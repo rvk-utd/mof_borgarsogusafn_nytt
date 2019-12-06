@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input {
+    padding: 0 0 0 20px;
+}
+
+html, html a, p, h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+
+input, textarea, select { 
+    -webkit-appearance: none !important;
+}
+
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+hr {
+    border: 0;
+    height: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+html, body {
+    width: 100%;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    overflow-x: hidden;
+    background: url('images/assets/pattern_bg_main.png') center center;
+    padding: 80px 12px 0;
+    display: block;
+    color: $color31 !important;
+}
+
+p, label, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+em, dfn, cite, i {
+    font-style: italic;
+}
+
+sup, sub {
+    font-size: 12px;
+    font-size: ( 12 / 16 ) + rem;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+.wrapper {
+    max-width: 66.25em;
+    position: relative;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.wrapper-padding {
+    padding: 20px;
+}
+
+.wrapper-padding.padding-top-none {
+    padding-top: 0;
+}
+
+.front.logged-in {
+    .main {
+        margin-top: 0;
+    }
+}
+
+.main {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.not-logged-in {
+    .tabs {
+        display: none;
+    }
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    clear: both;
+    padding: 10px 20px 0;
+    ul {
+        list-style-type: none;
+        float: left;
+        width: 100%;
+        margin-bottom: 16px;
+        li {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+    h2 {
+        display: none;
+    }
+}
+
+
+.text-content {
+    font-family: $merriweather;
+        p, ul, ol {
+            font-size: 14px;
+            font-size: 0.875rem;
+            margin-bottom: 16px;
+        }
+        ul, ol {
+        		padding-left: 13px;
+        }
+        h2 {
+            font-size: 20px;
+            font-size: 1.25rem;
+            font-family: $futuraheavy;
+            line-height: 1.5;
+             strong {
+                font-weight: normal;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            font-size: 1.125rem;
+            font-family: $futuraheavy;
+            line-height: 1.5;
+            strong {
+                font-weight: normal;
+            }
+        }
+        h4 {
+            font-size: 17px;
+            font-size: 1.0625rem;
+            font-family: $futuraheavy;
+            line-height: 1.5;
+             strong {
+                font-weight: normal;
+            }
+        }
+        p {
+            a:link, a:visited {
+                color: $color6 !important;
+                font-weight: 700;
+            }
+            u {
+                color: $color6;
+            }
+            em {
+                font-style: italic;
+            }
+        }
+}
+
+
+
+/* Media Queries Min Width and Max Width 100px - 1059px  */
+/*  ------------------------------*/
+
+@media (min-width: 6.25em) and (max-width: 66.1875em) {
+    body {
+        min-width: 100px;
+    }
+}
+
+
+/* Media Queries Min Width 320px */
+/*  ------------------------------*/
+
+@media (min-width: 20em) {
+    body {
+        padding: 80px 21px 0;
+    }
+
+    body.node-type-fraedsla, body.node-type-syningar, body.node-type-themes, body.node-type-videy, body.node-type-arbaejarsafn, body.node-type-ljosmyndasafn-reykjavikur, body.node-type-sjominjasafnid, body.node-type-landnamssyningin {
+        padding: 60px 21px 0;
+    }
+}
+
+/* Media Queries Min Width 768px */
+/*  ------------------------------*/
+
+@media (min-width: 48em) {
+    .wrapper-padding {
+        padding: 40px;
+    }
+    .wrapper {
+        margin-bottom: 40px;
+    }
+    body {
+        padding: 147px 40px 0;
+    }
+
+     body.node-type-fraedsla, body.node-type-syningar, body.node-type-themes, body.node-type-videy, body.node-type-arbaejarsafn, body.node-type-ljosmyndasafn-reykjavikur, body.node-type-sjominjasafnid, body.node-type-landnamssyningin {
+        padding: 106px 21px 0;
+    }
+    .not-front.logged-in {
+        .museums {
+            margin-top: 136px
+        }
+    }
+}
+
+
+/* Media Queries Min Width 1024px */
+/*  ------------------------------*/
+
+@media (min-width: 64em) {
+    
+     body.front, body.news {
+        padding: 158px 40px 0;
+    }
+
+       body.node-type-fraedsla, body.node-type-syningar, body.node-type-themes, body.node-type-videy, body.node-type-arbaejarsafn, body.node-type-ljosmyndasafn-reykjavikur, body.node-type-sjominjasafnid, body.node-type-landnamssyningin {
+        padding: 99px 21px 0;
+    }
+}
+
+
+
+/* Media Queries Min Width 480px */
+/*  ------------------------------*/
+
+@media (min-width: 30em) {
+    .item-list2 .item {
+        min-width: 100px;
+    }
+}
+
+
+/* Media Queries Min Width 1060px */
+/*  ------------------------------*/
+
+@media (min-width: 66.25em) {
+     body.news {
+        .museums {
+            margin-top: 0;
+        }
+    }
+    body {
+        min-width: 1060px;
+    }
+}
+

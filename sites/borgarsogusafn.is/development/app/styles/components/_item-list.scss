@@ -1,0 +1,135 @@
+// Components - Item Lists
+//
+// Styleguide 17.0
+
+// 	 Breadcrumbs
+// 
+// 	 markup:
+//	<div class="header-1">
+//		Yfirstandandi (2)
+//	</div>
+//
+//	 Styleguide 17.1
+
+.header-1, .header-2, .header-3, .header-4 {
+	font-size: 11px;
+	font-size: 0.6875rem;
+	font-family: $opensans;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+
+.item-list {
+	.block {
+		position: relative;
+		overflow: hidden;
+	}
+	.date-wrapper {
+		margin-bottom: 9px;
+		.where:after {
+			content: " \2022";
+		}
+	}
+	.date-wrapper span, .date-wrapper {
+		font-family: $opensans;
+		font-weight: 600;
+		font-size: 11px;
+		font-size: 0.6875rem;
+		line-height: 1.5;
+		letter-spacing: 0.55px;
+	}
+	.date-wrapper span {
+		text-transform: uppercase;
+	}
+	.items .image-wrapper {
+		float: left;
+		width: 100%;
+		margin-bottom: 11px;
+	}
+
+	.items {
+		padding-top: 31px;
+		h2 {
+			margin-bottom: 12px;
+		}
+		a:link, a:visited {
+			display: inline-block;
+			width: 100%;
+			background-color: $color9;
+			color: $color1;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-size: 0.75rem;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			font-family: $opensans;
+			font-weight: 700;
+			margin-bottom: 8px;
+			border-radius: 3px;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	.view-header {
+		position: relative;
+		height: 49px;
+		padding-top: 15px;
+		padding-bottom: 6px;
+		cursor: pointer;
+		span:nth-child(1), span:nth-child(2) {
+			float: left;
+		}
+		span:nth-child(1) {
+			margin-right: 6px;
+		}
+		.icon:before {
+			font-size: 22px;
+			color: $color7;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 24px;
+			width: 24px;
+		}
+		.icon-plus:before {
+			
+			color: $color18;
+		}
+		.icon-minus {
+			opacity: 0;
+		}
+		.active {
+			span {
+				color: $color7;
+			}
+			.icon-minus {
+				opacity: 1;
+			}
+			.icon-plus {
+				opacity: 0;
+			}
+		}
+	}
+	#block-views-syningar-block, #block-views-syningar-block-1, 
+	#block-views-syningar-block-2, #block-views-syningar-block-3 {
+		.view-header {
+			border-top: 1px solid $color19;
+			border-bottom: 1px solid $color19;
+		}
+	}
+	#block-views-syningar-block-5, #block-views-syningar-block-6,
+	#block-views-syningar-block-7, #block-views-syningar-block-8,
+	#block-views-syningar-block-9, #block-views-syningar-block-10,
+	#block-views-syningar-block-11, #block-views-syningar-block-12 {
+		.view-header {
+			border-bottom: 1px solid $color19;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+// Components - Buttons
+//
+// All buttons components
+//
+// Styleguide 15.0
+
+.btn {
+	padding: 8px 28px 8px 28px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+// 	 White Button
+// 
+// 	 markup:
+//	 	<div class="example styleguide">
+//			<a href="#" class="btn bg-white text-dark-grey f-XXS f-1-3">Nánar</a>
+// 	 </div>
+//
+//	 Styleguide 15.1
+
+.btn.bg-white {
+	&:hover {
+		color: $color9;
+	}
+}
+
+// 	 Dark Grey Button
+// 
+// 	 markup:
+//	 	<div class="example styleguide">
+//			<a href="#" class="btn bg-dark-grey text-white f-XXS f-1-3">Nánar</a>
+// 	 </div>
+//
+//	 Styleguide 15.2
+
+.btn.bg-dark-grey {
+	border: 1px solid $color31;
+}
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.btn.bg-dark-grey {
+		transition: all .2s ease-in-out;
+		&:hover {
+			color: $color31;
+			background-color: $color1;
+		}
+	}
+	.component.item-list {
+		.view-syningar, .view-fraedsla, .view-news {
+			.content-wrapper {
+				a {
+					transition: all .2s ease-in-out;
+					border: 1px solid $color31;
+				}
+				a:hover {
+					background-color: $color1;
+					color: $color31;
+				}
+			}
+		}
+	}
+}

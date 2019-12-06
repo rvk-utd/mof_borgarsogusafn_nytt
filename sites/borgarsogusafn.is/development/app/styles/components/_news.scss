@@ -1,0 +1,67 @@
+// Components - News
+//
+// All news components
+//
+// Styleguide 14.0
+
+// 	 News Detail
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-news-detail">
+//			<h1 class="f-XXL f-2 text-dark-grey">Dagskrá safnanætur á Sjóminjasafninu</h1>
+//			<span class="date f-XXXS f-1-2 text-dark-grey">6.2.2015</span>
+//			<h2 class="f-L f-2 text-dark-grey">Magnaðir tónleikar í Varðskipinu Óðni</h2>
+//			<p class="f-XS f-3 text-dark-grey">Sjóminjasafnið verður opið á Safnanótt föstudaginn 6. febrúar frá kl. 19.00-24.00. Í varðskipinu Óðni verða magnaðir tónleikar í þyrluskýli skipsins. Fram koma Cryptochrome, Sometime og Hljómsveitt. Tónleikarnir hefjast kl. 21.30 og allir velkomnir meðan rými leyfir. Aldrei áður hefur verið blásið til slíkra tónleika í skipinu svo missið ekki af!</p>
+//			<figure class="image-wrapper">
+//				<img src="images/assets/news.jpg">
+//				<figcaption class="f-XXS f-3-3 text-dark-grey">Ljósmynd: cryptochrome</figcaption>
+//			</figure>
+//			<p class="f-XS f-3 text-dark-grey">Inni á safninu verður skemmtilegt föndur í Hornsílinu fyrir alla fjölskylduna með sjóræningjaþema milli kl. 19.00 og 21.00. Einnig verður spennandi  ratleikur um sýningarsali safnsins frá 19.00-24.00. Þeim sem tekst að klára leikinn hitta sjóræningja í fullum skrúða sem varðveitir fjársjóðskistu með gómsætum gullpeningum. Allt starfsfólk verður klætt eins og sjóræningjar svo það verður sjón að sjá.</p>
+//		</div>
+//
+//	 Styleguide 14.1
+
+.main {
+.component-news-detail {
+	h1 {
+		font-size: 30px;
+		font-size: 1.875rem;
+		letter-spacing: 1px;
+		line-height: 1.2;
+		margin-bottom: 23px;
+	}
+	
+	h2 {
+		font-size: 20px;
+		font-size: 1.25rem;
+		line-height: 1.85;
+		margin-bottom: 9px;
+	}
+
+	.date {
+		margin-bottom: 12px;
+		font-size: 11px;
+		font-size: 0.6875rem;
+		font-family: $opensans;
+		font-weight: 600;
+	}
+	
+	p {
+		font-size: 14px;
+		font-size: 0.875rem;
+		margin-bottom: 24px;
+	}
+	.image-wrapper {
+		img {
+			margin-bottom: 14px;
+		}
+		margin-bottom: 24px;
+
+		figcaption {
+			font-size: 12px;
+			font-size: 0.75rem;
+			color: $color24;
+		}
+	}
+}
+}

@@ -1,0 +1,7 @@
+body {
+    &.menu-on {
+        .example {
+            transform: translate3d(280px,0,0);
+        }
+    }
+}

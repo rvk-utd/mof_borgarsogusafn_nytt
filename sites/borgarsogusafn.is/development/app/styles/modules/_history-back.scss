@@ -1,0 +1,31 @@
+/* Media Queries Min Width 400px */
+/*	------------------------------*/
+
+@media (min-width: 25em) {
+	.back.modules {
+		position: absolute;
+		display: block;
+		top: 8px;
+		left: 17px;
+		z-index: 20;
+	}
+}
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+	.back.modules {
+		left: auto;
+		top: 80px;
+		right: 90px;
+	.icon-top-arrow {
+		display: block;
+		margin: 0 0 10px;
+	}
+	.icon-left {
+		display: none;
+	}
+	}
+	
+}

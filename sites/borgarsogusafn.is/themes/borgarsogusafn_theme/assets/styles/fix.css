@@ -1,0 +1,79 @@
+/* Þetta stílsnið er til að benda beint á ný á einstaka hluti ಠ_ಠ */
+
+.page-node-646 .layout1 .wrapper {
+    padding-top: 0;
+}
+
+.page-node-646 .component-slider.modules li {
+    background-color: #FAA61A;
+}
+
+.page-node-646 .item-list1 .item {
+    background-color: #F26522;
+    transition: all 0.26s ease-in-out 0s;
+}
+
+.page-node-646 .item-list1 .item:hover {
+    background-color: #FAA61A;
+}
+
+@media (min-width: 66.25em) {
+
+.page-node-599 .item-list .view-header span:nth-child(1) {
+	margin-right: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.page-node-599 .item-list .block:nth-child(2) .view-header{
+    margin-left: -2px;
+}
+
+.page-node-599 .item-list .block:nth-child(3) .view-header {
+    margin-left: -4px;
+}
+.page-node-599 .item-list .block:nth-child(4) .view-header {
+    margin-left: -6px;
+}
+
+.page-node-606 .item-list .view-header span:nth-child(1),
+.page-node-607 .item-list .view-header span:nth-child(1) {
+	margin-right: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.page-node-606 .item-list .block:nth-child(2) .view-header,
+.page-node-607 .item-list .block:nth-child(2) .view-header {
+    margin-left: 4px;
+}
+
+.page-node-606 .item-list .block:nth-child(3) .view-header,
+.page-node-607 .item-list .block:nth-child(3) .view-header {
+    margin-left: -11px;
+}
+.page-node-606 .item-list .block:nth-child(4) .view-header,
+.page-node-607 .item-list .block:nth-child(4) .view-header {
+    margin-left: -61px;
+}
+
+.page-node-609 .item-list .view-header span:nth-child(1) {
+	margin-right: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.page-node-609 .item-list .block:nth-child(2) .view-header {
+    margin-left: 3px;
+}
+
+.page-node-609 .item-list .block:nth-child(3) .view-header {
+    margin-left: 1px;
+}
+
+.page-node-609 .item-list .block:nth-child(4) .view-header {
+    margin-left: -54px;
+}
+
+}
+

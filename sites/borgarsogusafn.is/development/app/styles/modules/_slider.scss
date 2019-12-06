@@ -1,0 +1,297 @@
+.component-slider.modules {
+	padding: 0;
+	.image-wrapper {
+		position: relative;
+		background-image: none;
+		height: auto;
+		margin: 0;
+		img {
+			margin: 0;
+		}
+	}
+	li {
+		width: 100%;
+		a {
+			display: block;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	ul {
+		overflow: hidden;
+	}
+	.bx-controls {
+		position: absolute;
+		bottom: 226px;
+		width: 100%;
+		text-align: center;
+	}
+	.bx-controls-direction {
+		display: none;
+	}
+
+	.bx-pager-item {
+		display: inline-block;
+		margin-right: 10px;
+		a {
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			background-color: $color1;
+			display: block;
+			text-indent: -9999em;
+		}
+		a.active {
+			background-color: $color7;
+		}
+	}
+	.bx-pager-item:last-child {
+		margin-right: 0;
+	}
+	.text {
+		height: 220px;
+		overflow: hidden;
+	}
+}
+
+.page-node-97, .page-node-98 {
+	.component-slider.modules {
+		ul {
+			background-color: $color3;
+		}
+		li {
+			background-color: $color3;
+		}
+	}
+}
+
+.page-node-100, .page-node-99 {
+	.component-slider.modules {
+		ul {
+			background-color: $color4;
+		}
+		li {
+			background-color: $color4;
+			.btn {
+				color: $color9;
+			}
+		}
+	}
+}
+
+.page-node-102, .page-node-101 {
+	.component-slider.modules {
+		ul {
+			background-color: $color5;
+		}
+		li {
+			background-color: $color5;
+			.btn {
+				color: $color5;
+			}
+		}
+	}
+}
+
+.page-node-103, .page-node-104 {
+	.component-slider.modules {
+		ul {
+			background-color: $color6;
+		}
+		li {
+			background-color: $color6;
+			.btn {
+				color: $color6;
+			}
+		}
+	}
+}
+
+.page-node-105, .page-node-106 {
+	.component-slider.modules {
+		ul {
+			background-color: $color7;
+		}
+		li {
+			background-color: $color7;
+			.btn {
+				color: $color7;
+			}
+		}
+	}
+}
+
+/* Media Queries Min Width 480px */
+/*	------------------------------*/
+
+@media (min-width: 30em) {
+	.component-slider.modules {
+		.text {
+			height: 176px;
+		}
+		.bx-controls {
+			bottom: 182px;
+		}
+	}
+}
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+	.landingpage-slider {
+
+		.medium {
+			.image-wrapper {
+				float: left;
+				width: 50%;
+			}
+			.text {
+				position: absolute;
+				width: 50%;
+				right: 0;
+				bottom: 0;
+				padding: 20px;
+				height: auto;
+				h1 {
+					margin-bottom: 7px;
+				}
+				p {
+					margin-bottom: 30px;
+				}
+			}
+		}
+		.large {
+			.text {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				padding: 20px;
+				z-index: 2;
+				height: auto;
+				h1 {
+					margin-bottom: 7px;
+				}
+				p {
+					margin-bottom: 30px;
+				}
+			}
+		}
+		.btn {
+			display: inline-block;
+		}
+	}
+	.component-slider.modules {
+		.bx-pager {
+			display: none;
+		}
+		.bx-controls-direction {
+			display: block;
+			a {
+				width: 40px;
+				height: 40px;
+				background-color: rgba(0,0,0,0.2);
+				display: inline-block;
+				color: transparent;
+				position: relative;
+				text-align: center;
+			}
+			a:first-child {
+				margin-right: 1px;
+			}
+			.bx-prev {
+				&:before {
+					content: "";
+					color: #000000;
+					font-size: 9px;
+					position: absolute;
+					font-family: "iconsfont";
+					left: 18px;
+					top: 7px;
+				}
+			}
+			.bx-next {
+				&:before {
+					content: "";
+					color: #000000;
+					font-size: 9px;
+					position: absolute;
+					font-family: "iconsfont";
+					left: 18px;
+					top: 7px;
+				}
+			}
+		}
+		.bx-controls {
+			bottom: auto;
+			top: 40px;
+			right: 40px;
+			width: auto;
+		}
+		.medium {
+			a:before {
+				content: "";
+				font-family: "iconsfont";
+				position: absolute;
+				width: 50%;
+				height: 100%;
+				right: 181px;
+				bottom: -217px;
+				color: rgba(0,0,0,0.1);
+				font-size: 508px;
+			}
+		}
+	}
+}
+
+/* Media Queries Min Width 860px */
+/*	------------------------------*/
+
+@media (min-width: 53.75em) {
+	.component-slider.modules {
+	
+		.medium {
+			a:before {
+				right: 181px;
+				bottom: -217px;
+				font-size: 600px;
+			}
+		}
+	}
+}
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.landingpage-slider {
+		.medium, .large {
+			.text {
+				padding: 40px;
+			}
+		}
+		.btn:hover {
+			background-color: $color1;
+		}
+	}
+	.component-slider.modules {
+		.medium {
+			a:before {
+				right: 176px;
+				bottom: -277px;
+				font-size: 700px;
+			}
+		}
+		.btn:hover {
+			background-color: $color1;
+		}
+	}
+	.front {
+		.component-slider.modules {
+			.btn:hover {
+				color: $color31;
+			}
+		}
+	}
+}

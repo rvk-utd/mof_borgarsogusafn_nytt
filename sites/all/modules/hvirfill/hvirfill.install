@@ -1,0 +1,65 @@
+<?php
+
+function hvirfill_schema() {
+
+    $schema['hvirfill_hidden'] = array(
+        'description' => t('Store event ids to hide.'),
+        'fields' => array(
+            'fid' => array(
+                'type'        => 'serial',
+                'unsigned'    => true,
+                'not null'    => true,
+            ),
+            'event_id' => array(
+                'description' => t('User ID'),
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => true,
+                'default'     => '',
+            ),
+            'time' => array(
+                'description' => t('Time'),
+                'type'        => 'int',
+                'size'        => 'big',
+                'not null'    => true,
+                'default'     => 0,
+            ),
+        ),
+        'primary key' => array(
+            'fid'
+        ),
+    );
+
+    return $schema;
+}
+
+function hvirfill_install() {
+    drupal_install_schema('hvirfill_hidden');
+    drupal_set_message(t('Hvirfill is now correctly installed'));
+
+    $default_settings = array(
+        'events_no' => '30',
+        'tags' => array(),
+        'is_start_date' => 0,
+        'start_date' => '',
+        'is_end_date' => 0,
+        'end_date' => '',
+        'is_search' => 1,
+        'is_datepicker' => 1,
+        'is_share' => 0,
+        'is_english_fallback' => 1,
+        'sample_hvirfill_path' => '',
+        'sample_events_no' => '5',
+        'sample_is_random' => 0,
+    );
+
+    variable_set('hvirfill_settings', json_encode($default_settings));
+}
+
+function hvirfill_uninstall() {
+    drupal_uninstall_schema('hvirfill_hidden');
+    variable_del('hvirfill_settings');
+}
+
+
+

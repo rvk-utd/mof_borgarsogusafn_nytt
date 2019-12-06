@@ -1,0 +1,68 @@
+// Components - Social 
+//
+// All social media components
+//
+// Styleguide 9.0
+
+// 	 Social Media
+// 
+// 	 markup:
+//			<ul class="social-media">
+//				<li><a href="#"><span class="icon-facebook"></span><p>Deila á Facebook</p></a></li>
+//				<li><a href="#"><span class="icon-twitter"></span><p>Deila á Twitter</p></a></li>
+//				<li><a href="#"><span class="icon-googleplus"></span><p>Deila á Google Plus</p></a></li>
+//				<li><a href="#"><span class="icon-share"></span><p>Deila</p></a></li>
+//				<li><a href="#"><span class="icon-mail"></span><p>Senda Tölvupóst</p></a></li>
+//			</ul>
+//
+//	 Styleguide 9.1
+
+.social-media {
+	list-style-type: none;
+
+	li {
+		display: inline-block;
+		vertical-align: bottom;
+		a {
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			display: block;
+		}
+	}
+	p {
+		display: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	span {
+		/*margin-right: 22px;*/
+	}
+	span:last-child {
+		/*margin-right: 0;*/
+	}
+	.icon-facebook {
+		font-size: 18px;
+		color: $color13;
+	}
+	.icon-twitter {
+		font-size: 15px;
+		color: $color14;
+	}
+	.icon-googleplus {
+		font-size: 18px;
+		color: $color15;
+	}
+	.icon-share {
+		font-size: 18px;
+		color: $color16;
+	}
+	.icon-mail {
+		font-size: 12px;
+		color: $color9;
+		position: relative;
+		top: -3px;
+	}
+}

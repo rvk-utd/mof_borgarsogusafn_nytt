@@ -1,0 +1,252 @@
+// Components - Slider 
+//
+// All slider components
+//
+// Styleguide 4.0
+
+// 	 Frontpage Slider
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-frontpage-slider">
+//			<a href="#">
+//				<div class="inner wrapper-padding">
+//					<h1 class="f-XXXL f-2 text-white">Friðsæl og fögur</h1>
+//					<p class="f-M f-2-2 text-white">Hér upp­lifir þú þúsund ára sögu og nýtur ein­stakrar nátt­úru. Viðey er perla sem okkur ber að gæta og varð­veita.</p>
+//					<div class="btn bg-white text-dark-grey f-XXS f-1-3">Nánar</div>
+//				</div>
+//			</a>
+// 	 </div>
+//
+//	 Styleguide 4.1
+
+
+.component-frontpage-slider {
+
+	background: url('images/assets/hero1.jpg') no-repeat center center;
+	background-size: cover;
+	height: 530px;
+	position: relative;
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		&:after {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: "";
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 46%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+			opacity: 0.9;
+		}
+	}
+
+	h1 {
+		margin-bottom: 10px;
+		letter-spacing: 2px;
+		line-height: 1;
+	}
+
+	p {
+		letter-spacing: 1px;
+	}
+
+	.inner {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.btn {
+		margin-top: 35px;
+	}
+
+	
+}
+
+// 	 Museum Slider
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-slider bg-green">
+//			<a href="#">
+//			<div class="image-wrapper"></div>
+//			<div class="text">
+//				<div class="date">
+//					<span class="category f-XXXS f-1-2 text-white">Viðburðir</span>
+//					<span class="date-inner f-XXXS f-1-2 text-white">6.2.2015</span>
+//				</div>
+//				<h1 class="text-white f-XXL f-2">Draugaganga um dimma stíga Árbjarsafns</h1>
+//				<div class="btn bg-white text-green f-XXS f-1-3">Nánar</div>
+//			</div>
+//			</a>
+// 	 </div>
+//
+//	 Styleguide 4.2
+
+.component-slider {
+	position: relative;
+	width: 100%;
+	padding-top: 335px;
+	max-width: 335px;
+	.image-wrapper {
+		position: absolute;
+		top: 0;	
+		left: 0;
+		width: 100%;
+		background: url('images/assets/slider-image.jpg') no-repeat center center;
+		background-size: cover;
+		height: 335px;
+	}
+	.text {
+		position: relative;
+		padding: 9px 20px 23px;
+	}
+	.category {
+		position: relative;
+		text-transform: uppercase;
+		padding-right: 11px;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 2px;
+			height: 2px;
+			background-color: $color1;
+			right: 0;
+			top: 50%;
+			margin-top: -1px;
+		}
+	}
+	.date {
+		margin-bottom: 11px;
+	}
+	.date-inner {
+		padding-left: 5px;
+	}
+	h1 {
+		line-height: 1.2;
+	}
+	.btn {
+		display: none;
+	}
+	.btn.text-green:hover {
+		color: $color3;
+	}
+}
+
+
+
+// 	 Slider Large Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-slider-large">
+//			<a href="#">
+//				<div class="inner">
+//					<div class="date">
+//						<span class="category f-XXXS f-1-2 text-white">Viðburðir</span>
+//						<span class="date-inner f-XXXS f-1-2 text-white">6.2.2015</span>
+//					</div>
+//					<h1 class="text-white f-XXL f-2">Inner and Outer Landscapes</h1>
+//					<p class="f-M f-2-2 text-white">Ingvar Högni Ragnarsson kannar hið síbreytilega reykvíska borgarlandslag.</p>
+//					<div class="btn bg-white text-dark-grey f-XXS f-1-3">Nánar</div>
+//				</div>
+//			</a>
+// 	</div>
+//
+//	 Styleguide 4.3
+
+
+.component-slider-large {
+
+		a {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		&:after {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: "";
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 46%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,0) 46%,rgba(0,0,0,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+			opacity: 0.9;
+		}
+	}
+
+	background: url('images/assets/slider-image2.jpg') no-repeat center center;
+	background-size: cover;
+	height: 530px;
+	position: relative;
+
+	h1 {
+		line-height: 1.2;
+		letter-spacing: 1px;
+		margin-bottom: 11px;
+	}
+	p {
+		
+	}
+	.btn {
+		margin-top: 35px;
+	}
+
+	.inner {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 24px;
+		z-index: 2;
+	}
+	.category {
+		position: relative;
+		text-transform: uppercase;
+		padding-right: 11px;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 2px;
+			height: 2px;
+			background-color: $color1;
+			right: 0;
+			top: 50%;
+			margin-top: -1px;
+		}
+	}
+	.date {
+		margin-bottom: 11px;
+	}
+	.date-inner {
+		padding-left: 5px;
+	}
+}
+
+.front {
+	.component-slider {
+		max-width: none;
+		.medium, .large {
+			background-color: #009C9E;
+		}
+		.btn {
+			color: $color9;
+		}
+	}
+}

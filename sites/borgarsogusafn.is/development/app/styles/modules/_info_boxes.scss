@@ -1,0 +1,277 @@
+/* Museums Landing Pages */
+
+#block-block-1, #block-block-2, #block-block-3,
+#block-block-4, #block-block-5, #block-block-6 {
+	width: 100%;
+	clear: both;
+}
+
+.info-boxes {
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
+	.component-info-sub, .component-open-hours-sub, .component-admission-sub {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 53px;
+		> h2 {
+			display: none;
+		}
+		.icon-Info, .icon-klukka, .icon-kr {
+			float: left;
+		}
+		.text {
+			position: relative;
+			overflow: hidden;
+			padding-left: 30px;
+		}
+	}
+}
+
+.component-feedback {
+	border-top: 1px solid #cedae0;
+	width: 100%;
+}
+
+/* Media Queries Min Width 435px */
+/*	------------------------------*/
+
+@media (min-width: 27.1875em) {
+	
+}
+
+
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+
+	.front {
+		.component-info {
+			text-align: left;
+			overflow: hidden;
+			.image-wrapper {
+				float: left;
+				img {
+					display: block;
+				}
+			}
+			.wrapper {
+				position: relative;
+				overflow: hidden;
+			}
+			.text {
+				padding-left: 40px;
+			}
+			.btn {
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.info-boxes {
+
+		.component-info-sub, .component-open-hours-sub, .component-admission-sub {
+			width: 33.33333333333333%;
+			float: left;
+			padding-left: 40px;
+			> h2 {
+				display: block;
+			}
+			.text {
+				padding-left: 10px;
+				h2 {
+					display: none;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+/* Media Queries Min Width 1024px */
+/*	------------------------------*/
+
+@media (min-width: 64em) {
+	.component-feedback {
+		height: 120px;
+		padding-top: 39px;
+		.btn {
+			width: auto;
+			float: right;
+			margin: 0;
+		}
+		.text {
+			display: inline-block;
+		}
+	}
+	.info-boxes {
+		
+		.component-info-sub, .component-open-hours-sub, .component-admission-sub {
+			overflow: visible;
+			> h2 {
+				display: none;
+			}
+			.text {
+				h2 {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.component-download-box {
+		transition: all .2s ease-in-out;
+		&:before {
+			transition: all .2s ease-in-out;
+		}
+		h2, .icon-download:before {
+			transition: all .2s ease-in-out;
+		}
+	}
+	.component-download-box:hover {
+		border-color: $color6;
+		&:before {
+			background-color: $color6;
+		}
+		h2, .icon-download:before {
+			color: $color6;
+		}
+	}
+
+	.front {
+		.component-info {
+			padding: 0;
+			text-align: left;
+			display: table;
+			width: 100%;
+			.image-wrapper {
+				display: table-cell;
+				vertical-align: top;
+				float: none;
+				img {
+					display: block;
+					margin: 0;
+				}
+			}
+			.wrapper {
+				display: table-cell;
+				vertical-align: top;
+				padding: 40px;
+				width: auto;
+				.wrapper-inner {
+					position: relative;
+					overflow: hidden;
+					padding-right: 142px;
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.icon-alert {
+				padding: 40px 0 40px 40px;
+			}
+			.text {
+				padding: 0 !important;
+				display: block;
+				padding-left: 10px;
+			}
+			.btn {
+				margin: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+	
+	.info-boxes {
+
+		.component-info-sub, .component-open-hours-sub, .component-admission-sub {
+			margin-bottom: 0;
+			.text {
+				padding-left: 30px;
+			}
+		}
+		.component-info-sub {
+			width: 36.02040816326531%;
+			padding-right: 98px;
+		}
+		.component-open-hours-sub {
+			width: 36.12244897959184%;
+			padding-left: 0;
+			padding-right: 100px;
+		}
+		.component-admission-sub {
+			width: 27.85714285714285%;
+			padding-left: 0;
+			padding-right: 70px;
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 1px;
+			background-color: $color25;
+			left: 31.83673469387755%;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 1px;
+			background-color: $color25;
+			left: 67.85714285714286%;
+		}
+		.bg-cover {
+			width: 100%;
+			height: 40px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: $color1;
+			z-index: 1;
+		}
+	}
+}		
+
+
+
+/* Media Queries Min Width 1100px */
+/*	------------------------------*/
+
+@media (min-width: 68.75em) {
+
+}
+
+/* Media Queries Min Width 1200px */
+/*	------------------------------*/
+
+@media (min-width: 75em) {
+
+}
+
+/* Media Queries Min Width 1400px */
+/*	------------------------------*/
+
+@media (min-width: 87.5em) {
+	
+}
+
+/* Media Queries Min Width 1500px */
+/*	------------------------------*/
+
+@media (min-width: 93.75em) {
+	
+}
+
+

@@ -1,0 +1,189 @@
+// Components - Faq 
+//
+// All faq components
+//
+// Styleguide 11.0
+
+
+// 
+// 	 markup:
+//<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+//		<h1 class="f-XXL f-2 text-dark-grey">Spurt og svarað</h1>
+//  	<div class="panel panel-default">
+//    	<div class="panel-heading" role="tab" id="headingOne">
+//      	<div class="panel-title">
+//        		<a class="f-XS f-1-3" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+//          	Lorem ipsum dolor sit amet
+//					<span class="icon-plus icon"></span><span class="icon icon-minus"></span>
+//        	</a>
+//      	</div>
+//    	</div>
+//    	<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+//      	<div class="panel-body">
+//        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+//      	</div>
+//    	</div>
+//  	</div>
+//  	<div class="panel panel-default">
+//    	<div class="panel-heading" role="tab" id="headingTwo">
+//      	<div class="panel-title">
+//        		<a class="f-XS f-1-3 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+//          	Consectetur adipiscing elit?
+//					<span class="icon icon-plus"></span><span class="icon icon-minus"></span>
+//        		</a>
+//      	</div>
+//    	</div>
+//    	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+//      	<div class="panel-body">
+//        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+//      	</div>
+//    	</div>
+//  	</div>
+//  	<div class="panel panel-default">
+//    	<div class="panel-heading" role="tab" id="headingThree">
+//      	<div class="panel-title">
+//       		<a class="f-XS f-1-3 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+//          	Sed do eiusmod tempor
+//					<span class="icon icon-plus"></span><span class="icon icon-minus"></span>
+//        		</a>
+//      	</div>
+//    	</div>
+//    	<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+//      	<div class="panel-body">
+//        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+//      	</div>
+//    	</div>
+//  	</div>
+//</div>
+//
+//	 Styleguide 11.1
+
+#accordion {
+	h1 {
+		border-bottom: 1px solid #d7d7d6;
+		padding-bottom: 35px;
+	}
+	h4 {
+		line-height: 1.5;
+		margin-top: 5px;
+		margin-bottom: 12px;
+	}
+	.panel-title {
+		text-transform: uppercase;
+		a:hover {
+			text-decoration: none;
+		}
+		a {
+			color: $color30;
+		}
+		a.collapsed {
+			color: $color9;
+		}
+	}
+	.panel {
+		box-shadow: none;
+		border: none;
+	}
+	.panel-heading	{
+		background-color: transparent;
+		position: relative;
+		overflow: hidden;
+		border-bottom: 1px solid $color19;
+	}
+	.panel-body {
+    	padding: 12px 0 0;
+    	font-size: 14px;
+    	font-size: 0.875rem;
+    	border: none;
+	}
+	span.icon {
+		font-size: 22px;
+		font-size: 1.375rem;
+		color: $color18;
+		float: right;
+		margin-right: 1px;
+	}
+	.icon-plus {
+		display: none;
+	}
+	.icon-minus {
+		color: $color7;
+	}
+	.collapsed {
+		.icon-plus {
+			display: block;
+		}
+		.icon-minus {
+			display: none;
+		}
+	}
+}
+
+.component.faq {
+	padding-top: 51px;
+	&:before {
+		display: none;
+	}
+	list-style-type: none;
+	li div {
+    display: none;
+	}
+	li {
+		position: relative;
+		border-bottom: 1px solid $color19;
+		padding-bottom: 1px;
+		p {
+			margin-bottom: 33px;
+		}
+	}
+	li:first-child {
+		border-top: 1px solid $color19;
+	}
+	.header {
+		display: block;
+		cursor: pointer;
+		
+		.title {
+			font-weight: normal;
+			line-height: 1.5;
+			padding-right: 45px;
+			display: inline-block;
+			margin: 9px 0px 8px;
+			}
+		.icon:before {
+			font-size: 24px;
+			font-size: 1.5rem;
+		}
+		.icon-minus {
+			display: none;
+		}
+		.icon-minus, .icon-plus {
+			position: absolute;
+			right: 2px;
+			top: 10px;
+		}
+		&:hover {
+			span {
+				color: $color6;
+			}
+		}
+	}
+	.block-item {
+		.active {
+		span {
+			color: $color7;
+		}
+		.icon-plus {
+			display: none;
+		}
+		.icon-minus {
+			display: block;
+		}
+			&:hover {
+				span {
+					color: $color6;
+				}
+			}
+		}
+	}
+}

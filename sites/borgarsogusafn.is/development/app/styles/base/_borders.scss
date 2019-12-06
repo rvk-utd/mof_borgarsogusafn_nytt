@@ -1,0 +1,20 @@
+.border-default {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-top {
+    border-width: 1px 0 0;
+}
+
+.bottom-right {
+    border-width: 0 1px 0 0;
+}
+
+.border-bottom {
+    border-width: 0 0 1px;
+}
+
+.border-left {
+    border-width: 0 0 0 1px;
+}

@@ -1,0 +1,624 @@
+<?php
+
+define('kk_std_module_seconds_30_days', (30 * 24 * 60 * 60));
+define('kk_std_module_seconds_24_hours', (24 * 60 * 60));
+define('kk_std_module_seconds_1_hour', (1 * 60 * 60));
+define('kk_std_module_seconds_1_hours', kk_std_module_seconds_1_hour);
+define('kk_std_module_seconds_2_hours', (2 * 60 * 60));
+define('kk_std_module_seconds_6_hours', (6 * 60 * 60));
+define('kk_std_module_seconds_1_minute', (1 * 60));
+define('kk_std_module_seconds_1_minutes', kk_std_module_seconds_1_minute);
+define('kk_std_module_seconds_5_minutes', (5 * 60));
+define('kk_std_module_seconds_10_minutes', (10 * 60));
+define('kk_std_module_seconds_15_minutes', (15 * 60));
+
+define('kk_std_module_cookie_field_id', 'kk_std_module');
+
+/*
+ * CHAPTER I: Helper classes
+ */
+
+if (class_exists('SoapClient') === TRUE) {
+
+	class kk_std_module_NTLMSoapClient extends SoapClient {
+		protected $user = "";
+		protected $password = "";
+		protected $ch;
+		protected $validate = false;
+
+		function __set_login($user, $password) {
+			$this->user = $user;
+			$this->password = $password;
+		}
+
+		function __doRequest($request, $location, $action, $version, $one_way = 0) {
+			$headers = array(
+				'Method: POST',
+				'Connection: Keep-Alive',
+				'User-Agent: PHP-SOAP-CURL',
+				'Content-Type: text/xml; charset=utf-8',
+				'SOAPAction: "'. ((string) $action ).'"',
+			);
+
+			$this->__last_request_headers = $headers;
+			$this->ch = curl_init($location);
+
+			curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, $this->validate);
+			curl_setopt($this->ch, CURLOPT_SSL_VERIFYHOST, $this->validate);
+		
+			curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($this->ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($this->ch, CURLOPT_POST, true );
+			curl_setopt($this->ch, CURLOPT_POSTFIELDS, $request);
+			curl_setopt($this->ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
+			curl_setopt($this->ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC | CURLAUTH_NTLM);
+			curl_setopt($this->ch, CURLOPT_USERPWD, $this->user.':'.$this->password);
+
+			$response = curl_exec($this->ch);
+
+			if ($response === false) {
+				throw new Exception('Curl error: ' . curl_error($this->ch) . ' (errno:' . curl_errno($this->ch) . ')');
+			}
+
+			#header('Content-Type: text/xml');echo $request;die("response=$response");
+
+			return $response;
+		}
+	 
+		public function __getLastRequestHeaders() {
+			return implode('n', $this->__last_request_headers) . "\n";
+		}
+
+		public function validateCertificate($validate = true) {
+			$this->validate = $validate;
+			return true;
+		}
+	}
+}
+
+/*
+ * CHAPTER I: ENDS
+ */
+
+/*
+ * CHAPTER II: Helper functions 
+ */
+
+/*
+ * KK_DEF_MODULE_STR_SAFE:
+ *
+ * Converts all  icelandic (upper- and lowercase) characters in 
+ * given string to ASCII characters; all other chars are converted to
+ * underscore ("_").
+ */
+ 
+function kk_std_module_str_safe($str) {
+	$str = mb_strtolower($str);
+
+	$str = str_replace(
+		array("á", "æ", "þ", "ó", "í", "ý", "ú", "é", "ð", "ö"),
+		array("a", "ae", "th", "o", "i", "y", "u", "e", "d", "o"),
+		$str
+	);
+
+	return preg_replace('/[^a-z0-9]/i', '_', $str);
+}
+
+/*
+ * KK_DEF_MODULE_HTTPS_ENFORCE:
+ *
+ * Redirects the user to a HTTPS version of
+ * the page currently being viewed.
+ *
+ * Note that we do not enforce, if we are
+ * running in development environment.
+ */
+
+function kk_std_module_https_enforce() {
+	/* If we are already using HTTPS, return */
+	if (isset($_SERVER['HTTPS']) === TRUE) {
+		return;
+	}
+
+	if (variable_get('kk_std_module_https_enforce', FALSE) !== TRUE) {
+		return;
+	}
+
+	/* No HTTPS in development environment */
+	if (kk_std_module_development_environment_on() === TRUE) {
+		return;
+	}
+
+	/* OK, redirect user */
+	drupal_goto("https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']);
+	drupal_exit(0);
+}
+
+/*
+ * KK_DEF_MODULE_RAND_SLEEP:
+ *
+ * Make drupal sleep for random
+ * number of seconds (the maximum being $seconds).
+ *
+ */
+
+function kk_std_module_rand_sleep($seconds = 15) {
+	sleep(rand(0, $seconds));
+}
+
+/*
+ * KK_STD_MODULE_KENNITALA_CLEANUP:
+ *
+ * Removes everything except numbers from kennitalas.
+ *
+ */
+
+function kk_std_module_kennitala_cleanup($kt) {
+	$kt = (string) $kt;
+
+	return preg_replace('/[^0-9]/', '', $kt);
+}
+
+/* 
+ * KK_DEF_MODULE_KENNITALA_CHECK:
+ *
+ * Checks if kennitala is valid mathemathically.
+ * Does not check if it actually exists.
+ *
+ * Borrowed from http://stefanvignir.wordpress.com/2011/05/03/ad-vinna-med-kennitolur-i-php/
+ * 
+ * Enhanced so to get rid of "-" in kennitals.
+ */
+
+function kk_std_module_kennitala_check($kt) {
+	$kt = (string) $kt;
+
+	$kt = kk_std_module_kennitala_cleanup($kt);
+
+	if (strlen($kt) != 10) {
+		return false;
+	}
+
+	$checksum = substr($kt,0,1)*3;
+	$checksum += substr($kt,1,1)*2;
+	$checksum += substr($kt,2,1)*7;
+	$checksum += substr($kt,3,1)*6;
+	$checksum += substr($kt,4,1)*5;
+	$checksum += substr($kt,5,1)*4;
+	$checksum += substr($kt,6,1)*3;
+	$checksum += substr($kt,7,1)*2;
+
+	$moduloRem = 11-fmod($checksum,11);
+
+	if (($moduloRem == '11') && (substr($kt,8,1) === '0')) {
+		return true;
+	}
+
+	elseif ($moduloRem == 10) {
+		return false;
+	}
+
+	elseif ($moduloRem == substr($kt, 8, 1)) {
+		return true;
+	}
+
+	else {
+		return false;
+	}
+}
+
+/*
+ * KK_DEF_MODULE_CREDITCARDNUMBER_CHECK:
+ * 
+ * Checks if entered (presumed) creditcard number 
+ * fulfills some basic characteristics of real credit card
+ * numbers.
+ */
+
+function kk_std_module_creditcardnumber_check($credit_card_number) {
+	if ((strlen($credit_card_number) < 12) || (strlen($credit_card_number) > 19)) {
+		return FALSE;
+	}
+
+	for ($i = 0; $i < strlen($credit_card_number); $i++) {
+		if (is_numeric($credit_card_number[$i]) === FALSE) {
+			return FALSE;
+		}
+	}
+
+	return TRUE;
+}
+
+/*
+ * KK_DEF_MODULE_DEVELOPMENT_ENVIRONMENT_ON:
+ *
+ * Checks if we are running in a development environment. 
+ * Returns TRUE if so, FALSE otherwise.
+ */
+
+function kk_std_module_development_environment_on() {
+	//$myhostname = php_uname('n');
+	$myhostname = $_SERVER['HTTP_HOST'];
+
+	if (
+		($myhostname == "vm8.virtual.is") ||
+		($myhostname == "dev.kosmosogkaos.is") ||
+		($myhostname == "sleipnir.kosmosogkaos.is") ||
+		($myhostname == "haflidi.kosmosogkaos.is") ||
+		($myhostname == "nykur.kosmosogkaos.is") ||
+		($myhostname == "drupalviking.kosmosogkaos.is") ||
+		($myhostname == "centos-virtual-webserver.binhex.EU.org") ||
+		($myhostname == "Einar-Valurs-MacBook-Pro.local") ||
+		($myhostname == "imacs-imac.in.is") ||
+		($myhostname == "Hilmars-iMac.local") ||
+		($myhostname == "analogue.stefan") 
+	) {
+		return TRUE;
+	}
+
+	return FALSE;
+}
+
+/* 
+ * KK_DEF_MODULE_COOKIE_NEW:
+ *
+ * Purpose:
+ *	Create a new cookie for the user.
+ */
+
+function kk_std_module_cookie_new() {
+	/* Try to create a unique cookie */
+	do {
+		$cookie_hash_id = sha1(time() . rand() . rand()) . "_" . time(); /* We add a timestamp at the end */
+
+		$db_rows = db_query("SELECT cookie_hash_id FROM kk_std_module_cookie_ids WHERE cookie_hash_id = :cookie_hash_id", array(":cookie_hash_id" => $cookie_hash_id));
+	} while ($db_rows->rowCount() > 0);
+
+       
+	/* Register the new cookie into DB */ 
+	db_query("INSERT INTO kk_std_module_cookie_ids (cookie_hash_id, timestamp_updated) VALUES (:cookie_hash_id, :timestamp_updated)", array(":cookie_hash_id" => $cookie_hash_id, ":timestamp_updated" => time()));
+
+	/* Assign the cookie */
+	user_cookie_save(array(kk_std_module_cookie_field_id => $cookie_hash_id));
+
+	$_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id} = $cookie_hash_id;
+}
+
+/*
+ * KK_DEF_MODULE_COOKIE_CHECK_EXISTS:
+ *
+ * Purpose:
+ * 	Check if the user has any cookie assigned ?
+ */
+
+function kk_std_module_cookie_check_exists() {
+	/* Check if any cookie is given */
+	if (isset($_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id})) {
+		/* Check if the cookie exists in the database */
+		$rows = db_query("SELECT cookie_hash_id FROM kk_std_module_cookie_ids WHERE  cookie_hash_id = :cookie_hash_id", array(":cookie_hash_id" => $_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id}));
+
+		foreach ($rows as $row) {
+			/* Yep. It exists, return TRUE */
+			return TRUE;
+		}
+	}
+
+	/* 
+	 * Coookie is not given OR it does not exist in database.
+	 * A new one must be assigned.
+	 */
+
+	return FALSE;
+}
+
+/*
+ * KK_DEF_MODULE_COOKIE_GET_HASH_ID:
+ *
+ * Purpose:
+ *	Get ID of the cookie 
+ */
+ 
+function kk_std_module_cookie_get_hash_id() {
+	return $_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id};
+}
+
+/*
+ * KK_DEF_MODULE_VHOSTS_REGISTER_HOSTNAME:
+ *
+ * Register vhost user is visiting in our 
+ * cache of virtual hosts. 
+ */
+
+function kk_std_module_vhosts_register_hostname() {
+	static $function_called = FALSE;
+	$kk_std_module_vhosts_registry = array();
+
+	/* Make sure we do nothing if called twice during the some run */
+	if ($function_called == TRUE) {
+		return;
+	}
+
+	else {
+		$function_called = TRUE;
+	}
+
+	/* Get current vhosts */
+	if (($kk_std_module_vhosts_registry = cache_get('kk_std_module_vhosts_registry', 'cache')) !== FALSE) {
+		$kk_std_module_vhosts_registry = $kk_std_module_vhosts_registry->data;
+	}
+
+	else {
+		$kk_std_module_vhosts_registry = array();
+	}
+
+	/* Check if the one being visited here is in the registry */
+	if (in_array($_SERVER['SERVER_NAME'], $kk_std_module_vhosts_registry) === TRUE) {
+		/* Already in the registry */
+		return;
+	}
+
+	/* Add to the registry */
+	$kk_std_module_vhosts_registry[] = $_SERVER['SERVER_NAME'];
+
+	/* Save it to the cache */
+	cache_set('kk_std_module_vhosts_registry', $kk_std_module_vhosts_registry, 'cache', CACHE_PERMANENT);
+}
+
+/*
+ * KK_DEF_MODULE_VHOSTS_REGISTR_GET:
+ *
+ * Get registry of current vhosts.
+ */
+
+function kk_std_module_vhosts_registry_get() {
+	$kk_std_module_vhosts_registry = array();
+
+	/* Get current registry of vhosts */
+	if (($kk_std_module_vhosts_registry = cache_get('kk_std_module_vhosts_registry', 'cache')) !== FALSE) { 
+		$kk_std_module_vhosts_registry = $kk_std_module_vhosts_registry->data;
+	}
+
+	return $kk_std_module_vhosts_registry;
+}
+
+
+/*
+ ***************************************************
+ * CHAPTER I ENDS 
+ */
+
+/*
+ *
+ ***************************************************
+ * CHAPTER III: 
+ * 
+ * Enforce HTTPS where needed.
+ */
+
+function kk_std_module_node_view($node, $view_mode, $langcode) {
+	global $base_url;
+
+	/* Register vhost in our registry */
+	kk_std_module_vhosts_register_hostname();
+
+	/*
+	 * If user is accessing webform (full-view), not via 
+	 * HTTPS, and not running on K&K's development machines,
+	 * redirect to HTTPS version of the form.
+	 */
+		
+        if (($node->type == 'webform') && ($view_mode == 'full') && (isset($_SERVER['HTTPS']) === FALSE)) {
+		kk_std_module_https_enforce();
+	}
+}
+
+
+/*
+ * KK_DEF_MODULE_FORM_USER_LOGIN_ALTER:
+ *
+ * Catch when users load the login page. If they
+ * are not using HTTPS, redirect them to the HTTPS page.
+ * Applies also to OR's testing machines.
+ */
+
+function kk_std_module_form_user_login_alter(&$form, &$form_state) {
+	if (isset($_SERVER['HTTPS']) === FALSE) {
+		kk_std_module_https_enforce();
+	}
+}
+
+/*
+ * CHAPTER IV: CRON-RELATED FUNCTIONS
+ */
+
+function kk_std_module_cron() {
+	$queue = DrupalQueue::get('kk_std_module_cron_tasks');
+	$queue->createItem(array());
+}
+
+function kk_std_module_cron_queue_info() {
+	$queues = array();
+
+	$queues['kk_std_module_cron_tasks'] = array(
+		'worker callback'       => 'kk_std_module_cron_tasks',
+		'time'                  => 3000,
+	);
+
+	return $queues;
+}
+
+/*
+ * KK_DEF_MODULE_CRON_TASKS:
+ *
+ * Purpose:
+ *      Called bu Drupal, this will do
+ *      cron-related tasks needed by this module.
+ */
+
+function kk_std_module_cron_tasks() {
+	$drupal_flush_all_caches = FALSE;
+
+
+	/* Do this once every 24-hours */
+	if (date("H") == 13) {
+		/* 
+		 * Configure update manager.
+		 */
+
+		/* Check daily */
+		variable_set('update_check_frequency', "1");
+	
+		/* Do not check disabled modules and themes. */
+		variable_set('update_check_disabled', 0);
+
+		/* Send notifications only about security updates */
+		variable_set('update_notification_threshold', 'security');
+
+		/* Set timeout for checking to 120 seconds */
+		variable_set('update_max_fetch_time', 60);
+
+		if (kk_std_module_development_environment_on() === FALSE) {
+			/* WHen running live, let email go to K&K update email address */
+			variable_set('update_notify_emails', array('update@kosmosogkaos.is'));
+		}
+
+		else {
+			/* When running in development environment, let emails go into /dev/null */
+			variable_set('update_notify_emails', array('null@vm8.virtual.is'));
+		}
+
+		/* 
+		 * If not running in development environment, 
+		 * turn on cache for this site, if accidentally turned off 
+		 */
+
+		if (kk_std_module_development_environment_on() === FALSE) {
+			if ((variable_get('cache', FALSE)) != TRUE) {
+				variable_set('cache', TRUE);
+		
+				$drupal_flush_all_caches = TRUE;
+			}
+
+			$public_directory = 'public://';
+			$is_writable = (is_dir($public_directory) && is_writable($public_directory));
+
+			if ($is_writable == TRUE) {
+				if (variable_get('preprocess_css', 0) == 0) {
+					variable_set('preprocess_css', TRUE);
+					drupal_clear_css_cache();
+	
+					$drupal_flush_all_caches = TRUE;
+				}
+		
+				if (variable_get('preprocess_js', 0) == 0) {
+					variable_set('preprocess_js', TRUE);
+					drupal_clear_js_cache();
+	
+					$drupal_flush_all_caches = TRUE;
+				}
+			}
+	
+			if ($drupal_flush_all_caches === TRUE) {
+				drupal_flush_all_caches();
+			}
+		}
+	}
+}
+
+/**
+ * Generates a public://image.jpg string from Scald ID and Image style
+ *
+ * @param int $sid Scald ID
+ * @param string $image_style Name of the Image style to be used
+ * @return string with url and filename
+ */
+function kk_std_module_generate_image_from_sid_and_style( $sid, $image_style )
+{
+	$image = scald_atom_load( $sid );
+	return image_style_url( $image_style, $image->file_source );
+}
+
+/**
+ * Sanities the file path, checks if file name was supplied, and if not returns the file path
+ * If on otherhand the file name was supplied, it checks to see if a trailing / is on the file path
+ * and adds it if missing.  Finally it adds the filename to the path and returns it as one string
+ *
+ * @param string $file_path The path to the file
+ * @param string $file_name The name of the file
+ * @return string with path and file name concated
+ */
+
+function kk_std_module_sanitise_file_path( $file_path, $file_name ){
+	$path = $file_path;
+	$pathLen = strlen( $file_path );
+
+	if( is_string( $file_name ) ){
+		$pos = strrpos( $file_path, '/' );
+		if( !( $pos === $pathLen - 1 ) ){
+			$file_path .= '/';
+		}
+		$path = $file_path . $file_name;
+	}
+
+	return $path;
+}
+
+/**
+ * Generates a Drupal file object from a file path and file name.  It also copies the file from source location
+ * to a destination within Drupal.
+ *
+ * @param string $file_name - Sanitised with kk_std_module_sanitise_file_path()
+ * @return stdClass $file with All information about that one file
+ */
+function kk_std_module_generate_file_object_from_file( $file_name ){
+	$drupal_name = 'public://' . $file_name;
+
+	$document = file_get_contents( $path );
+	$file = file_save_data( $document, $drupal_name, FILE_EXISTS_RENAME );
+	return $file;
+}
+
+/**
+ * Generates a Scald atom from a file, with given providers.
+ *
+ * @param string $file_path The path to the file
+ * @param string $file_name The name of the file
+ * @param string $atom_type The type of the atom (image/file/video)
+ * @param string provider   The scald provider
+ * @return int $sid Scald ID
+ */
+function kk_std_module_generate_scald_atom_from_file( $file_path, $file_name = null, $atom_type = 'image', $provider = 'scald_image' ){
+	$path = kk_std_module_sanitise_file_path( $file_path, $file_name );
+	$file = kk_std_module_generate_file_object_from_file( $path );
+
+	if( !is_object( $file ) ){
+		watchdog( 'File damaged', "Tried to create a Drupal file entity from a damage file", WATCHDOG_ERROR );
+		return null;
+	}
+
+	$atom = new stdClass();
+
+	$atom->type = $atom_type;
+	$atom->provider = $provider;
+	$atom->publisher = 1;
+	$atom->language = 'und';
+	$atom->actions = 5;
+	$atom->title = ucwords(str_replace('_',' ',basename($file->filename)));
+	$atom->base_id = $file->fid;
+
+	//Thumbnail
+	$atom->scald_thumbnail['und'][0]['fid'] = $file->fid;
+	$atom->scald_thumbnail['und'][0]['display'] = '1';
+	$atom->scald_thumbnail['und'][0]['width'] = $file->metadata['width'];
+	$atom->scald_thumbnail['und'][0]['height'] = $file->metadata['height'];
+	$atom->scald_thumbnail['und'][0]['description'] = '';
+	$atom->scald_thumbnail['und'][0]['upload_button'] = 'Upload';
+	$atom->scald_thumbnail['und'][0]['remove_button'] = 'Remove';
+	$atom->scald_thumbnail['und'][0]['upload'] = '';
+	$atom->scald_thumbnail['und'][0]['alt'] = $atom->title;
+	$atom->scald_thumbnail['und'][0]['title'] = $atom->title;
+
+	$sid = scald_atom_save($atom);
+
+	return $sid;
+}

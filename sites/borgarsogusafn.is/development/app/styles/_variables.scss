@@ -1,0 +1,77 @@
+// Base typo
+
+$lineHeightBaseNarrow: 1.25;
+$lineHeightBaseDefault: 1.75;
+$lineHeightBaseWide: 2;
+
+$paragraphMargin: 24px;
+
+// Units
+
+$pxUnit:        px;
+$emUnit:        em;
+$remUnit:       rem;
+
+// Breakpoints
+
+$bp480:		    480;
+$bp768:		    768;
+$bp960:		    960;
+$bp992:		    992;
+$bp1024:			1024;
+$bp1192:			1192;
+$bp1280:			1280;
+
+// Colors
+
+$color1:        #ffffff;
+$color2:        #000000;
+$color3: 		 #00984a;
+$color4: 		 #faa61a;
+$color5: 		 #00508f;
+$color6: 		 #f26522;
+$color7: 		 #009c9e;
+$color8: 		 #d9e6ec;
+$color9: 		 #221e1a;
+$color10: 		 #e75828;
+$color11: 		 #2f2f2f;
+$color12: 		 #42433d;
+$color13: 		 #47569e;
+$color14: 		 #4daee8;
+$color15: 		 #d34733;
+$color16: 		 #3bc418;
+$color17: 		 #a39b68;
+$color18: 		 #999999;
+$color19: 		 #d7d7d6;
+$color20: 		 #525252;
+$color21: 		 #191919;
+$color22: 		 #007dc6;
+$color23: 		 #2ac4f4;
+$color24: 		 #716c48;
+$color25: 		 rgba(0,0,0,.2);
+$color26: 		 #fbfaf4;
+$color27: 		 #777777;
+$color28: 		 #736b46;
+$color29: 		 #faa61a;
+$color30: 		 #009c9e;
+$color31: 		 #393933;
+
+
+// Shades
+
+// Fonts
+
+$icon-font-path:                '../fonts/';
+
+$opensans:                      'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$merriweather: 						'Merriweather', serif;
+$futuraheavy: 							'Futura W01 Heavy', sans-serif;
+$futuramedium:            			'Futura W01 Medium', sans-serif;
+
+$basefontfamily: 				$opensans;
+$basefontweight: 				500;
+$basefontcolor: 				$color2;
+$basefontleading: 			    1;
+$basefontsize: 				    16 + $pxUnit;
+$baselineheight: 				24 + $pxUnit;
+$rhythmunit: 					$remUnit;

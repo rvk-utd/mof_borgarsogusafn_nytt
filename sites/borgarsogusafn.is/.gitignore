@@ -1,0 +1,15 @@
+#Do not store sensitive setting files in revision control. 
+*settings*.php
+
+#Ignore some temporary or unrelated files. 
+*.swp
+.Idea
+.DS_Store
+.sass-cache
+
+# Files folder should be discarded since it is user generated
+# 
+files/*
+node_modules/
+development/node_modules.rar
+development/psd/

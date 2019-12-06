@@ -1,0 +1,49 @@
+// Components - Footer
+//
+// All footer components
+//
+// Styleguide 13.0
+
+// 	 Shape
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-shape">
+//			<span class="icon icon-shape1 styleguide color-22"></span>
+//			<span class="icon icon-shape3 styleguide color-23"></span>
+//			<span class="icon icon-shape2 styleguide color-22"></span>
+//		</div>
+//
+//	 Styleguide 13.1
+
+.component-shape {
+	position: relative;
+	height: 152px;
+	width: 205px;
+
+	.color-22 {
+		color: $color22;
+	}
+	.color-23 {
+		color: $color23;
+	}
+	.icon {
+		font-size: 192px;
+		position: absolute;
+		top: 0;
+	}
+	.icon-shape3 {
+		font-size: 390px;
+	}
+	.icon-shape1 {
+		left: 0;
+		top: 69px;
+	}
+	.icon-shape2 {
+		right: 0;
+	}
+	.icon-shape3 {
+		left: 50px;
+		top: 20px;
+		z-index: 2;
+	}
+}

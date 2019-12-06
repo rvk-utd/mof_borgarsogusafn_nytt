@@ -1,0 +1,475 @@
+// Components - Menu 
+//
+// All menu components
+//
+// Styleguide 8.0
+
+// 	 Desktop Main Menu 1
+// 
+// 	 markup:
+//	 	<nav class="component-nav-main-top">
+//			<ul class="nav nav-tabs">
+//				<li><a href="#">Árbæjarsafn</a></li>
+//				<li><a href="#">Ljósmyndasafn Reykjavíkur</a></li>
+//				<li><a href="#">Sjóminjasafnið í Reykjavík</a></li>
+//				<li><a href="#">Landnámssýningin</a></li>
+//				<li><a href="#">Viðey</a></li>
+//			</ul>
+//		</nav>
+//
+//	 Styleguide 8.1
+
+
+.component-nav-main-top {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	ul {
+		border: none;
+	}
+	li {
+		a {
+			color: $color1;
+			border: none;
+			border-radius: 0;
+			font-family: $opensans;
+			font-weight: 700;
+			text-align: center;
+			height: 38px;
+			height: 2.375rem;
+			line-height: 1.25;
+			padding: 9px 12px;
+		}
+		a:hover {
+			border: none;
+		}
+	}
+	li:nth-child(1) {
+		a {
+			background-color: $color3;
+		}
+	}
+	li:nth-child(2) {
+		a {
+			background-color: $color6;
+		}
+	}
+	li:nth-child(3) {
+		a {
+			background-color: $color5;
+		}
+	}
+	li:nth-child(4) {
+		a {
+			background-color: $color4;
+		}
+	}
+	li:nth-child(5) {
+		a {
+			background-color: $color7;
+		}
+	}
+}
+
+// 	 Desktop Main Menu 1 hover
+// 
+// 	 markup:
+// 	<nav class="component-nav-main-top-hover">
+//		<ul>
+//			<li>
+//				<a href="#">
+//					<div class="image-wrapper">
+//						<img src="/images/assets/menu-bg1.jpg">
+//					</div>
+//					<div class="text-wrapper">
+//						<h2>Viðey</h2>
+//						<p>Sjáðu einstaka náttúru og fuglalíf</p>
+//					</div>
+//				</a>
+//			</li>
+//			<li>
+//				<a href="#">
+//					<div class="image-wrapper">
+//						<img src="/images/assets/menu-bg2.jpg">
+//					</div>
+//					<div class="text-wrapper">
+//						<h2>Landnámssýningin</h2>
+//						<p>Landnámssýningin fjallar um landnám í Reykjavík</p>
+//					</div>
+//				</a>
+//			</li>
+//			<li>
+//				<a href="#">
+//					<div class="image-wrapper">
+//						<img src="/images/assets/menu-bg3.jpg">
+//					</div>
+//					<div class="text-wrapper">
+//						<h2>Árbæjarsafn</h2>
+//						<p>Byggingalist, lifnaðarhættir og mannlíf í Reykjavík fyrri tíma</p>
+//					</div>
+//				</a>
+//			</li>
+//			<li>
+//				<a href="#">
+//					<div class="image-wrapper">
+//						<img src="/images/assets/menu-bg4.jpg">
+//					</div>
+//					<div class="text-wrapper">
+//						<h2>Ljósmyndasafn Reykjavíkur</h2>
+//						<p>Reykvísk samtíma ljósmyndun frá 1870 til 2002</p>
+//					</div>
+//				</a>
+//			</li>
+//			<li>
+//				<a href="#">
+//					<div class="image-wrapper">
+//						<img src="/images/assets/menu-bg5.jpg">
+//					</div>
+//					<div class="text-wrapper">
+//						<h2>Sjóminjasafnið í Reykjavík</h2>
+//						<p>Fiskveiðar og siglingar eru samofnar sögu þjóðarinnar</p>
+//					</div>
+//				</a>
+//			</li>
+//		</ul>
+//		</nav>
+//
+//	 Styleguide 8.2
+
+.component-nav-main-top-hover {
+	
+	ul {
+		border: none;
+		list-style-type: none;
+	}
+	li {
+		list-style-type: none;
+		position: relative;
+		max-width: 252px;
+		a {
+			color: $color1;
+			border: none;
+			border-radius: 0;
+			h2 {
+				font-size: 20px;
+				font-size: 1.25rem;
+				font-family: $futuraheavy;
+				font-weight: normal;
+				line-height: 1.2;
+				margin-bottom: 2px;
+			}
+			p {
+				font-size: 14px;
+				font-size: 0.875rem;
+				font-family: $futuramedium;
+			}
+		}
+		.text-wrapper {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+			padding: 29px 30px;
+		}
+	}
+	
+}
+
+// 	 Desktop Main Menu 2
+// 
+// 	 markup:
+//	 	<nav class="component-nav-main-bottom">
+//			<ul class="nav nav-tabs">
+//				<li class="level3"><a href="#">Um Borgarsögusafn</a></li>
+//				<li><a href="#">Sýningar</a></li>
+//				<li class="level3"><a href="#">Safnfræðsla</a></li>
+//				<li class="level3"><a href="#">Minjar og rannsóknir</a></li>
+//			</ul>
+//		</nav>
+//
+//	 Styleguide 8.3
+
+.component-nav-main-bottom {
+	ul {
+		border: none;
+
+		li:last-child {
+			margin-right: 0;
+		}
+	}
+	li {
+		position: relative;
+		margin-right: 32px;
+
+	
+		a {
+			font-size: 14px;
+			font-size: 0.875rem;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			color: $color9;
+			font-family: $futuraheavy;
+			font-weight: normal;
+			padding: 10px 11px;
+			display: block;
+			white-space: pre;
+		}
+		a:hover {
+			background-color: transparent;
+			text-decoration: none;
+		}
+	}
+	.expanded:before, .level3:before {
+		position: absolute;
+		content: "";
+		border-left: 3px solid transparent; 
+		border-right: 3px solid transparent; 
+		border-top: 3px solid $color9;
+		right: 0;
+		top: 50%;
+		margin-top: 1px;
+		margin-top: -7px;
+	}
+}
+
+// 	 Desktop Dropdown Menu
+// 
+// 	 markup:
+//	 	<nav class="component-nav-main-dropdown">
+//			<ul class="nav">
+//				<li><a href="#">Hlutverk</a></li>
+//				<li><a href="#">Starfsmenn</a></li>
+//				<li><a href="#">Saga</a></li>
+//				<li><a href="#">Fréttir</a></li>
+//				<li><a href="#">Hollvinir</a></li>
+//				<li><a href="#">Hafðu samband</a></li>
+//				<li><a href="#">Fyrir fjölmiðla</a></li>
+//				<li><a href="#">Spurt og svarað</a></li>
+//				<li><a href="#">Safnbúðir</a></li>
+//			</ul>
+//		</nav>
+//
+//	 Styleguide 8.4
+
+.component-nav-main-dropdown {
+	ul {
+		border: none;
+		background-color: $color9;
+		float: left;
+		position: relative;
+
+		&:before {
+			width: 0; 
+			height: 0; 
+			border-left: 7px solid transparent; 
+			border-right: 7px solid transparent; 
+			border-bottom: 8px solid $color9;
+			content: "";
+			top: -8px;
+			left: 50%;
+			margin-left: -7px;
+			position: absolute;
+		}
+	}
+	li {
+		padding: 0 30px;
+		a {
+			font-size: 12px;
+			font-size: 0.75rem;
+			background-color: transparent;
+			border-bottom: 1px solid $color20;
+			border-radius: 0;
+			color: $color1;
+			padding: 4px 0 3px;
+			font-family: $merriweather;
+			font-weight: 700;
+		}
+		a:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+// 	 Desktop Dropdown Menu Level3
+// 
+// 	 markup:
+//			<ul class="nav level3">
+//				<li><a href="#">Skipurit</a></li>
+//				<li><a href="#">Starfsmenn</a></li>
+//			</ul>
+//
+//	 Styleguide 8.5
+
+ul.level3 {
+	background-color: $color21;
+	border: none;
+
+	li {
+		padding: 0 30px;
+		a {
+			font-size: 12px;
+			font-size: 0.75rem;
+			background-color: transparent;
+			border-bottom: 1px solid $color20;
+			border-radius: 0;
+			color: $color1;
+			padding: 4px 0 3px;
+			font-family: $merriweather;
+			font-weight: 700;
+		}
+		a:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+// 	 Subpages Menu
+// 
+// 	 markup:
+//	 	<nav class="component-nav-main-subpages color3">
+//			<ul class="nav nav-tabs">
+//				<li><a href="#">Um safnið</a></li>
+//				<li><a href="#">Sýningar</a></li>
+//				<li><a href="#">Safnsvæði</a></li>
+//				<li><a href="#">Fræðsla</a></li>
+//				<li><a href="#">Útleiga</a></li>
+//				<li><a href="#">Veitingar</a></li>
+//			</ul>
+//		</nav>
+//
+//	 Styleguide 8.6
+
+.component-nav-main-subpages.color3 {
+	background-color: $color3;
+	ul {
+		border-bottom: none;
+	}
+	li {
+		a {
+			color: $color1;
+			border: none;
+			border-radius: 0;
+			font-family: $futuraheavy;
+			font-weight: normal;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+
+// 	 Subpages Menu Mobile
+// 
+// 	 markup:
+//	 	<nav class="component-nav-main-subpages">
+//			<a class="select bg-green text-white f-XS f-2" href="#">Valmynd</a>
+//		</nav>
+//
+//	 Styleguide 8.7
+
+.component-nav-main-subpages {
+
+	.select {
+		/*background-color: $color3;*/
+		display: inline-block;
+    	padding: 10px 41px 10px 19px;
+    	/*color: $color1;*/
+    	position: relative;
+    	/*font-family: $futuraheavy;
+		font-weight: normal;*/
+	}
+	.select:hover {
+		text-decoration: none;
+	}
+	.select:before {
+		position: absolute;
+		content: "";
+		border-left: 3px solid transparent; 
+		border-right: 3px solid transparent; 
+		border-top: 3px solid $color1;
+		right: 19px;
+		top: 50%;
+		margin-top: -1px;
+	}
+	.select:after {
+		position: absolute;
+		content: "";
+		border-left: 3px solid transparent; 
+		border-right: 3px solid transparent; 
+		border-bottom: 3px solid $color1;
+		right: 19px;
+		top: 50%;
+		margin-top: -1px;
+		display: none;
+	}
+	.select:hover:before {
+		display: none;
+	}
+	.select:hover:after {
+		display: block;
+	}
+}
+
+
+// 	 Mobile Menu Level 1
+// 
+// 	 markup:
+//	 	<nav class="component-mobile-nav-main">
+//			<ul class="nav">
+//				<li><a href="#">Borgarsögusafn</a></li>
+//				<li><a href="#">Árbæjarsafn</a></li>
+//				<li><a href="#">Ljósmyndasafn Reykjavíkur</a></li>
+//				<li><a href="#">Sjóminjasafnið í Reykjavík</a></li>
+//				<li><a href="#">Landnámssýningin</a></li>
+//				<li><a href="#">Viðey</a></li>
+//			</ul>
+//		</nav>
+//
+//	 Styleguide 8.8
+
+.component-mobile-nav-main {
+	li {
+		position: relative;
+		/*height: 39px;*/
+
+		a {
+			background-color: $color9;
+			color: $color1;
+			font-size: 16px;
+			font-size: 1rem;
+			line-height: 39px;
+			line-height: 2.4375rem;
+			padding: 0 20px;
+			font-family: $futuraheavy;
+			font-weight: normal;
+			display: block;
+		}
+		a:hover {
+			background-color: $color9;
+		}
+		/*&:before {
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			background-color: $color11;
+			bottom: 1px;
+			left: 0;
+			content: "";
+			z-index: 1;
+		}
+		&:after {
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			background-color: $color12;
+			bottom: 0;
+			left: 0;
+			content: "";
+			z-index: 1;
+		}*/
+
+	}
+}

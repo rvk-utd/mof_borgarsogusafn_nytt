@@ -1,0 +1,12 @@
+{
+  "name": "borgarsogusafn_theme",
+  "description": "borgarsogusafn_theme",
+  "version": "0.0.1",
+  "url": "https://github.com/KosmosOgKaos/borgarsogusafn.is/issues",
+  "email": "hostmaster@kosmosogkaos.is",
+  "repository" :
+      { "type" : "git"
+          , "url" : "git@github.com:KosmosOgKaos/borgarsogusafn.is.git"
+      },
+  "dependencies": {}
+}

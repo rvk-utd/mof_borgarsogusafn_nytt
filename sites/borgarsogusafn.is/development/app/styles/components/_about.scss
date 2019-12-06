@@ -1,0 +1,61 @@
+// Components - About 
+//
+// All about components
+//
+// Styleguide 7.0
+
+// 	 About items
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-about">
+//			<div class="image-wrapper image1">
+//				<img src="images/assets/about1.jpg">
+// 	 	</div>
+//			<div class="text-wrapper right">
+//				<h2 class="f-L f-2">Safnfræðsla</h2>
+//				<p class="f-XXS f-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+//			</div>
+//		</div>
+//
+//	 Styleguide 7.1
+
+.component-about {
+	max-width: 265px;
+	position: relative;
+	overflow: hidden;
+
+	li {
+		background-color: $color8;
+	}
+
+	.text-wrapper {
+		padding: 27px 29px;
+		position: relative;
+		&:before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 10px 10px 10px;
+			border-color: transparent transparent $color8 transparent;
+			content: "";
+			top: -10px;
+			left: 50%;
+			margin-left: -10px;
+			position: absolute;
+		}
+	}
+	
+	h2 {
+		font-size: 20px;
+		font-size: 1.25rem;
+		color: $color9;
+		margin-bottom: 18px;
+	}
+	
+	p {
+		font-size: 12px;
+		font-size: 0.75rem;
+		color: $color9;
+		line-height: 1.65;
+	}
+}

@@ -1,0 +1,48 @@
+// Components - Breadcrumbs
+//
+// Styleguide 16.0
+
+// 	 Breadcrumbs
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-breadcrumbs">
+//			<ol>
+//  			<li><a href="#">Forsíða</a></li>
+//  			<li><a href="#">Um Borgarsögusafn</a></li>
+//			</ol>
+//		</div>
+//
+//	 Styleguide 16.1
+
+.component-breadcrumbs {
+	ol {
+		list-style-type: none;
+		li {
+			display: inline-block;
+			margin-right: 4px;
+		li:last-child {
+			margin-right: 0;
+		}
+			a {
+				font-size: 11px;
+				font-size: 0.6875rem;
+				text-transform: uppercase;
+				color: $color9;
+				font-family: $opensans;
+				font-weight: 400;
+				position: relative;
+				padding-right: 11px;
+
+				&:after {
+					position: absolute;
+					content: "/";
+					right: 0;
+					top: -4px;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

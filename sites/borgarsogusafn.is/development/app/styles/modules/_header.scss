@@ -1,0 +1,861 @@
+/* Header */
+
+html {
+	-webkit-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   -moz-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   -o-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    left: 0;
+}
+
+
+#navbar-administration {
+	.element-invisible {
+		display: none;
+	}
+}
+
+.not-front {
+	.icon-logo4, .icon-city-museum {
+		float: left;
+    	font-size: 0;
+    	left: 34px;
+    	position: relative;
+    	top: 17px;
+	}
+}
+
+	.component-nav-main-top-hover.nav-top {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 11;
+		display: none;
+
+		li {
+			width: 20%;
+			max-width: 20%;
+			float: left;
+			height: 152px;
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+.component-mobile-nav-main-active {
+		left: 260px;
+		.header-layout {
+			left: 260px;
+
+
+			&:before, &:after {
+				opacity: 1;
+				-webkit-transition-delay: 500ms;
+    			-moz-transition-delay: 500ms;
+    			-o-transition-delay: 500ms;
+    			transition-delay: 500ms;
+			}
+
+		}
+		.component-mobile-nav-main {
+			left: 0;
+		}
+		body {
+			overflow-y: hidden;
+		}
+		
+		.menu-global {
+			border-color: $color1;
+		}
+}
+
+.front, .not-front.news, .not-front.node-type-borgarsogusafn {
+	.icon-logo4, .icon-city-museum {
+		display: inline-block;
+		font-size: 30px;
+		font-size: 1.875rem;
+		color: $color9;
+		position: relative;
+		float: left;
+		left: 36px;
+		top: 15px;
+		a {
+			text-indent: -9999em;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+.icon-city-museum {
+}
+
+.mobile-menu-trigger {
+	display: block;
+	position: relative;
+	float: left;
+	top: 25px;
+	left: 12px;
+	cursor: pointer;
+	width: 16px;
+	height: 14px;
+	z-index: 11;
+}
+
+.menu-global {
+	backface-visibility: hidden;
+	position: absolute;
+	left: 0;
+	border-top: 2px solid $color9;
+	width: 100%;
+	transition: 0.55s;
+}
+
+.menu-top {
+	top: 0;
+}
+
+.menu-middle {
+	top: 4px;
+}
+
+.menu-bottom {
+	top: 8px;
+}
+
+.menu-top-click {
+	backface-visibility: hidden;
+	top: 4px;
+	transform: rotate(40deg);
+	transition: 0.55s 0.5s;
+}
+
+.menu-middle-click {
+	opacity: 0;
+}
+
+.menu-bottom-click {
+	backface-visibility: hidden;
+	top: 4px;
+	transform: rotate(-400deg);
+	transition: 0.55s 0.5s;
+}
+
+.header-wrapper {
+	max-width: 66.25em;
+	position: relative;
+	margin: 0 auto;
+}
+
+.header-layout {
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	z-index: 11;
+	left: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   -moz-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   -o-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	
+	ul.menu {
+		list-style-type: none;
+	}
+
+	.component-mobile-nav-main {
+		width: 260px;
+		position: fixed;
+		left: -260px;
+		top: 0;
+		height: 100%;
+		z-index: 10;
+		overflow-y: scroll;
+		background-color: $color9;
+		-webkit-transition: left 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	-moz-transition: left 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+     	-o-transition: left 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+      transition: left 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		ul {
+			padding-top: 21px;
+			li {
+				/*height: 40px;*/
+				a {
+					line-height: 2.3375rem;
+					text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+				}
+				a:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		ul {
+			li:first-child {
+				a {
+					padding-bottom: 2px;
+				}
+			}
+		}
+		ul > li > a {
+			display: block;
+			border-bottom: 1px solid #2f2f2f;
+		}
+		ul li.active-trail {
+			> a {
+				color: $color7;
+			}
+			ul {
+				display: block;
+			}
+		}
+		ul ul {
+			padding-top: 0;
+			display: none;
+		}
+		ul ul li {
+			position: relative;
+
+			a {
+				color: $color4;
+				font-family: $merriweather;
+				font-style: italic;
+				font-weight: 400;
+				font-size: 14px;
+				font-size: 0.875rem;
+				padding-top: 1px;
+				padding-bottom: 2px;
+				padding-left: 35px;
+				display: block;
+				border-bottom: 1px solid #2f2f2f;
+				&:before {
+					content: ".";
+					position: absolute;
+					left: 21px;
+					top: -4px;
+				}
+			}
+		}
+	}
+
+	.component-nav-main-top {
+		display: none;
+	}
+
+
+	.component-nav-main-bottom {
+		display: none;
+		.menu {
+			li {
+				float: left;
+    			margin-bottom: -1px;
+    			display: block;
+    			padding-bottom: 16px;
+			}
+			li.expanded:hover {
+				
+					.menu {
+						opacity: 1;
+						visibility: visible;
+					}
+				
+			}
+			li:nth-child(3) {
+				.menu {
+					left: -14px;
+				}
+			}
+			li:nth-child(4) {
+				.menu {
+					left: -20px;
+				}
+			}
+			.menu {
+				position: absolute;
+				border: none;
+				background-color: $color31;
+				top: 52px;
+				visibility: hidden;
+    			-webkit-transition: all .25s ease;
+       		-moz-transition: all .25s ease;
+        		-ms-transition: all .25s ease;
+         	-o-transition: all .25s ease;
+            transition: all .25s ease;
+            opacity: 0;
+            padding-top: 19px;
+				&:before {
+					width: 0; 
+					height: 0; 
+					border-left: 7px solid transparent; 
+					border-right: 7px solid transparent; 
+					border-bottom: 8px solid $color9;
+					content: "";
+					top: -8px;
+					left: 50%;
+					margin-left: -7px;
+					position: absolute;
+				}
+				li {
+					padding: 0 30px;
+					margin: 0;
+					float: none;
+					background-color: transparent;
+					transition: all .26s ease-in-out;
+					a {
+						font-size: 12px;
+						font-size: 0.75rem;
+						background-color: transparent;
+						border-bottom: 1px solid $color20;
+						border-radius: 0;
+						color: $color1;
+						padding: 4px 0 3px;
+						font-family: $merriweather;
+						font-weight: 700;
+						display: block;
+						transition: color .26s ease-in-out;
+					}
+					a:hover {
+						background-color: transparent;
+						color: $color6;
+						border-bottom: 1px solid $color9;
+						padding: 4px 0 3px;
+						/*padding-bottom: 4px;*/
+					}
+				}
+				li:hover {
+					background-color: $color9;
+					a {
+						background-color: transparent;
+						color: $color6;
+						border-bottom: 0;
+						padding-bottom: 4px;
+					}
+				}
+
+			}
+		}
+	}
+
+	.icon-logo4, .icon-city-museum {
+		a {
+			font-size: 14px;
+			font-size: 0.875rem;
+			color: $color9;
+			font-family: $futuraheavy;
+			font-weight: normal;
+			span {
+				font-family: $futuramedium;
+			}
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	.search-language-wrapper {
+	float:right;
+	position: relative;
+	right: 12px;
+	top: 15px;
+
+	.icon-magnifying-glass {
+		font-size: 16px;
+		font-size: 1rem;
+		color: $color9;
+		cursor: pointer;
+		float: left;
+		margin-right: 12px;
+		margin-top: 4px;
+	}
+	.languages {
+		list-style-type: none;
+		float: left;
+		li {
+			float: left;
+			margin-right: 6px;
+		}
+		li.last {
+			margin-right: 0;
+		}
+		li.active {
+			display: none;
+		}
+		a {
+			font-family: $opensans;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-size: 0.75rem;
+			color: $color9;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+	&:before {
+		position: fixed;
+		content: "";
+		width: 0;
+		height: 0;
+		z-index: 11;
+		border-style: solid;
+		border-width: 9.5px 10px 9.5px 0;
+		border-color: transparent $color7 transparent transparent;
+		left: 250px;
+		top: 21px;
+	}
+
+	&:after {
+		position: fixed;
+		content: "";
+		width: 100%;
+		height: 60px;
+		background-color: $color7;
+		z-index: 10;
+		left: 260px;
+	}
+
+	&:before, &:after {
+		opacity: 0;
+		-webkit-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	-moz-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	-o-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    	transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    	-webkit-transition-delay: 100ms;
+    	-moz-transition-delay: 100ms;
+    	-o-transition-delay: 100ms;
+    	transition-delay: 100ms;
+	}
+}
+
+.component-mobile-nav-main-active {
+	left: 260px;
+	.component-mobile-nav-main {
+		left: 0;
+	}
+}
+
+
+/* Media Queries Min Width 375px */
+/*	------------------------------*/
+
+@media (min-width: 23.4375em) {
+
+	.header-layout {
+		.component-mobile-nav-main {
+			width: 315px;
+			left: -315px;
+		}
+
+		&:before {
+			left: 305px;
+		}
+
+		&:after {
+			left: 315px;
+		}
+	}
+
+	.component-mobile-nav-main-active {
+		left: 315px;
+		.header-layout {
+			left: 315px;
+		}
+		.component-mobile-nav-main {
+			left: 0;
+		}
+	}
+
+	.mobile-menu-trigger {
+		left: 23px;
+	}
+	.front .icon-logo4, .not-front.news .icon-logo4, .not-front.node-type-borgarsogusafn .icon-logo4, 
+	.front .icon-city-museum, .not-front.node-type-borgarsogusafn .icon-city-museum {
+		left: 66px;
+	}
+	.header-layout .search-language-wrapper {
+		right: 24px;
+	}
+}
+
+
+
+/* Media Queries Min Width 435px */
+/*	------------------------------*/
+
+@media (min-width: 27.1875em) {
+	.header-layout {
+		.component-mobile-nav-main {
+			width: 375px;
+			left: -375px;
+		}
+		&:before {
+			left: 365px;
+		}
+		&:after {
+			left: 375px;
+		}
+	}
+
+	.component-mobile-nav-main-active {
+		left: 375px;
+		.header-layout {
+			left: 375px;
+		}
+		.component-mobile-nav-main {
+			left: 0;
+		}
+	}
+}
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+
+.not-front {
+	.icon-logo4, .icon-city-museum {
+		left: 45px;
+   }
+}
+
+	.component-mobile-nav-main-active {
+		.menu-global {
+			border-color: $color9;
+		}
+	}
+	
+	.header-layout {
+		height: 107px;
+				
+		.component-nav-main-top {
+			display: block;
+
+			li {
+				width: 20%;
+				a {
+					height: 47px;
+					height: 2.9375rem;
+					padding-top: 9px;
+				}
+			}
+			li:last-child {
+				a {
+					margin-right: 0;
+				}
+			}
+		}
+		.main-header {
+			height: 107px;
+			height: 6.6875rem;
+		}
+		.search-language-wrapper {
+			float: right;
+			top: 11px;
+			right: 10px;
+			.icon-magnifying-glass {
+				background-color: $color4;
+				margin: 0;
+				height: 40px;
+				width: 40px;
+				text-align: center;
+				line-height: 40px;
+			}
+			.languages {
+				li {
+					background-color: $color7;
+					height: 40px;
+					width: 40px;
+					text-align: center;
+					line-height: 40px;
+					a {
+						display: block;
+					}
+				}
+			}
+		}
+		&:before, &:after {
+			display: none;
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1024px */
+/*	------------------------------*/
+
+@media (min-width: 64em) {
+
+.logged-in {
+	.header-layout {
+		top: 80px;
+
+	}
+	.main {
+			margin-top: 160px;
+	}
+	.component-nav-main-subpages {
+		top: 100px;
+	}
+
+}
+
+body.not-front.news, body.not-front.node-type-borgarsogusafn {
+	
+		.header-layout {
+			.search-language-wrapper {
+				height: 80px;
+			   position: fixed;
+			   right: 0;
+			   top: 38px;
+			   width: 40px;
+			}
+		}
+
+}
+
+.not-front {
+	.museums {
+    	margin-top: 51px;
+	}
+	.museums .component-nav-main-subpages-wrapper {
+    	top: 98px;
+	}
+
+	.header-layout {
+		height: 98px;
+		.component-nav-main-bottom {
+			top: 10px;
+			li:last-child {
+				margin-right: 52px;
+			}
+		}
+		.search-language-wrapper {
+			height: 40px;
+		   position: fixed;
+		   right: 10px;
+		   top: 48px;
+		   width: 80px;
+		}
+		.icon-magnifying-glass {
+			float: left;
+			margin-right: 0;
+			margin-top: 0;
+		}
+		.icon-logo4, .icon-city-museum {
+			left: 30px;
+			top: 18px;
+			a {
+				font-size: 16px;
+				font-size: 1rem;
+			}
+	   }
+	}
+}
+
+	.component-mobile-nav-main-active {
+		left: 0;
+		.header-layout {
+    		left: 0;
+		}
+		body {
+			overflow-y: auto;
+		}
+	}
+	
+	.mobile-menu-trigger {
+		display: none;
+	}
+
+	.front .icon-logo4, .not-front.news .icon-logo4, .not-front.node-type-borgarsogusafn .icon-logo4, 
+	.front .icon-city-museum, .not-front.node-type-borgarsogusafn .icon-city-museum {
+		font-size: 40px;
+		left: 20px;
+		top: 21px;
+	}
+
+	.header-layout, .not-front.news .header-layout, .not-front.node-type-borgarsogusafn .header-layout {
+		height: 118px;
+		
+
+		.component-mobile-nav-main {
+			display: none;
+		}
+
+		.component-nav-main-top {
+			li {
+				a {
+					height: 38px;
+					height: 2.375rem;
+					padding-top: 13px;
+				}
+			}
+		}
+		.component-nav-main-bottom {
+			display: block;
+			float: right;
+			position: relative;
+    		top: 21px;
+    		right: 70px;
+		}
+		.search-language-wrapper {
+			height: 80px;
+			top: 1px;
+			right: 0;
+			width: 40px;
+		}
+	}
+
+	.front, .node-type-borgarsogusafn {
+	.component-nav-main-bottom {
+	.menu .menu {
+				top: 60px !important;
+			}
+		}
+	}
+}
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.header-layout {
+		.search-language-wrapper {
+			position: fixed;
+			top: 38px;
+		}
+		.component-nav-main-bottom {
+			/*right: 80px;*/
+		}
+	}
+	.icon-magnifying-glass, .language-link {
+		transition: all .2s ease-in-out;
+	} 
+	.icon-magnifying-glass:hover, #block-locale-language:hover .language-link {
+		background-color: $color1;
+		color: $color31;
+	} 
+
+}
+
+
+/* Media Queries Min Width 1100px */
+/*	------------------------------*/
+
+@media (min-width: 68.75em) {
+	.header-layout {
+		.search-language-wrapper {
+			right: 0;
+		}
+	}
+}
+
+/* Media Queries Min Width 1160px */
+/*	------------------------------*/
+
+@media (min-width: 72.5em) {
+	.not-front {
+		.header-layout {
+			.icon-logo4, .icon-city-museum {
+				left: -30px;
+	   	}
+	   	.component-nav-main-bottom {
+				li:last-child {
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1200px */
+/*	------------------------------*/
+
+@media (min-width: 75em) {
+	.front .icon-logo4, .not-front.news .icon-logo4, .not-front.node-type-borgarsogusafn .icon-logo4, 
+	.front .icon-city-museum, .not-front.node-type-borgarsogusafn .icon-city-museum {
+    left: -54px;
+   }
+   .header-layout {
+   	.search-language-wrapper {
+    		-webkit-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   		-moz-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   		-o-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    		transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		}
+   }
+   .component-nav-main-top-hover.nav-top {
+   	-webkit-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	-moz-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	-o-transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    	transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   	display: block;
+   	top: -152px;
+   	.image-wrapper {
+   		height: 152px;
+  			width: 100%;
+  			overflow: hidden;
+  			position: relative;
+  			background-color: #000;
+  			
+   		img {
+   			display: block;
+				height: 100%;
+				width: auto;
+				min-width: 101%;
+				max-width: inherit;
+				transition: all .2s ease-in-out;
+				}
+   		}
+   		a:hover{
+   			img {
+   				transform: scale(1.1);
+   				opacity: 0.8;
+   			}
+   		}
+   	}
+ 
+   .component-nav-main-top-active {
+   	.component-nav-main-top-hover.nav-top {
+   		top: 0;
+   	}
+   	.header-layout {
+   		top: 114px;
+   		.search-language-wrapper {
+    			top: 152px;
+			}
+   	}
+   }
+}
+
+/* Media Queries Min Width 1255px */
+/*	------------------------------*/
+
+@media (min-width: 78.4375em) {
+	.not-front {
+		.header-layout {
+			.component-nav-main-bottom {
+				right: 31px;
+				li:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.header-layout {
+		.component-nav-main-bottom {
+			right: 0 !important;
+		}
+	}
+}
+

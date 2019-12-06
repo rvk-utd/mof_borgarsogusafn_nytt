@@ -1,0 +1,239 @@
+/* News */
+
+.node-type-news {
+	#block-easy-breadcrumb-easy-breadcrumb {
+		margin-bottom: 35px;
+	}
+	.text-content {
+		.title {
+			margin-bottom: 34px;
+		}
+		.date {
+			margin-bottom: 6px;
+		}
+		p {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.backlink-wrapper {
+	float: left;
+	padding-left: 17px;
+	padding-top: 14px;
+	a:last-child {
+		display: none;
+	}
+	a:first-child {
+		span {
+			font-size: 12px;
+			font-size: 0.75rem;
+			margin-bottom: 0;
+			margin-right: 26px;
+			margin-top: 2px;
+		}
+		p, span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.component-news-list {
+		h1 {
+			margin-bottom: 25px;
+		}
+		ul {
+			li {
+			list-style-type: none;
+			position: relative;
+			overflow: hidden;
+		}
+		.image-wrapper {
+			margin-top: 2px;
+			margin-left: 17px;
+			margin-bottom: 13px;
+			margin-right: 0;
+			float: right;
+			width: 40%;
+		}
+		.date-inner {
+			margin-bottom: 10px;
+			display: block;
+		}
+		h2 {
+			line-height: 1.6;
+		}
+		.btn {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+
+/* Media Queries Min Width 435px */
+/*	------------------------------*/
+
+@media (min-width: 27.1875em) {
+	
+}
+
+
+/* Media Queries Min Width 640px */
+/*	------------------------------*/
+
+@media (min-width: 40em) {
+	
+	.component-news-list {
+		
+			ul {
+				
+			.image-wrapper {
+				width: auto;
+			}
+			
+		}
+	}
+}
+
+
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+	.backlink-wrapper {
+		float: none;
+		padding: 0;
+		right: 51px;
+		top: 81px;
+		position: absolute;
+		z-index: 2;
+		a:last-child {
+			display: block;
+		}
+		a:first-child {
+			display: none;
+		}
+	}
+	.museums.sub-2 .main {
+    padding-right: 170px;
+	}
+	.component-news-list {
+		
+			ul {
+
+			.image-wrapper {
+				float: right;
+				width: 40%;
+			}
+				
+			/*.image-wrapper {
+				width: 40%;
+				float: left;
+				margin-right: 17px;
+				margin-left: 0;
+			}*/
+
+		}
+	}
+}
+
+/* Media Queries Min Width 1024px */
+/*	------------------------------*/
+
+@media (min-width: 64em) {
+	.component-news-list {
+		
+		ul {
+
+			li {
+				padding-left: 262px;
+			}
+
+			.image-wrapper {
+				float: none;
+			   left: 0;
+			   margin: 0;
+			   max-width: 212px;
+			   position: absolute;
+			   top: 8px;
+			   width: auto;
+			}
+				
+			.btn {
+				width: auto;
+			}
+
+			.btn {
+				margin-bottom: 80px;
+			}
+			
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.backlink-wrapper {
+		right: 78px;
+	}
+	.museums.sub-2 .main {
+    	padding-right: 212px;
+	}
+	.page-node-222, .page-node-223 {
+		.view-content {
+			position: relative !important;
+			top: 0 !important;
+
+			div:nth-child(1) {
+				.items {
+					padding-top: 0;
+				}
+			}
+		}
+		.item-list {
+			padding-top: 20px;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	
+}
+
+
+/* Media Queries Min Width 1100px */
+/*	------------------------------*/
+
+@media (min-width: 68.75em) {
+
+}
+
+/* Media Queries Min Width 1200px */
+/*	------------------------------*/
+
+@media (min-width: 75em) {
+
+}
+
+/* Media Queries Min Width 1400px */
+/*	------------------------------*/
+
+@media (min-width: 87.5em) {
+	
+}
+
+/* Media Queries Min Width 1500px */
+/*	------------------------------*/
+
+@media (min-width: 93.75em) {
+	
+}
+
+

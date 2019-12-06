@@ -1,0 +1,63 @@
+name = borgarsogusafn_theme
+description = Borgarsogusafn
+core = 7.x
+
+;-------------------- C S S -----------------------
+; We include one "editor" stylesheet that contains
+; resets and normalizations as well as styles used
+; by editors such as typography and styles for use
+; in a WYSIWYG editor.
+; 
+; All other styles will be placed in the styles
+; file. This will include styles for layout, page
+; elements, features and print overrides.
+
+
+stylesheets[all][] = assets/styles/main.css
+stylesheets[all][] = assets/styles/polyfill.object-fit.css
+
+stylesheets[all][] = assets/styles/fix.css
+
+;--------------------- J S ------------------------
+
+;scripts[] = assets/javascripts/jRespond.min.js
+;scripts[] = assets/javascripts/queries.js
+;scripts[] = assets/javascripts/main.js
+;scripts[] = assets/javascripts/jquery.bxslider.min.js
+;scripts[] = assets/javascripts/slider.js
+;scripts[] = assets/javascripts/jquery.matchHeight-min.js
+;scripts[] = assets/javascripts/match-height.js
+;scripts[] = assets/javascripts/item-list.js
+;scripts[] = assets/javascripts/form.js
+;scripts[] = assets/javascripts/faq-list.js
+
+;scripts[] = assets/javascripts/jquery.object-fit.min.js
+;scripts[] = assets/javascripts/call-object-fit.js
+
+
+
+regions[header] = Header
+regions[navigation] = Navigation
+regions[mobile_menu] = Mobile Menu
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[content] = Content
+regions[arbaejarsafn] = arbaejarsafn
+regions[videy] = videy
+regions[sjominjasafn] = sjominjasafn
+regions[landnamssyning] = landnamssyning
+regions[ljosmyndasafn] = ljosmyndasafn
+regions[info] = Info
+regions[language] = Language
+regions[syningar] = Sýningar
+regions[fraedsla] = Fræðsla
+regions[frettir] = Fréttir
+regions[social_media] = Social Media
+regions[custom_breadcrumbs] = Custom Breadcrumbs
+regions[feedback] = Feedback
+regions[search] = Search
+regions[history_back] = History back
+regions[postlist] = Postlist
+regions[google_maps] = Google Maps

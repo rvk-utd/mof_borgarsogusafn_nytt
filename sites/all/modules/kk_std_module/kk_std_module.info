@@ -1,0 +1,18 @@
+name = kk_std_module
+description = Kosmos & Kaos standard module: library for routines often used.
+package = Kosmos & Kaos
+core = 7.x
+files[] = kk_std_module.install
+files[] = kk_std_module.module
+
+dependencies[] = file
+dependencies[] = image
+dependencies[] = system
+dependencies[] = token
+
+
+; Information added by drupal.org packaging script on 2011-08-17
+version = "7.x-0.3"
+core = "7.x"
+project = "kk_std_module"
+datestamp = ""

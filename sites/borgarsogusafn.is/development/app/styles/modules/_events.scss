@@ -1,0 +1,253 @@
+/* Events */
+
+.front {
+	.component-event {
+		margin-top: 0 ;
+	}
+}
+.events-wrapper {
+
+	.component-event {
+		max-width: none;
+		font-size: 0;
+		.text-wrapper {
+			padding-top: 10px !important;
+		}
+		li {
+			margin-bottom: 0;
+		}
+		a {
+			padding-bottom: 34px;
+			display: block;
+		}
+		.image-wrapper {
+			margin: 0;
+			img {
+				margin: 0;
+			}
+		}
+		.date {
+			margin-bottom: 20px;
+			margin-top: 20px;
+			h2 {
+				font-size: 20px;
+				font-size: 1.25rem;
+			}
+			.component-event-title {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
+	form {
+		position: relative;
+		z-index: 1;
+		input[type=text] {
+			width: 100%;
+			height: 40px;
+			border: 1px solid $color19;
+			border-radius: 0;
+			box-shadow: inset 0 2px 2px #ebebeb;
+			margin-bottom: 12px;
+		}
+		input:focus {
+			border-color: $color31;
+		}
+	}
+	.title {
+		margin-bottom: 23px;
+	}
+}
+
+
+/* Media Queries Min Width 435px */
+/*	------------------------------*/
+
+@media (min-width: 27.1875em) {
+	.front {
+		.events-wrapper {
+			.component-event {
+				margin-top: 0 ;
+			}
+		}
+	}
+	.events-wrapper {
+		.component-event {
+			margin-top: 20px;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				.text-wrapper {
+					padding: 0 20px;
+					h2 {
+						word-wrap: break-word;
+					}
+				}
+			}
+			.date {
+				margin: 0;
+				.component-event-title {
+					display: table;
+					width: 100%;
+					h2 {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+			.image-wrapper {
+				position: relative;
+				overflow: hidden;
+
+			}
+		}
+		
+	}
+}
+
+/* Media Queries Min Width 600px */
+/*	------------------------------*/
+
+@media (min-width: 37.5em) {
+	.front {
+	.component-event {
+		margin-top: 0 ;
+	}
+}
+	.events-wrapper {
+		.component-event {
+			width: 100%;
+			overflow: hidden;
+			.date {
+				h2 {
+					font-size: 24px;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		form {
+			float: left;
+			width: 100%;
+
+			.searchBox, .dateBox {
+				float: left;
+				width: 50%;
+			}
+			.searchBox {
+				padding-right: 5px;
+			}
+			.dateBox {
+				padding-left: 5px;
+			}
+			margin-bottom: 20px;
+		}
+		.title {
+			float: left;
+		}
+	}
+}
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+	.events-wrapper {
+		.component-event {
+			.date {
+				.component-event-title {
+					padding-left: 40px;
+					padding-right: 40px;
+				}
+			}
+		}
+		form {
+			float: right;
+			max-width: 400px;
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1024px */
+/*	------------------------------*/
+
+@media (min-width: 64em) {
+.events-wrapper {
+		.component-event-btn {
+			width: 203px;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+		}
+		form {
+			text-align: right;
+			max-width: 700px;
+			margin-bottom: 27px;
+			.searchBox, .dateBox {
+				float: none;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.searchBox {
+				width: 346px;
+			}
+			.dateBox {
+				width: 135px;
+			}
+		}
+		.component-event {
+			li {
+				width: 25%;
+				h2 {
+					word-wrap: break-word;
+				}
+			}
+			.date {
+				
+			}
+		}
+	}
+
+}
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.events-wrapper {
+		.component-event {
+			
+			a, h2, p {
+				display: block;
+				-webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+     -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+			}
+			a:hover {
+					background-color: $color26;
+					h2, p {
+						color: $color6;
+					}
+				}
+			
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1100px */
+/*	------------------------------*/
+
+@media (min-width: 68.75em) {
+
+}
+
+/* Media Queries Min Width 1200px */
+/*	------------------------------*/
+
+@media (min-width: 75em) {
+
+}
+

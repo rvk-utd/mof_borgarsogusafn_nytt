@@ -1,0 +1,245 @@
+// Colors
+//
+//
+// Styleguide 3.0
+
+
+.color-swatch {
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+
+// 	 Green Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-green"></div>
+//
+//	 Styleguide 3.1
+
+.bg-green {
+  background-color: $color3;
+}
+
+// 	 Yellow Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-yellow"></div>
+//
+//	 Styleguide 3.2
+
+.bg-yellow {
+  background-color: $color4;
+}
+
+// 	 Blue Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-blue"></div>
+//
+//	 Styleguide 3.3
+
+.bg-blue {
+  background-color: $color5;
+}
+
+// 	 Red Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-red"></div>
+//
+//	 Styleguide 3.4
+
+.bg-red {
+  background-color: $color6;
+}
+
+// 	 Turkish Blue Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-turkish-blue"></div>
+//
+//	 Styleguide 3.5
+
+.bg-turkish-blue {
+  background-color: $color7;
+}
+
+// 	 Grey Blue Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-grey-blue"></div>
+//
+//	 Styleguide 3.6
+
+.bg-grey-blue {
+  background-color: $color8;
+}
+
+// 	 Grey Background 20
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-grey-20"></div>
+//
+//	 Styleguide 3.7
+
+.bg-grey-20 {
+  background-color: $color25;
+}
+
+// 	 Dark Grey Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-dark-grey"></div>
+//
+//	 Styleguide 3.9
+
+.bg-dark-grey {
+  background-color: $color9;
+}
+
+// 	 Light Grey Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-grey-light"></div>
+//
+//	 Styleguide 3.10
+
+.bg-grey-light {
+  background-color: $color26;
+}
+
+// 	 White Background
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch bg-white"></div>
+//
+//	 Styleguide 3.11
+
+.bg-white {
+  background-color: $color1;
+}
+
+// 	 Text Red
+// 
+// 	 markup:
+//	 	<h1 class="text-red">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.12
+
+.text-red {
+  color: $color6;
+}
+
+// 	 Text Dark Grey
+// 
+// 	 markup:
+//	 	<h1 class="text-dark-grey">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.13
+
+.text-dark-grey {
+  color: $color9;
+}
+
+// 	 Text Grey
+// 
+// 	 markup:
+//	 	<h1 class="text-grey">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.14
+
+.text-grey {
+  color: $color27;
+}
+
+// 	 Text Turkish Blue
+// 
+// 	 markup:
+//	 	<h1 class="text-turkish-blue">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.15
+
+.text-turkish-blue {
+  color: $color7;
+}
+
+// 	 Text Yellow Grey
+// 
+// 	 markup:
+//	 	<h1 class="text-yellow-grey">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.16
+
+.text-yellow-grey {
+  color: $color28;
+}
+
+// 	 Text Yellow
+// 
+// 	 markup:
+//	 	<h1 class="text-yellow">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.17
+
+.text-yellow {
+  color: $color29;
+}
+
+// 	 Text Turkish Blue 2
+// 
+// 	 markup:
+//	 	<h1 class="text-turkish-blue-2">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.18
+
+.text-turkish-blue-2 {
+  color: $color30;
+}
+
+// 	 Text Green
+// 
+// 	 markup:
+//	 	<h1 class="text-green">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.19
+
+.text-green {
+  color: $color3;
+}
+
+
+// 	 Text White
+// 
+// 	 markup:
+//	 	<h1 class="text-white">Lorem Ipsum</h1>
+//
+//	 Styleguide 3.20
+
+.text-white {
+  color: $color1;
+}
+
+
+// 	 Border Light Grey
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch border-grey-light"></div>
+//
+//	 Styleguide 3.21
+
+.border-grey-light {
+	border: 1px solid $color19;
+}
+
+// 	 Border Red
+// 
+// 	 markup:
+//	 	<div class="example styleguide color-swatch border-red"></div>
+//
+//	 Styleguide 3.22
+
+.border-red {
+	border: 1px solid $color6;
+}

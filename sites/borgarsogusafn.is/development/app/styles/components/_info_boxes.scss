@@ -1,0 +1,310 @@
+// Components - Info Alert boxes 
+//
+// All info components
+//
+// Styleguide 5.0
+
+
+// 	Info Box
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-info">
+//			<a href="#">
+//				<span class="icon-alert styleguide text-dark-grey"></span>
+//				<h2 class="f-L f-2 text-dark-grey">Opnunartímar safna um hátíðirnar</h2>
+//				<p class="f-XXS f-3 text-dark-grey">Opnunartímar safna Borgarsögusafns yfir hátíðirnar verða eftirfarandi.</p>
+//				<div class="btn bg-dark-grey text-white f-XXS f-1-3">Nánar</div>
+//			</a>
+//		</div>
+//
+//	 Styleguide 5.1
+
+.component-info {
+
+	word-wrap: break-word;
+	margin-bottom: 20px;
+
+	img {
+		margin-bottom: 16px;
+	}
+
+	a {
+			text-decoration: none;
+	}
+
+	background-color: $color8;
+	text-align: center;
+	padding: 30px;
+
+	h2 {
+		letter-spacing: 1px;
+		line-height: 1.2;
+		margin-bottom: 4px;
+	}
+
+	p {
+		margin-bottom: 16px;
+	}
+
+	.btn {
+		/*display: none;*/
+	}
+	span {
+		font-size: 27px;
+		font-size: 1.6875rem;
+		margin-bottom: 11px;
+		display: inline-block;
+	}
+	.wrapper {
+		box-shadow: none;
+		margin: 0;
+	}
+}
+
+.component-info:last-child {
+	margin-bottom: 0;
+}
+
+// 	Info Box Subpages
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-info-sub row">
+//			<span class="icon-Info styleguide col-xs-2"></span>
+//			<div class="text col-xs-10">
+//				<h2 class="f-L f-2 text-dark-grey">Upplýsingar</h2>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Árbæjarsafn</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Kistuhyl</p>
+//				<p class="f-XXS f-3 text-dark-grey custom-margin">110 Reykjavík</p>
+//				<p class="f-XXS f-3 text-dark-grey">Sími: (+354) 411 6300</p>
+//				<p class="f-XXS f-3"><a href="mailto:borgarsogusafn@reykjavik.is">borgarsogusafn@reykjavik.is</a></p>
+//			</div>
+//		</div>
+//
+//	 Styleguide 5.2
+
+.component-info-sub {
+	.icon-Info {
+		&:before {
+			color: $color17;
+			font-size: 27px;
+			font-size: 1.6875rem;
+		}
+	}
+	h2 {
+		letter-spacing: 1px;
+		margin-bottom: 22px;
+
+	}
+	h3 {
+		text-transform: uppercase;
+		line-height: 1.65;
+	}
+	p {
+		line-height: 1.65;
+	}
+
+	.custom-margin {
+		margin-bottom: 20px;
+	}
+
+}
+
+// 	Open Hours Box Subpages
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-open-hours-sub row">
+//			<span class="icon-klukka styleguide col-xs-2"></span>
+//			<div class="text col-xs-10">
+//				<h2 class="f-L f-2 text-dark-grey">Opnunartímar</h2>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">1.september - 30.maí</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Leiðsögn alla daga kl. 13:00.</p>
+//				<p class="f-XXS f-3 text-dark-grey custom-margin">Þess fyrir utan eru safnhúsin lokuð. Tekið á móti hópum eftir samkomulagi.</p>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">1.júní - 31.ágúst</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Opið frá kl. 10:00 - 17:00</p>
+//			</div>
+//		</div>
+//
+//	 Styleguide 5.3
+
+.component-open-hours-sub {
+	.icon-klukka {
+		&:before {
+			color: $color17;
+			font-size: 27px;
+			font-size: 1.6875rem;
+		}
+	}
+	h2 {
+		letter-spacing: 1px;
+		margin-bottom: 22px;
+	}
+	h3 {
+		text-transform: uppercase;
+		line-height: 1.65;
+	}
+	p {
+		line-height: 1.65;
+	}
+	.custom-margin {
+		margin-bottom: 20px;
+	}
+}
+
+// 	Info Box Subpages
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-admission-sub row">
+//			<span class="icon-kr styleguide col-xs-2"></span>
+//			<div class="text col-xs-10">
+//				<h2 class="f-L f-2 text-dark-grey">Aðgangseyrir </h2>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Fullorðnir</h3>
+//				<p class="f-XXS f-3 text-dark-grey">1400 ISK</p>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Hópagjald</h3>
+//				<p class="f-XXS f-3 text-dark-grey">800 ISK</p>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Börn til 18 ára</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Ókeypis</p>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Eldri borgarar 70+</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Ókeypis</p>
+//				<h3 class="f-XXS f-1-3 text-dark-grey">Öryrkjar</h3>
+//				<p class="f-XXS f-3 text-dark-grey">Ókeypis</p>
+//			</div>
+//		</div>
+//
+//	 Styleguide 5.4
+
+.component-admission-sub {
+	.icon-kr {
+		&:before {
+			color: $color17;
+			font-size: 27px;
+			font-size: 1.6875rem;
+		}
+	}
+	h2 {
+		letter-spacing: 1px;
+		margin-bottom: 22px;
+	}
+	h3 {
+		text-transform: uppercase;
+		line-height: 1.65;
+	}
+	p {
+		line-height: 1.65;
+	}
+	.custom-margin {
+		margin-bottom: 20px;
+	}
+}
+
+// 	Upload Box
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-download-box">
+//			<a href="#">
+//				<span class="icon-download"></span>
+//				<div>
+//					<h2 class="f-M f-2 text-dark-grey">Merki safna</h2>
+//					<p class="f-XXS f-3 text-dark-grey">Merki safna og notkunarreglur fyrir prent og vef.</p>
+//					<p class="f-XXS f-3 text-dark-grey">Zip skjal (1.345 kb)</p>
+//				</div>
+//			</a>
+//		</div>
+//
+//	 Styleguide 5.5
+
+.component-download-box {
+	border: 1px solid $color19;
+	border-radius: 4px;
+	position: relative;
+	margin-bottom: 30px;
+
+	h2 {
+		line-height: 1.65;
+	}
+	p {
+		line-height: 1.65;
+	}
+
+	a {
+		display: block;
+	}
+
+	&:before {
+		position: absolute;
+		width: 1px;
+		background-color: $color19;
+		height: 100%;
+		top: 0;
+		left: 100px;
+		content: ""; 
+	}
+	.icon-download:before {
+		color: $color7;
+		font-size: 23px;
+		font-size: 1.4375rem;
+	}
+	span, div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	div {
+		 padding: 21px 21px 21px 121px;
+	}
+	span {
+		position: absolute;
+		left: 34px;
+		top: 50%;
+		margin-top: -12px;
+	}
+
+}
+
+// 	Feedback
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-feedback">
+//			<span class="icon icon-speech styleguide"></span>
+//			<div class="text">
+//				<h2 class="f-XS f-2 text-dark-grey">Þarfnast þessi síða lagfæringar?</h2>
+//				<p class="f-XXS f-3-3 text-dark-grey">Vilt þú koma einhverju á framfæri sem varðar innihald síðunnar?</p>
+//			</div>
+//			<div class="btn bg-dark-grey text-white f-XXS f-1-3">Sendu okkur ábendingu</div>
+//		</div>
+//
+//	 Styleguide 5.6
+
+.component-feedback {
+
+	background-color: $color8;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+
+	.btn {
+		width: 100%;
+		margin-top: 25px;
+	}
+	h2 {
+		font-size: 12px;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		line-height: 1.65;
+	}
+
+	p {
+		font-size: 12px;
+		font-size: 0.75rem;
+		line-height: 1.65;
+	}
+	span {
+		font-size: 27px;
+		font-size: 1.6875rem;
+	}
+	.icon {
+		position: absolute;
+	}
+	.text {
+		padding-left: 58px;
+	}
+}
+

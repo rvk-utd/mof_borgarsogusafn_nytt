@@ -1,0 +1,26 @@
+<?php
+
+function kk_std_module_install() {
+	variable_set('kk_std_module_https_enforce', FALSE);
+
+	db_query("
+		CREATE TABLE kk_std_module_cookie_ids (
+			`id` bigint(20) NOT NULL AUTO_INCREMENT,
+			cookie_hash_id varchar(128) NOT NULL,
+			timestamp_updated bigint(20) NOT NULL,
+			PRIMARY KEY (`id`),
+			KEY (cookie_hash_id (10))
+		) ENGINE=InnoDB DEFAULT CHARSET=latin1
+	");
+
+}
+
+function kk_std_module_uninstall() {
+	variable_del('kk_std_module_https_enforce');
+
+	db_query("
+		DROP TABLE or_module_cookie_ids
+	");
+}
+
+?>

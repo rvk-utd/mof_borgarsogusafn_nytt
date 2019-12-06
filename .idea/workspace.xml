@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35fdad0f-7114-41f8-91fa-7c1e0811cfb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/default.settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/default.settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/fonts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/fonts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/styleguide.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/styleguide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/wiredep.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.gulp/wiredep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/.yo-rc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/README_styleguide.md" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/README_styleguide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/fonts/iconsfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/Info.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/Info.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/alert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/alert.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/arbaejarsafn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/arbaejarsafn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/arbaer-museum.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/arbaer-museum.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/city-museum.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/city-museum.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/googleplus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/googleplus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/klukka.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/klukka.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/kr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/kr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/landnamssyning.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/landnamssyning.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/left-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/left-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/logo4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/magnifying-glass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/magnifying-glass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/mail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/maritime-museum.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/maritime-museum.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/photography-museum.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/photography-museum.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/postlist.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/postlist.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/right-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/right-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/settlement-exibition.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/settlement-exibition.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/shape4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/sjominjasafn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/sjominjasafn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/speech.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/speech.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/top-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/top-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/videy-iceland.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/videy-iceland.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/videy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/videy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/wheelchair.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/icons/wheelchair.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/about1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/about1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/about2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/about2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/background-pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/background-pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/hero1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/hero1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/hero2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/hero2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/ljosmyndasafn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/ljosmyndasafn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menningarkort-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menningarkort-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/menu-bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/news.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/news.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/pattern_bg_main.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/pattern_bg_main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/slider-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/slider-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/slider-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/slider-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/sofn-image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/sofn-image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/sofn-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/assets/sofn-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/sprites/sprites.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/sprites/src/world.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/images/sprites/src/world.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/museum-sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/museum-sub.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/news-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/news-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/news-sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/news-sub.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/about1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/about1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/about2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/about2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/background-pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/background-pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/hero1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/hero1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/hero2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/hero2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/ljosmyndasafn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/ljosmyndasafn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menningarkort-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menningarkort-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/menu-bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/news.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/news.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/pattern_bg_main.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/pattern_bg_main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/slider-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/slider-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/slider-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/slider-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/sofn-image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/sofn-image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/sofn-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/readonly/images-min/assets/sofn-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/components/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/components/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/vendor/classList.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/scripts/src/vendor/classList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/sofn.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/sofn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/animations/_body-classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/animations/_body-classes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/animations/_transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/animations/_transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_accordions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_accordions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_assets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_assets.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_borders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_frontpage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_frontpage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/bootstrap/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_events.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_example.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_example.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_history-back.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_history-back.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_info_boxes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_info_boxes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_item-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_item-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_links.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_links.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_museums.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_museums.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_news.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_shows.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_shows.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_staff.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/components/_staff.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_events.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_history-back.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_history-back.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_info_boxes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_info_boxes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_item-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_item-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_language-switch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_language-switch.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_museums.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_museums.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_news.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_postlist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_postlist.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_subpages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_subpages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_themes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/modules/_themes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_iconsfont.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_iconsfont.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_sprite9823+s.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_sprite9823+s.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_sprites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/readonly/_sprites.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/styleguide/_styleguide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/styleguide/_styleguide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/templates/_iconsfont.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/app/styles/templates/_iconsfont.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/ipad/rvkm_ipad_safn_front_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/ipad/rvkm_ipad_safn_front_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/ipad/rvkm_ipad_safn_menu_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/ipad/rvkm_ipad_safn_menu_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_events_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_events_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_faq_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_faq_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_front_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_front_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_news_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_news_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_safn_front_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_safn_front_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_safn_front_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_safn_front_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_shows_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_shows_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_sidenav_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/mobile/rvkm_mobile_sidenav_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_events_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_events_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_faq_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_faq_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_feedback_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_feedback_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_fjolmidlar_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_fjolmidlar_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_fjolmidlar_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_fjolmidlar_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_c.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_c.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_d.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_front_safn_001_d.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_nav_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_nav_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_news_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_news_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safn_sub_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safn_sub_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safn_sub_001_b.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safn_sub_001_b.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safnbud_vorur_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_safnbud_vorur_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_search_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_search_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_skipurit_001_a.psd" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/psd/rvkm_skipurit_001_a.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/spec/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/development/test/spec/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/files/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/files/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/modules/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/modules/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/fonts/iconsfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/call-object-fit.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/call-object-fit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/faq-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/faq-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/item-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jRespond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jRespond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.bxslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.bxslider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.matchHeight-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.matchHeight-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.object-fit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/jquery.object-fit.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/match-height.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/match-height.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/javascripts/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/about1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/about1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/about2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/about2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/background-pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/background-pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/hero1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/hero1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/hero2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/hero2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/ljosmyndasafn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/ljosmyndasafn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menningarkort-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menningarkort-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/menu-bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/news.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/news.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/pattern_bg_main.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/pattern_bg_main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/slider-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/slider-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/slider-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/slider-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/sofn-image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/sofn-image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/sofn-image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/assets/sofn-image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/logo-menningarkort.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/logo-menningarkort.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-arbaer-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-arbaer-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-arbaer-is.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-arbaer-is.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-landnams-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-landnams-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-landnams-is.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-landnams-is.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-ljosmynda-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-ljosmynda-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-ljosmynda-is.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-ljosmynda-is.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-sjominja-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-sjominja-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-sjominja-is.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-sjominja-is.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-videy-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-videy-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-videy-is.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/marker-videy-is.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/sprites/sprites.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/zoom-in-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/images/zoom-in-button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/polyfill.object-fit.css" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/assets/styles/polyfill.object-fit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/borgarsogusafn_theme.info" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/borgarsogusafn_theme.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--16.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--16.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--24.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--24.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--25.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--25.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--26.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--26.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--27.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--27.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--28.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--block--28.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--navigation.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--navigation.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--no-wrapper.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--no-wrapper.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--social_media.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--social_media.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--views--frontpage-view-block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block--views--frontpage-view-block.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/block.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/comment-wrapper.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/comment-wrapper.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/comment.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/comment.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/field-name-field-efni.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/field-name-field-efni.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/html.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/html.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/includes/footer.inc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/includes/footer.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/includes/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/includes/header.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--361.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--fraedsla.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--fraedsla.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--news.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--news.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--syningar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--syningar.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--themes.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node--themes.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/node.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/page--front.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/page--front.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/page.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/page.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--documents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--documents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq_item_content.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq_item_content.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq_layout.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--faq_layout.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--layout_1.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--layout_1.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--layout_2.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--layout_2.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items1_50_50.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items1_50_50.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items1_item.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items1_item.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items2.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items2.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items2_item.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--list_items2_item.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--main_title.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--main_title.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--mynd_til_haegri.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--mynd_til_haegri.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--mynd_til_vinstri.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--mynd_til_vinstri.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages_item_100.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages_item_100.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages_item_50.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--slider_landingpages_item_50.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--starfsmadur.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--starfsmadur.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--stor_mynd.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--stor_mynd.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--subtitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--subtitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--textasvaedi.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--textasvaedi.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--toflur.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--toflur.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--top_menu_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item--top_menu_list.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-item.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items--field_efni.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items--field_efni.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items--top_menu_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items--top_menu_list.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/paragraphs-items.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/region.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/region.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block-1.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block-1.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block-2.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block-2.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--frontpage-view--block.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--top-menu-slide-down--block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view--top-menu-slide-down--block.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view-unformatted--frontpage-view--block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view-unformatted--frontpage-view--block.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view-unformatted--top-menu-slide-down--block.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/sites/borgarsogusafn.is/themes/borgarsogusafn_theme/templates/views-view-unformatted--top-menu-slide-down--block.tpl.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kk_router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/sites.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/borgarsogusafn.is/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/sites/borgarsogusafn.is" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sites/sites.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/php.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-98" />
+    <option name="width" value="1440" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="borgarsogusafn_backup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borgarsogusafn_backup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borgarsogusafn_backup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borgarsogusafn_backup" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borgarsogusafn_backup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borgarsogusafn_backup" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="borgarsogusafn.is" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borgarsogusafn_backup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borgarsogusafn_backup" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$" port="8001" router_script="$PROJECT_DIR$/kk_router.php" use_router_script="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35fdad0f-7114-41f8-91fa-7c1e0811cfb7" name="Default Changelist" comment="" />
+      <created>1575629869848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575629869848</updated>
+      <workItem from="1575629871961" duration="2682000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2682000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="801" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.36530325" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kk_router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/sites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/borgarsogusafn.is/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

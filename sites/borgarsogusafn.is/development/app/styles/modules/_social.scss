@@ -1,0 +1,144 @@
+.social-media.modules {
+	position: relative;
+	text-align: right;
+	margin-right: -30px;
+	top: 2px;
+	z-index: 9;
+	li {
+		position: relative;
+		margin: 0 !important;
+	}
+}
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+	.social-media.modules {
+		position: absolute;
+		display: block;
+      left: 38px;
+      top: 44px;
+	}
+}
+
+
+/* Media Queries Min Width 1060px */
+/*	------------------------------*/
+
+@media (min-width: 66.25em) {
+	.layout1 {
+		overflow: hidden;
+	}
+	.social-media.modules {
+		text-align: right;
+		margin-right: -30px;
+		top: 44px;
+		z-index: 9;
+		&:before {
+			position: absolute;
+			content: "";
+			left: -40px;
+			top: -40px;
+			height: 300px;
+			width: 40px;
+			background-color: $color1;;
+		}
+		li {
+			position: relative;
+			margin: 0 !important;
+			span {
+				margin: 0!important;
+			}
+			p {
+				display: block;
+				position: absolute;
+				height: 40px;
+				top: 0;
+				left: -700%;
+				white-space: pre;
+				background-color: $color31;
+				color: white;
+				padding: 0 20px;
+				z-index: -2;
+				transition: all 0.5s ease-out;
+			}
+			a:before {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				content: "";
+				left: 0;
+				top: 0;
+				z-index: -1;
+				background-color: $color1;
+				transition: all 0.5s ease;
+			}
+			a:after {
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 4.5px 0 4.5px 5px;
+				top: 50%;
+				margin-top: -4px;
+				right: -5px;
+				opacity: 0;
+				transition: opacity 0.5s ease;
+			}
+			a:hover {
+				span {
+					color: $color1;
+				}
+				p {
+					left: 40px;
+				}
+			}
+			a:hover:before, a:hover:after {
+				opacity: 1;
+			}
+		}
+		li:nth-child(1) {
+			a:hover:before {
+				background-color: #3f5a9f;
+			}
+			a:after {
+				border-color: transparent transparent transparent #3f5a9f;
+			}
+		}
+		li:nth-child(2) {
+			a:hover:before {
+				background-color: #2bb0ea;
+			}
+			a:after {
+				border-color: transparent transparent transparent #2bb0ea;
+			}
+		}
+		li:nth-child(3) {
+			a:hover:before {
+				background-color: #db4c2c;
+			}
+			a:after {
+				border-color: transparent transparent transparent #db4c2c;
+			}
+		}
+		li:nth-child(4) {
+			a:hover:before {
+				background-color: #23bf00;
+			}
+			a:after {
+				border-color: transparent transparent transparent #23bf00;
+			}
+		}
+		li:nth-child(5) {
+			a:hover:before {
+				background-color: $color31;
+				border-right: 1px solid $color1;
+			}
+			a:after {
+				border-color: transparent transparent transparent $color1;
+			}
+		}
+	}
+}

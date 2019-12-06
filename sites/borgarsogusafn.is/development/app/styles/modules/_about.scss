@@ -1,0 +1,151 @@
+/* About */
+
+.component-about.layout {
+	max-width: none;
+}
+
+
+/* Media Queries Min Width 435px */
+/*	------------------------------*/
+
+@media (min-width: 27.1875em) {
+	.component-about.layout {
+		
+		li {
+			position: relative;
+			overflow: hidden;
+			list-style-type: none;
+		}
+		li:nth-child(even) {
+			.image-wrapper {
+				float: right;
+			}
+			.text-wrapper:before {
+				border-width: 9.5px 0 9.5px 10px;
+				border-color: transparent transparent transparent $color8;
+				right: -10px;
+				left: inherit;
+			}
+		}
+		li:nth-child(odd) {
+			.text-wrapper:before {
+				border-width: 9.5px 10px 9.5px 0;
+				border-color: transparent $color8 transparent transparent;
+				left: 0;
+			}
+		}
+		.image-wrapper, .text-wrapper {
+			float: left;
+			width: 50%;
+		}
+		.text-wrapper:before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			position: absolute;
+			top: 30px;
+		}
+	}
+}
+
+
+
+/* Media Queries Min Width 768px */
+/*	------------------------------*/
+
+@media (min-width: 48em) {
+
+}
+
+/* Media Queries Min Width 1024px */
+/*	------------------------------*/
+
+@media (min-width: 64em) {
+		.component-about.layout {
+	
+		li {
+			float: left;
+			width: 50%;
+			transition: all .26s ease-in-out;
+		}
+		li:nth-child(1), li:nth-child(2) {
+			
+			.text-wrapper {
+				float: right;
+				&:before {
+					transition: all .26s ease-in-out;
+				}
+			}
+			.image-wrapper {
+				float: left;
+			}
+		}
+		li:nth-child(2) {
+			.text-wrapper:before {
+				border-width: 9.5px 10px 9.5px 0;
+				border-color: transparent $color8 transparent transparent;
+				left: 0;
+				right: inherit;
+			}
+		}
+		li:nth-child(3) {
+			.text-wrapper:before {
+				border-width: 9.5px 0 9.5px 10px;
+				border-color: transparent transparent transparent $color8;
+				right: -10px;
+				left: inherit;
+			}
+		}
+		li:nth-child(3), li:nth-child(4) {
+			
+			.text-wrapper {
+				float: left;
+			}
+			.image-wrapper {
+				float: right;
+			}
+		}
+		
+
+		li:hover {
+			background-color: $color26;
+		}
+	
+		li:nth-child(even):hover {
+			.text-wrapper:before {
+				border-color: transparent transparent transparent $color26;
+			}
+		}
+		li:nth-child(odd):hover {
+			.text-wrapper:before {
+				border-color: transparent $color26 transparent transparent;
+			}
+		}
+		li:nth-child(2):hover {
+			.text-wrapper:before {
+				border-color: transparent $color26 transparent transparent;
+			}
+		}
+		li:nth-child(3):hover {
+			.text-wrapper:before {
+				border-color: transparent transparent transparent $color26;
+			}
+		}
+	}
+}
+
+
+/* Media Queries Min Width 1100px */
+/*	------------------------------*/
+
+@media (min-width: 68.75em) {
+
+}
+
+/* Media Queries Min Width 1200px */
+/*	------------------------------*/
+
+@media (min-width: 75em) {
+
+}
+

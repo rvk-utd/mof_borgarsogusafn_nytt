@@ -1,0 +1,5 @@
+.component-example {
+	@include breakAt(minWidth, $bp768, null, em) {
+   	display: none;
+	}
+}

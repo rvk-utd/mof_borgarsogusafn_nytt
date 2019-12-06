@@ -1,0 +1,61 @@
+// Components - Museums
+//
+// All museum components
+//
+// Styleguide 12.0
+
+// 	 About items
+// 
+// 	 markup:
+//	 	<div class="example styleguide component-museum row">
+//			<div class="image-wrapper col-xs-6">
+// 	 	</div>
+//			<div class="text-wrapper col-xs-6">
+//				<h2 class="f-M f-2">Leiðsögn í Árbæjarsafn</h2>
+//				<p class="f-XXS f-3">Leiðsögn um safnsvæðið alla daga klukkan 13:00</p>
+//			</div>
+//		</div>
+//	 	<div class="example styleguide component-museum row">
+//			<div class="image-wrapper col-xs-6 col-xs-push-6">
+// 	 	</div>
+//			<div class="text-wrapper col-xs-6 col-xs-pull-6">
+//				<h2 class="f-M f-2">Leiðsögn í Árbæjarsafn</h2>
+//				<p class="f-XXS f-3">Leiðsögn um safnsvæðið alla daga klukkan 13:00</p>
+//			</div>
+//		</div>
+//
+//	 Styleguide 12.1
+
+.component-museum {
+	background-color: $color7;
+	height: 168px;
+	position: relative;
+	overflow: hidden;
+	max-width: 335px;
+
+	.image-wrapper {
+		background: url('images/assets/slider-image.jpg') no-repeat center center;
+		background-size: cover;
+		height: 168px;
+	}
+
+	.text-wrapper {
+		padding: 15px 20px;
+		position: relative;
+	}
+	
+	h2 {
+		font-size: 20px;
+		font-size: 1.25rem;
+		color: $color9;
+		margin-bottom: 20px;
+		line-height: 1.4;
+	}
+	
+	p {
+		font-size: 12px;
+		font-size: 0.75rem;
+		color: $color9;
+		line-height: 1.65;
+	}
+}
