@@ -5,9 +5,9 @@ core = 7.x
 dependencies[] = scald
 
 
-; Information added by Drupal.org packaging script on 2014-05-18
-version = "7.x-1.x-dev"
+; Information added by Drupal.org packaging script on 2017-06-23
+version = "7.x-1.0"
 core = "7.x"
 project = "scald_filter"
-datestamp = "1400401428"
+datestamp = "1498233848"
 
