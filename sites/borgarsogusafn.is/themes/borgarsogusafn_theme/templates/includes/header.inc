@@ -19,23 +19,23 @@ global $language;
    <?php if ($language->language == 'is'): ?>
       <nav class="component-nav-main-top">
          <ul class="nav nav-tabs">
-            <li><a href="/is/arbaejarsafn">Árbæjarsafn</a></li>
-            <li><a href="/is/landnamssyningin">Landnámssýningin</a></li>
-            <li><a href="/is/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
-         <li><a href="/is/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
-            <li><a href="/is/videy">Viðey</a></li>
+            <li><a href="/arbaejarsafn">Árbæjarsafn</a></li>
+            <li><a href="/landnamssyningin">Landnámssýningin</a></li>
+            <li><a href="/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
+         <li><a href="/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
+            <li><a href="/videy">Viðey</a></li>
          </ul>
       </nav>
    <?php endif; ?>
     <?php if ($language->language == 'en'): ?>
       <nav class="component-nav-main-top">
          <ul class="nav nav-tabs">
-            <li><a href="/en/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
-            <li><a href="/en/the-settlement-exhibition">The Settlement Exhibition</a></li>
-            <li><a href="/en/reykjavik-museum-of-photography">Museum of Photography</a></li>
-            <li><a href="/en/reykjavik-maritime-museum">Maritime Museum</a></li>
+            <li><a href="/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
+            <li><a href="/the-settlement-exhibition">The Settlement Exhibition</a></li>
+            <li><a href="/reykjavik-museum-of-photography">Museum of Photography</a></li>
+            <li><a href="/reykjavik-maritime-museum">Maritime Museum</a></li>
 
-            <li><a href="/en/videy-island">Viðey island</a></li>
+            <li><a href="/videy-island">Viðey island</a></li>
          </ul>
       </nav>
    <?php endif; ?>
