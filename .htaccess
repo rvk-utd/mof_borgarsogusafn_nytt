@@ -71,7 +71,7 @@ DirectoryIndex index.php index.html index.htm
   # Rewrite old links, for Path prefix configuration to domain root configuration
 
   # Icelandic
-  RewriteRule ^is/(.*)$ $1 [R,L]
+  RewriteRule ^is/(.*)$ https://borgarsogusafn.is/$1 [R,L]
   # English
   RewriteRule ^en/(.*)$ https://reykjavikcitymuseum.is/$1 [R,L]
 
