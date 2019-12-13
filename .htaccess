@@ -71,9 +71,9 @@ DirectoryIndex index.php index.html index.htm
   # Rewrite old links, for Path prefix configuration to domain root configuration
 
   # Icelandic
-  RewriteRule ^(.*)/?is/(.*)$ $1/$2 [R,L]
+  RewriteRule ^is/(.*)$ $1 [R,L]
   # English
-  RewriteRule ^(.*)/?en/(.*)$ https://reykjavikcitymuseum.is/$2 [R,L]
+  RewriteRule ^en/(.*)$ https://reykjavikcitymuseum.is/$1 [R,L]
 
   # Make sure Authorization HTTP header is available to PHP
   # even when running as CGI or FastCGI.
