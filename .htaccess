@@ -68,6 +68,13 @@ DirectoryIndex index.php index.html index.htm
   RewriteCond %{HTTPS} on
   RewriteRule ^ - [E=protossl:s]
 
+  # Rewrite old links, for Path prefix configuration to domain root configuration
+
+  # Icelandic
+  RewriteRule ^(.*)/?is/(.*)$ $1/$2 [R,L]
+  # English
+  RewriteRule ^(.*)/?en/(.*)$ https://reykjavikcitymuseum.is/$2 [R,L]
+
   # Make sure Authorization HTTP header is available to PHP
   # even when running as CGI or FastCGI.
   RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -113,7 +120,6 @@ DirectoryIndex index.php index.html index.htm
   # If your site is running in a VirtualDocumentRoot at http://example.com/,
   # uncomment the following line:
   # RewriteBase /
-
   # Pass all requests not referring directly to files in the filesystem to
   # index.php. Clean URLs are handled in drupal_environment_initialize().
   RewriteCond %{REQUEST_FILENAME} !-f
