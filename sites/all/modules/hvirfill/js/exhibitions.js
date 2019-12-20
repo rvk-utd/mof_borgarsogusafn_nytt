@@ -99,7 +99,7 @@
         
         if ('facebook' in data.media) {
             if (data.media.facebook.indexOf('facebook.com') === -1)
-                var fbLink = 'http://www.facebook.com/' + data.media.facebook;
+                var fbLink = 'https://www.facebook.com/' + data.media.facebook;
             else
                 var fbLink = data.media.facebook;
             links.push({
@@ -136,7 +136,7 @@
         var isReady = false;
         var baseUrl = window.location.href.split('?')[0];
 
-        var server = 'http://hvirfill.reykjavik.is';
+        var server = 'https://hvirfill.reykjavik.is';
         this.server = server;
         var map, marker;
         var mobileWidth = 767;

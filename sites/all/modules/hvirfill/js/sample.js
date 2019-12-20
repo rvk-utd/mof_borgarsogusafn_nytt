@@ -9,7 +9,7 @@
         var isRandom = HVIRFILL.sample_is_random;
         var eventsNo = parseInt(HVIRFILL.sample_events_no);
 
-        this.server = 'http://hvirfill.reykjavik.is';
+        this.server = 'https://hvirfill.reykjavik.is';
         this.events = ko.observableArray([]);
         this.lang = HVIRFILL.lang;
         this.showEvents = ko.observable(false);

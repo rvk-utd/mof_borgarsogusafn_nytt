@@ -170,7 +170,7 @@
         if (!hvirfill_is_event_id())
             return;
 
-        $server = 'http://hvirfill.reykjavik.is';
+        $server = 'https://hvirfill.reykjavik.is';
         $event_url = $server . '/get?_id=' . $_GET['event'];
         $data = file_get_contents($event_url);
         if ($data == false) {
