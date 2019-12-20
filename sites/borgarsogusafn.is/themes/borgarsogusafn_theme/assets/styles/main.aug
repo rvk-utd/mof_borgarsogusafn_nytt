@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,400italic);
-@import url(http://fast.fonts.net/cssapi/752c3bcf-3c0e-4227-a167-8041c60cc888.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,400italic);
+@import url(https://fast.fonts.net/cssapi/752c3bcf-3c0e-4227-a167-8041c60cc888.css);
 .sg.section .sg.section-partial {
   width: 100%; }
 
