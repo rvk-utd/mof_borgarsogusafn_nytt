@@ -58,3 +58,4 @@
  $sites['borgarsogusafn.is.kosmosogkaos.is'] = 'borgarsogusafn.is';
  $sites['www.reykjavikcitymuseum.is'] = 'borgarsogusafn.is';
  $sites['reykjavikcitymuseum.is'] = 'borgarsogusafn.is';
+ $sites['borgarsogusafn.is.ddev.site'] = 'borgarsogusafn.is';
