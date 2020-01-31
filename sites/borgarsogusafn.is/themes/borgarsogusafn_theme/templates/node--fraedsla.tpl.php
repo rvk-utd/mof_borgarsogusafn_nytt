@@ -6,7 +6,7 @@
 
    <div class="left">
       <?php
-         print render(block_get_blocks_by_region('social_media'));
+         print //render(block_get_blocks_by_region('social_media'));
       ?>
    </div>
 
