@@ -14,11 +14,11 @@
         this.lang = HVIRFILL.lang;
         this.showEvents = ko.observable(false);
         var hiddenIds = HVIRFILL.hidden;
-        
+
         if (HVIRFILL.lang === 'is')
-            this.mainPage = '/is/vidburdir';
+            this.mainPage = '/vidburdir';
         else
-            this.mainPage = '/en/events';
+            this.mainPage = '/events';
 
         var query = {}
         query.f = helper.dateFormat(new Date());
