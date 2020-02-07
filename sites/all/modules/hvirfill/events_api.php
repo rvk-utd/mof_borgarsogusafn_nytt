@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 class EventsApi {
 
-    public static $event_server = 'http://hvirfill.reykjavik.is';
+    public static $event_server = 'https://hvirfill.reykjavik.is';
     protected $api_key;
 
     public $error;
@@ -29,16 +29,16 @@ class EventsApi {
         $headers = array(
             'Accept: application/json',
             'Content-Type: application/json',
-            'Content-Length: ' . strlen($json_payload) 
+            'Content-Length: ' . strlen($json_payload)
         );
 
-        $ch = curl_init(self::$event_server.'/'.$path);                                                                      
+        $ch = curl_init(self::$event_server.'/'.$path);
 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $json_payload); 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-        curl_setopt($ch, CURLOPT_POST, 1);                                                                    
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json_payload);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
- 
+
         $result = curl_exec($ch);
         return json_decode($result);
     }
@@ -85,17 +85,17 @@ class EventsApi {
     function upload() {
         $ch = curl_init(self::$event_server.'/upload');
 
-        $headers = array(                                                                          
+        $headers = array(
             'Accept: application/json',
             'Content-Type: image/jpeg',
             'Content-Length: ' . (string) $_SERVER['CONTENT_LENGTH'],
-            'x-api-key: ' . $this->api_key                                                            
+            'x-api-key: ' . $this->api_key
         );
 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents("php://input")); 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-        curl_setopt($ch, CURLOPT_POST, 1);                                                                    
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);                                                                                                                   
+        curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents("php://input"));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         $result = curl_exec($ch);
         return json_decode($result);

@@ -49,7 +49,7 @@ global $language;
    </div>
    <?php if ($language->language == 'is'): ?>
    	<div class="icon icon-logo4">
-   		<a href="/is">Borgarsögusafn <span>Reykjavíkur</span></a>
+   		<a href="/">Borgarsögusafn <span>Reykjavíkur</span></a>
    	</div>
    <?php endif; ?>
     <?php if ($language->language == 'en'): ?>
