@@ -10,11 +10,11 @@
     <div class="component-nav-main-subpages-wrapper">
       <nav class="component-nav-main-subpages bg-green">
          <?php if ($language->language == 'is'): ?>
-            <div class="icon icon-arbaejarsafn text-white"><a href="/is/arbaejarsafn"></a></div>
+            <div class="icon icon-arbaejarsafn text-white"><a href="/arbaejarsafn"></a></div>
             <a class="select text-white f-XS f-2" href="#">Valmynd</a>
          <?php endif; ?>
          <?php if ($language->language == 'en'): ?>
-            <div class="icon icon-arbaer-museum text-white"><a href="/en/arbaer-open-air-museum"></a></div>
+            <div class="icon icon-arbaer-museum text-white"><a href="/arbaer-open-air-museum"></a></div>
             <a class="select text-white f-XS f-2" href="#">Select</a>
          <?php endif; ?>
    <?php print render($page['arbaejarsafn']); ?>
@@ -26,11 +26,11 @@
     <div class="component-nav-main-subpages-wrapper">
       <nav class="component-nav-main-subpages bg-yellow">
          <?php if ($language->language == 'is'): ?>
-            <div class="icon icon-logo text-white"><a href="/is/ljosmyndasafn-reykjavikur"></a></div>
+            <div class="icon icon-logo text-white"><a href="/ljosmyndasafn-reykjavikur"></a></div>
             <a class="select text-white f-XS f-2" href="#">Valmynd</a>
          <?php endif; ?>
          <?php if ($language->language == 'en'): ?>
-            <div class="icon icon-photography-museum text-white"><a href="/en/reykjavik-museum-of-photography"></a></div>
+            <div class="icon icon-photography-museum text-white"><a href="/reykjavik-museum-of-photography"></a></div>
             <a class="select text-white f-XS f-2" href="#">Select</a>
          <?php endif; ?>
    <?php print render($page['ljosmyndasafn']); ?>
@@ -42,11 +42,11 @@
    <div class="component-nav-main-subpages-wrapper">
       <nav class="component-nav-main-subpages bg-blue">
          <?php if ($language->language == 'is'): ?>
-            <div class="icon icon-sjominjasafn text-white"><a href="/is/sjominjasafnid-i-reykjavik"></a></div>
+            <div class="icon icon-sjominjasafn text-white"><a href="/sjominjasafnid-i-reykjavik"></a></div>
             <a class="select text-white f-XS f-2" href="#">Valmynd</a>
          <?php endif; ?>
          <?php if ($language->language == 'en'): ?>
-            <div class="icon icon-maritime-museum text-white"><a href="/en/reykjavik-maritime-museum"></a></div>
+            <div class="icon icon-maritime-museum text-white"><a href="/reykjavik-maritime-museum"></a></div>
             <a class="select text-white f-XS f-2" href="#">Select</a>
          <?php endif; ?>
    <?php print render($page['sjominjasafn']); ?>
@@ -58,11 +58,11 @@
     <div class="component-nav-main-subpages-wrapper">
       <nav class="component-nav-main-subpages bg-red">
          <?php if ($language->language == 'is'): ?>
-            <div class="icon icon-landnamssyning text-white"><a href="/is/landnamssyningin"></a></div>
+            <div class="icon icon-landnamssyning text-white"><a href="/landnamssyningin"></a></div>
             <a class="select text-white f-XS f-2" href="#">Valmynd</a>
          <?php endif; ?>
          <?php if ($language->language == 'en'): ?>
-            <div class="icon icon-settlement-exibition text-white"><a href="/en/the-settlement-exhibition"></a></div>
+            <div class="icon icon-settlement-exibition text-white"><a href="/the-settlement-exhibition"></a></div>
             <a class="select text-white f-XS f-2" href="#">Select</a>
          <?php endif; ?>
    <?php print render($page['landnamssyning']); ?>
@@ -74,11 +74,11 @@
    <div class="component-nav-main-subpages-wrapper">
       <nav class="component-nav-main-subpages bg-turkish-blue">
          <?php if ($language->language == 'is'): ?>
-            <div class="icon icon-videy text-white"><a href="/is/videy"></a></div>
+            <div class="icon icon-videy text-white"><a href="/videy"></a></div>
             <a class="select text-white f-XS f-2" href="#">Valmynd</a>
          <?php endif; ?>
          <?php if ($language->language == 'en'): ?>
-            <div class="icon icon-videy-iceland text-white"><a href="/en/videy-iceland"></a></div>
+            <div class="icon icon-videy-iceland text-white"><a href="/videy-iceland"></a></div>
             <a class="select text-white f-XS f-2" href="#">Select</a>
          <?php endif; ?>
    <?php print render($page['videy']); ?>
@@ -88,13 +88,13 @@
 
 
 <div class="wrapper bg-white museums sub">
-  
-  
+
+
    <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-     
-    
+
+
    <?php print render($page['content']); ?>
-     
+
    <?php if ($page['info']): ?>
       <?php print render($page['info']); ?>
    <?php endif; ?>

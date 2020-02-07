@@ -54,12 +54,12 @@ global $language;
    <?php endif; ?>
     <?php if ($language->language == 'en'): ?>
       <div class="icon icon-city-museum">
-         <a href="/en">Reykjavík <span>City Museum</span></a>
+         <a href="/">Reykjavík <span>City Museum</span></a>
       </div>
    <?php endif; ?>
 
   	<nav class="component-nav-main-bottom">
-      <?php 
+      <?php
          $isMenu = menu_tree('menu-borgarsogusafn-is');
          $enMenu = menu_tree('menu-borgarsogusafn-en');
       ?>
@@ -69,14 +69,14 @@ global $language;
       <?php if ($language->language == 'en'): ?>
          <?php print drupal_render($enMenu); ?>
       <?php endif; ?>
-	  	
+
 	</nav>
    <div class="icon icon-magnifying-glass"></div>
    <?php if ($page['language']): ?>
       <?php print render($page['language']); ?>
    <?php endif; ?>
 
-    
+
 
       <div class="component-mobile-nav-main">
       <?php if ($page['mobile_menu']): ?>
@@ -84,20 +84,20 @@ global $language;
       <?php endif; ?>
       <?php if ($language->language == 'is'): ?>
          <ul class="subpages-mobile-menu">
-            <li><a href="/is/arbaejarsafn">Árbæjarsafn</a></li>
-            <li><a href="/is/landnamssyningin">Landnámssýningin</a></li>
-            <li><a href="/is/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
-            <li><a href="/is/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
-            <li><a href="/is/videy">Viðey</a></li>
+            <li><a href="/arbaejarsafn">Árbæjarsafn</a></li>
+            <li><a href="/landnamssyningin">Landnámssýningin</a></li>
+            <li><a href="/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
+            <li><a href="/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
+            <li><a href="/videy">Viðey</a></li>
          </ul>
       <?php endif; ?>
       <?php if ($language->language == 'en'): ?>
          <ul class="subpages-mobile-menu">
-            <li><a href="/en/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
-            <li><a href="/en/the-settlement-exhibition">The Settlement Exhibition</a></li>
-            <li><a href="/en/reykjavik-maritime-museum">Reykjavík Maritime Museum</a></li>
-            <li><a href="/en/reykjavik-museum-of-photography">Reykjavík Museum Of Photography</a></li>
-            <li><a href="/en/videy-island">Viðey Island</a></li>
+            <li><a href="/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
+            <li><a href="/the-settlement-exhibition">The Settlement Exhibition</a></li>
+            <li><a href="/reykjavik-maritime-museum">Reykjavík Maritime Museum</a></li>
+            <li><a href="/reykjavik-museum-of-photography">Reykjavík Museum Of Photography</a></li>
+            <li><a href="/videy-island">Viðey Island</a></li>
          </ul>
       <?php endif; ?>
         <!-- <ul class="nav">
