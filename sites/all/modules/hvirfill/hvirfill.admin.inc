@@ -193,7 +193,7 @@
                 '#maxlength'        => 24,
                 '#required'         => true,
                 '#element_validate' => array('hvirill_validate_event_id'),
-            ),     
+            ),
             'submit' => array(
                 '#type'             => 'submit',
                 '#value'            => t('Save'),
@@ -217,7 +217,7 @@
         $result = db_query('SELECT fid, event_id FROM {hvirfill_hidden} ORDER BY time DESC');
         foreach ($result as $r) {
             $row = array();
-            $row[] = '<a href="http://hvirfill.reykjavik.is/events.html#/t/'.$r->event_id.'" target="_blank">'.$r->event_id.'</a>';
+            $row[] = '<a href="https://hvirfill.reykjavik.is/events.html#/t/'.$r->event_id.'" target="_blank">'.$r->event_id.'</a>';
             $row[] = array('data' => l(t('delete'), 'admin/config/hvirfill/hidden/'.$r->fid.'/delete'));
             $rows[] = $row;
         }
@@ -242,7 +242,7 @@
     function hvirfill_hidden_form_submit($form, &$form_state) {
 
         $values = $form_state['values'];
-        
+
         $fid = db_insert('hvirfill_hidden')->fields(array(
             'event_id' => $values['event_id'],
             'time' => time(),

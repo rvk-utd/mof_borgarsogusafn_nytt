@@ -7,8 +7,8 @@
 <!-- Navigation -->
 
   <div id="search-container">
-    <div class="hvirfill-controls clearfix">     
-    
+    <div class="hvirfill-controls clearfix">
+
       <div class="search-box">
         <input placeholder= "Leit" class="hvirfill-input"
             data-bind="event: {keyup: autocomplete}, value: searchString, valueUpdate: 'afterkeydown'"/>
@@ -18,7 +18,7 @@
         <input type="text" class="hvirfill-input" id="search-date"/>
         <input type="hidden" id="search-date"/>
       </div>
-      
+
       <div class="switch-box">
         <select data-bind="event: {change: switchView}" class="hvirfill-input">
           <option value="" data-bind="t10n: 'all events'"></option>
@@ -81,7 +81,7 @@
 
           <?php if ($is_admin) : ?>
             <span class="pull-left">
-              <a class="pointer"> 
+              <a class="pointer">
                 <span class="fa-stack fa-2x" data-bind="click: adminHide">
                   <i class="fa fa-stop fa-stack-2x"></i>
                   <i class="fa fa-trash-o fa-inverse"></i>
@@ -91,7 +91,7 @@
           <?php endif; ?>
 
             <span class="pull-right">
-              <a class="pointer" data-bind="click: toggleMap">  
+              <a class="pointer" data-bind="click: toggleMap">
                 <span class="fa-stack fa-2x pointer">
                   <div class="content-icon">
                     <i class="fa fa-stop fa-stack-2x"></i>
@@ -99,7 +99,7 @@
                   </div>
                 </span>
               </a>
-              <a class="pointer" data-bind="click: prev"> 
+              <a class="pointer" data-bind="click: prev">
                 <span class="fa-stack fa-2x">
                   <i class="fa fa-stop fa-stack-2x"></i>
                   <i class="fa fa-chevron-left fa-stack-1x fa-inverse"></i>
@@ -111,7 +111,7 @@
                   <i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
-              <a class="pointer"> 
+              <a class="pointer">
                 <span class="fa-stack fa-2x" data-bind="click: hideModal">
                   <i class="fa fa-stop fa-stack-2x"></i>
                   <i class="fa fa-times fa-stack-1x fa-inverse"></i>
@@ -119,14 +119,14 @@
               </a>
             </span>
           </ul>
-        </nav>   
+        </nav>
       </div>
 
       <div class="event-content clearfix" data-bind="if: isModal, hidden: isMap">
         <div class="block first-block">
           <div class="event-image event-part">
             <img class="img-responsive" data-bind="attr: {
-                src: server + '/images/' + modalData().image.large,
+                src: server + modalData().image.large,
                 alt: modalData().language[$root.lang].title}"/>
             <span class="text-dark-grey f-XXXS f-1-3 text-white" style="display: none;"
                 data-bind="modalLabel: modalData().language.is.tags"></span>
@@ -157,13 +157,13 @@
             <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language[$root.lang].text"></p> 
+            <p data-bind="text: modalData().language[$root.lang].text"></p>
           </div>
         </div>
 
         <div class="block third-block">
         <?php if ($settings->is_datepicker) : ?>
-          <div class="block cal-block event-part"> 
+          <div class="block cal-block event-part">
             <h4 data-bind="monthName: new Date()"></h4>
             <table class="cal">
               <tbody data-bind="foreach: modalCal">
@@ -176,10 +176,10 @@
                           event: $data.event,
                           sameMonth: $data.sameMonth
                       }">
-                  </td> 
+                  </td>
                 </tr>
               </tbody>
-            </table>  
+            </table>
           </div>
         <?php endif; ?>
 
@@ -204,7 +204,7 @@
             <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language[$root.lang].text"></p> 
+            <p data-bind="text: modalData().language[$root.lang].text"></p>
           </div>
         </div>
       </div>
