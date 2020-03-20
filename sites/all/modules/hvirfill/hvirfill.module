@@ -5,14 +5,14 @@
     function hvirfill_menu() {
 
         $items = array();
-        
+
         $items['admin/config/hvirfill'] = array(
             'title'             => t('Hvirfill'),
             'page callback'     => 'hvirfill_admin_landing_page',
             'access arguments'  => array('administer Hvirfill'),
             'file'              => 'hvirfill.admin.inc',
         );
-        
+
         $items['admin/config/hvirfill/settings'] = array(
             'title'             => t('Hvirfill settings'),
             'page callback'     => 'drupal_get_form',
@@ -32,7 +32,7 @@
             'type'              => MENU_LOCAL_TASK,
             'weight'            => 1,
         );
-        
+
         $items['admin/config/hvirfill/hidden'] = array(
             'title'             => t('Hidden events'),
             'page callback'     => 'hvirfill_hidden',
@@ -41,7 +41,7 @@
             'type'              => MENU_LOCAL_TASK,
             'weight'            => 2,
         );
-        
+
         $items['admin/config/hvirfill/hidden/add'] = array(
             'title'             => 'Hvirfill - Add hidden event',
             'page callback'     => 'drupal_get_form',
@@ -51,7 +51,7 @@
             'type'              => MENU_LOCAL_ACTION,
             'weight'            => 3,
         );
-        
+
         $items['admin/config/hvirfill/hidden/%/delete'] = array(
             'title'             => 'Hvirfill - Delete hidden event',
             'page callback'     => 'drupal_get_form',
@@ -104,7 +104,7 @@
                 break;
         }
         return $block;
-    }   
+    }
 
     function hvirfill_add_js($file, $options=null) {
         $path = drupal_get_path('module', 'hvirfill') . '/js/' . $file;
@@ -137,7 +137,7 @@
         global $language;
         if ($is_english_fallback)
             return $language->language == 'is' ? 'is' : 'en';
-        return $language->language; 
+        return $language->language;
     }
 
     function hvirfill_is_facebook_crawler() {
@@ -159,7 +159,7 @@
         $element = array(
             '#tag' => 'meta',
             '#attributes' => array(
-                'property' => 'og:' . $key, 
+                'property' => 'og:' . $key,
                 'content' => $value,
             ),
         );
@@ -181,7 +181,7 @@
         hvirfill_add_facebook_tag('type', 'website');
         hvirfill_add_facebook_tag('title', $event['language'][$lang]['title']);
         hvirfill_add_facebook_tag('description', $event['language'][$lang]['text']);
-        hvirfill_add_facebook_tag('image', $server . '/images/' . $event['image']['medium']);
+        hvirfill_add_facebook_tag('image', $server . $event['image']['medium']);
         hvirfill_add_facebook_tag('url', $GLOBALS['base_url'] . $_SERVER['REQUEST_URI']);
         hvirfill_add_facebook_tag('locale', $lang == 'is' ? 'is_IS' : 'en_US');
     }
@@ -199,7 +199,7 @@
         hvirfill_add_css('hvirfill.css');
         hvirfill_add_css('datepicker.css');
 
-        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));        
+        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('knockout-3.3.0.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('hvirfill-common.js');
         hvirfill_add_js('bindings.js');
@@ -236,7 +236,7 @@
         hvirfill_add_css('hvirfill.css');
         hvirfill_add_css('datepicker.css');
 
-        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));        
+        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('knockout-3.3.0.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('hvirfill-common.js');
         hvirfill_add_js('bindings.js');
@@ -270,7 +270,7 @@
     }
 
     function hvirfill_sample() {
-        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));        
+        hvirfill_add_js('inline-0.9.3.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('knockout-3.3.0.js', array('group' => JS_LIBRARY));
         hvirfill_add_js('hvirfill-common.js');
         hvirfill_add_js('bindings.js');
@@ -294,7 +294,7 @@
             return hvirfill_json_error_output('missing event_id');
         if (!hvirfill_valid_id($_POST['event_id']))
             return hvirfill_json_error_output('invalid event_id');
-        
+
         db_insert('hvirfill_hidden')->fields(array(
             'event_id' => $_POST['event_id'],
             'time' => time(),

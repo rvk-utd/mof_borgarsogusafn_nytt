@@ -78,13 +78,13 @@
 
     var getLinks = function(data) {
         var links = [];
-        
+
         links.push({
             label: 'link',
             link: '?event=' + data._id,
             icon: 'fa-share-alt',
         });
-        
+
         if (HVIRFILL.is_share) {
             links.push({
                 label: 'share',
@@ -96,7 +96,7 @@
         if (typeof data.media === 'undefined') {
             return links;
         }
-        
+
         if ('facebook' in data.media) {
             if (data.media.facebook.indexOf('facebook.com') === -1)
                 var fbLink = 'https://www.facebook.com/' + data.media.facebook;
@@ -126,7 +126,7 @@
         }
 
         return links;
-    } 
+    }
 
     var EventsModel = function () {
         var self = this;
@@ -146,12 +146,12 @@
         var searchQuery = {};
         searchQuery.sort = 'start';
         searchQuery.occurrence = '';
-        
+
         if (HVIRFILL.is_start_date)
             initialDate = helper.jsonToDate(HVIRFILL.start_date);
         else
             initialDate = new Date(helper.dateFormat(new Date()));
-        
+
         if (HVIRFILL.is_end_date)
             searchQuery.t = helper.jsonToDateFormat(HVIRFILL.end_date);
 
@@ -161,7 +161,7 @@
             searchQuery.not = 'sýningar';
         else
             searchQuery.not = 'exhibition';
-        
+
         this.searchDate = ko.observable();
         this.isMobile = ko.observable(window.innerWidth < mobileWidth);
         this.lang = searchQuery.lang = HVIRFILL.lang;
@@ -186,8 +186,8 @@
         });
 
         setSearchDate(initialDate);
-        
-        // Query    
+
+        // Query
 
         var events = [];
         this.events = ko.observableArray([]);
@@ -245,9 +245,9 @@
 
             isBusy = true;
             offset += limit;
-            
+
             var future = inline.jsonp(url('find'), buildQuery()).fallback([]);
-            
+
             inline.foreach(future, function(item) {
                 events.push(modifyDates(item));
             });
@@ -276,7 +276,7 @@
         this.modalData = ko.observable({});
         this.modalLinks = ko.observableArray([]);
         this.modalImage = ko.observable('');
-        this.isModal = ko.observable(false); 
+        this.isModal = ko.observable(false);
         this.isMap = ko.observable(false);
         this.modalCal = ko.observableArray([]);
 
@@ -376,21 +376,21 @@
             var isNotHidden = function(item) {
                 return HVIRFILL.hidden.indexOf(item.event_id) === -1;
             }
-            
+
             var future = inline.jsonp(url('get'), {_id: HVIRFILL.uid}).check(isNotHidden);
-            
+
             inline.if(future, function(data) {
                 eventData = modifyDates(data);
                 events = [eventData];
                 self.showModal(eventData);
                 setSearchDate(eventData.start);
-            
+
                 var countQuery = {};
                 countQuery.f = helper.dateFormat(eventData.start);
                 countQuery.t = helper.dateFormat(helper.dateTomorrow(eventData.start));
                 if (searchQuery.tags !== 'undefined')
                     countQuery.tags = searchQuery.tags;
-                
+
                 var countFuture = inline.jsonp(url('count'), countQuery);
                 inline.run(function() {
                     while (countFuture.data.count > limit)
@@ -398,11 +398,11 @@
                 });
             });
         }
-        
+
         inline.run(self.runQuery);
-            
+
         inline.run(function() {
-            
+
             isReady = true;
             limit = LIMIT;
 
@@ -412,7 +412,7 @@
 
             // add scroll
 
-            if (/MSIE/i.test(navigator.userAgent) ) {                 
+            if (/MSIE/i.test(navigator.userAgent) ) {
                 window.onscroll = function(e) {
                     if (($(window).innerHeight() + document.documentElement.scrollTop) > ($('#event-bottom').position().top - 300)) {
                         self.moreQuery();

@@ -24,9 +24,9 @@
                 sort: 'start'
             }
 
-            var future = inline.jsonp('http://hvirfill.reykjavik.is/find', params);
+            var future = inline.jsonp('https://hvirfill.reykjavik.is/find', params);
             var modified = inline.map(future, modifyDates)
-            
+
             inline.run(function() {
                 self.events(modified.data);
             });
@@ -47,7 +47,7 @@
             var value = [date.getDate(), date.getMonth(), date.getFullYear()].join('.');
             $(element).text(value);
         }
-    } 
+    }
 
     ko.bindingHandlers.eventTime = {
         init: function(element, value) {

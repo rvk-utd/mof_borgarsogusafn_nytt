@@ -2,7 +2,7 @@
   <li>
      <a data-bind="attr: {href: $root.mainPage + '?event=' + $data._id}">
         <div class="image-wrapper">
-           <img class="img-responsive" data-bind="attr: {src: $root.server + '/images/' + $data.image.medium}"/>
+           <img class="img-responsive" data-bind="attr: {src: $root.server + $data.image.medium}"/>
            <span class="text-dark-grey f-XXXS f-1-3 text-white" data-bind="label: $data.language.is.tags" style="display: none;"></span>
         </div>
         <div class="text-wrapper">

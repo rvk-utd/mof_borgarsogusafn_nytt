@@ -49,7 +49,7 @@
     ko.bindingHandlers.eventThumb = {
         update: function(element, value, bindings, model, context) {
             var data = ko.unwrap(value());
-            $(element).attr('src', context.$root.server + '/images/' + data.image.medium);
+            $(element).attr('src', context.$root.server + data.image.medium);
         }
     }
 
