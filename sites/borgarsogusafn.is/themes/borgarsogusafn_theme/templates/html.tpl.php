@@ -39,7 +39,7 @@
   <?php print $styles; ?>
   <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=is&language=<?php echo $variables['language']->language; ?>"></script>-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFd68xYg3xRbfrQ0YekyKo_qXxDBv71dM&callback=initMap&libraries=places&region=is&language=<?php echo $variables['language']->language; ?>" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFd68xYg3xRbfrQ0YekyKo_qXxDBv71dM&libraries=places&region=is&language=<?php echo $variables['language']->language; ?>" type="text/javascript"></script>
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <?php print $scripts; ?>
 </head>
