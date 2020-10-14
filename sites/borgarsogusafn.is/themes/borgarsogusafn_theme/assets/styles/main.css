@@ -6929,7 +6929,7 @@ html {
 /*	------------------------------*/
 @media (min-width: 64em) {
   .logged-in .header-layout {
-    top: 80px; }
+    top: 30px; }
   .logged-in .main {
     margin-top: 160px; }
   .logged-in .component-nav-main-subpages {
@@ -8290,7 +8290,6 @@ a.zoom-in {
     .layout1 .image-wrapper img, .layout2 .image-wrapper img {
       margin: 0; }
   .layout1 .right, .layout2 .right {
-    min-height: 300px;
     position: relative; }
   .layout1 .title, .layout2 .title {
     margin: 32px 0 9px; }
