@@ -9793,9 +9793,55 @@ html, body {
   padding: 20px 0 20px;
 }
 
+.reports .subtitle {
+  margin-bottom: 5px !important;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
-  .main. {
+  .main {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .main .report-category {
+    top: 0;
+    right: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main .report-category {
+    top: 0;
+    right: 100px;
+  }
+}
+
+.tags>p>a {
+  display: inline-block;
+  background: #888888;
+  color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.report-category {
+  display: inline-block;
+  background: #888888;
+  color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  position: absolute;
+  top: 30px;
+  right: 230px;
 }
