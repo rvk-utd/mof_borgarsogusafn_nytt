@@ -1,0 +1,129 @@
+/** Fræðslublokkir - ENSKA */
+
+  /** LEIKSKÓLI */
+  .i18n-en #block-views-fraedsla-block-1 .view-header,
+  .i18n-en #block-views-fraedsla-block-13 .view-header,
+  .i18n-en #block-views-fraedsla-block-5 .view-header,
+  .i18n-en #block-views-fraedsla-block-9 .view-header,
+  .i18n-en #block-views-fraedsla-block-17 .view-header,
+  .i18n-en #block-views-fraedsla-block-21 .view-header {
+    width: 128px;
+  }
+
+  .i18n-en #block-views-fraedsla-block-1 .view-header span,
+  .i18n-en #block-views-fraedsla-block-13 .view-header span,
+  .i18n-en #block-views-fraedsla-block-5 .view-header span,
+  .i18n-en #block-views-fraedsla-block-9 .view-header span,
+  .i18n-en #block-views-fraedsla-block-17 .view-header span,
+  .i18n-en #block-views-fraedsla-block-21 .view-header span {
+    margin: 0;
+  }
+
+  /** GRUNNSKÓLI */
+  .i18n-en #block-views-fraedsla-block-2 .view-header,
+  .i18n-en #block-views-fraedsla-block-14 .view-header,
+  .i18n-en #block-views-fraedsla-block-6 .view-header,
+  .i18n-en #block-views-fraedsla-block-10 .view-header,
+  .i18n-en #block-views-fraedsla-block-18 .view-header,
+  .i18n-en #block-views-fraedsla-block-22 .view-header {
+    width: 162px;
+  }
+  .i18n-en #block-views-fraedsla-block-2 .view-header span,
+  .i18n-en #block-views-fraedsla-block-14 .view-header span,
+  .i18n-en #block-views-fraedsla-block-6 .view-header span,
+  .i18n-en #block-views-fraedsla-block-10 .view-header span,
+  .i18n-en #block-views-fraedsla-block-18 .view-header span,
+  .i18n-en #block-views-fraedsla-block-22 .view-header span {
+    margin: 0;
+  }
+
+  .i18n-en #block-views-fraedsla-block-2 .view-header,
+  .i18n-en #block-views-fraedsla-block-14 .view-header,
+  .i18n-en #block-views-fraedsla-block-6 .view-header {
+    width: 162px;
+  }
+  .i18n-en #block-views-fraedsla-block-2 .view-header span,
+  .i18n-en #block-views-fraedsla-block-14 .view-header span,
+  .i18n-en #block-views-fraedsla-block-6 .view-header span {
+    margin: 0;
+  }
+
+  /** FRAMHALDSSKÓLI */
+  .i18n-en #block-views-fraedsla-block-3 .view-header,
+  .i18n-en #block-views-fraedsla-block-15 .view-header,
+  .i18n-en #block-views-fraedsla-block-7 .view-header,
+  .i18n-en #block-views-fraedsla-block-11 .view-header,
+  .i18n-en #block-views-fraedsla-block-19 .view-header,
+  .i18n-en #block-views-fraedsla-block-23 .view-header {
+    width: 113px !important;
+  }
+  .i18n-en #block-views-fraedsla-block-3 .view-header span,
+  .i18n-en #block-views-fraedsla-block-15 .view-header span,
+  .i18n-en #block-views-fraedsla-block-7 .view-header span,
+  .i18n-en #block-views-fraedsla-block-11 .view-header span,
+  .i18n-en #block-views-fraedsla-block-19 .view-header span,
+  .i18n-en #block-views-fraedsla-block-23 .view-header span {
+    margin: 0;
+  }
+
+  .i18n-en #block-views-fraedsla-block-3 .view-header,
+  .i18n-en #block-views-fraedsla-block-15 .view-header,
+  .i18n-en #block-views-fraedsla-block-7 .view-header {
+    width: 92px;
+  }
+  .i18n-en #block-views-fraedsla-block-3 .view-header span,
+  .i18n-en #block-views-fraedsla-block-15 .view-header span,
+  .i18n-en #block-views-fraedsla-block-7 .view-header span {
+    margin: 0;
+  }
+
+  /** HÁSKÓLI */ 
+  .i18n-en #block-views-fraedsla-block-4 .view-header,
+  .i18n-en #block-views-fraedsla-block-16 .view-header,
+  .i18n-en #block-views-fraedsla-block-8 .view-header,
+  .i18n-en #block-views-fraedsla-block-12 .view-header,
+  .i18n-en #block-views-fraedsla-block-20 .view-header,
+  .i18n-en #block-views-fraedsla-block-24 .view-header {
+    width: 106px;
+  }
+  .i18n-en #block-views-fraedsla-block-4 .view-header span,
+  .i18n-en #block-views-fraedsla-block-16 .view-header span,
+  .i18n-en #block-views-fraedsla-block-8 .view-header span,
+  .i18n-en #block-views-fraedsla-block-12 .view-header span,
+  .i18n-en #block-views-fraedsla-block-20 .view-header span,
+  .i18n-en #block-views-fraedsla-block-24 .view-header span {
+    margin: 0;
+  }
+
+  .i18n-en #block-views-fraedsla-block-4 .view-header,
+  .i18n-en #block-views-fraedsla-block-16 .view-header,
+  .i18n-en #block-views-fraedsla-block-8 .view-header {
+    width: 106px;
+  }
+  .i18n-en #block-views-fraedsla-block-4 .view-header span,
+  .i18n-en #block-views-fraedsla-block-16 .view-header span,
+  .i18n-en #block-views-fraedsla-block-8 .view-header span {
+    margin: 0;
+  }
+
+  /** FJARFRÆÐSLA */
+  .i18n-en #block-views-fraedsla-block-30 .view-header,
+  .i18n-en #block-views-fraedsla-block-31 .view-header,
+  .i18n-en #block-views-fraedsla-block-32 .view-header
+  .i18n-en #block-views-fraedsla-block-33 .view-header
+  .i18n-en #block-views-fraedsla-block-34 .view-header,
+  .i18n-en #block-views-fraedsla-block-35 .view-header{
+    width: 106px;
+  }
+  .i18n-en #block-views-fraedsla-block-30 .view-header span,
+  .i18n-en #block-views-fraedsla-block-31 .view-header span,
+  .i18n-en #block-views-fraedsla-block-32 .view-header span
+  .i18n-en #block-views-fraedsla-block-33 .view-header span
+  .i18n-en #block-views-fraedsla-block-34 .view-header span,
+  .i18n-en #block-views-fraedsla-block-35 .view-header span{
+    margin: 0;
+  }
+
+  
+
+
