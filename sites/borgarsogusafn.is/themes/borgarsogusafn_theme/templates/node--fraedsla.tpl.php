@@ -24,7 +24,7 @@
          <?php //print $formatted_date; ?>
       </div-->
       <h1 class="title f-XXL f-2 text-dark-grey"><?php print $node->title; ?></h1>
-	  <h2 class="f-M f-2-2 subtitle"><?php print render($content['field_summary']); ?></h2>
+	    <p><?php print render($content['field_summary']); ?></p>
 	<?php print render($content); ?>
 	</div>
 

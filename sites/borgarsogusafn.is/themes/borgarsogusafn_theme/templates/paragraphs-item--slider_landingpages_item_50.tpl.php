@@ -24,14 +24,13 @@ if (!empty($result['node'])) {
 	<a href="<?php if ($content['field_link']): ?><?php print render($content['field_link']); ?><?php endif; ?>">
 		<?php if ($content['field_mynd_landing_medium']): ?>
 			<div class="image-wrapper">
-				<?php print render($content['field_mynd_landing_medium']); ?>	
-			</div>		
+				<?php print render($content['field_mynd_landing_medium']); ?>
+			</div>
 		<?php endif; ?>
 		<div class="text">
 			<div class="date">
 				<?php if ($content['field_flokkur']): ?>
 					<span class="category f-XXXS f-1-2 text-white"><?php print render($content['field_flokkur']); ?></span>
-					<span class="date-inner f-XXXS f-1-2 text-white"><?php print format_date($themesItems->created, 'custom', 'd F Y'); ?></span>
 				<?php endif; ?>
 			</div>
 			<?php if ($content['field_title']): ?>
