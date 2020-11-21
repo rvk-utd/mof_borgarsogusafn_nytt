@@ -6208,7 +6208,7 @@ ul.level3 {
   .component-example {
     display: none; } }
 
-.header-1, .header-2, .header-3, .header-4, .header-5 {
+.header-1, .header-2, .header-3, .header-4, .header-5, .header-6 {
   font-size: 11px;
   font-size: 0.6875rem;
   font-family: 'Nunito', sans-serif;;
@@ -9025,14 +9025,16 @@ footer.layout .w25 {
   .item-list .block .header-2.active,
   .item-list .block .header-3.active,
   .item-list .block .header-4.active,
-  .item-list .block .header-5.active{
+  .item-list .block .header-5.active,
+  .item-list .block .header-6.active{
     border-bottom: 1px solid #fff;
     background: transparent; }
   .item-list .block .header-1,
   .item-list .block .header-2,
   .item-list .block .header-3,
   .item-list .block .header-4,
-  .item-list .block .header-5{
+  .item-list .block .header-5,
+  .item-list .block .header-6{
     transition: all .28s ease-in-out;
     border-top: 1px solid #d7d7d6;
     border-right: 1px solid #d7d7d6;
@@ -9058,28 +9060,32 @@ footer.layout .w25 {
   .item-list .block .header-2 span,
   .item-list .block .header-3 span,
   .item-list .block .header-4 span,
-  .item-list .block .header-5 span {
+  .item-list .block .header-5 span,
+  .item-list .block .header-6 span{
     float: none;
   }
   .item-list .block .header-1 .icon,
   .item-list .block .header-2 .icon,
   .item-list .block .header-3 .icon,
   .item-list .block .header-4 .icon,
-  .item-list .block .header-5 .icon{
+  .item-list .block .header-5 .icon,
+  .item-list .block .header-6 .icon{
     display: none;
   }
   .item-list .block .header-1:hover,
   .item-list .block .header-2:hover,
   .item-list .block .header-3:hover,
   .item-list .block .header-4:hover,
-  .item-list .block .header-5:hover {
+  .item-list .block .header-5:hover,
+  .item-list .block .header-6:hover{
     opacity: 0.75;
   }
   .item-list .block .header-1.active:hover,
   .item-list .block .header-2.active:hover,
   .item-list .block .header-3.active:hover,
   .item-list .block .header-4.active:hover,
-  .item-list .block .header-5.active:hover {
+  .item-list .block .header-5.active:hover,
+  .item-list .block .header-6.active:hover{
     opacity: 1;
   }
   .item-list .block:nth-child(1) .view-content {
@@ -9088,7 +9094,8 @@ footer.layout .w25 {
   .item-list .block:nth-child(2) .view-content,
   .item-list .block:nth-child(3) .view-content,
   .item-list .block:nth-child(4) .view-content,
-  .item-list .block:nth-child(5) .view-content{
+  .item-list .block:nth-child(5) .view-content,
+  .item-list .block:nth-child(6) .view-content{
     opacity: 0;
   }
   .item-list .block:nth-child(1) .view-header {
@@ -9102,7 +9109,7 @@ footer.layout .w25 {
   #block-views-fraedsla-block-17 .view-header,
   #block-views-fraedsla-block-21 .view-header,
   #block-views-fraedsla-block-26 .view-header{
-    width: 98px;
+    width: 75px;
   }
   #block-views-fraedsla-block-1 .view-header span,
   #block-views-fraedsla-block-13 .view-header span,
@@ -9121,7 +9128,7 @@ footer.layout .w25 {
   #block-views-fraedsla-block-18 .view-header,
   #block-views-fraedsla-block-22 .view-header,
   #block-views-fraedsla-block-27 .view-header{
-    width: 116px;
+    width: 90px;
   }
   #block-views-fraedsla-block-2 .view-header span,
   #block-views-fraedsla-block-14 .view-header span,
@@ -9141,7 +9148,7 @@ footer.layout .w25 {
   #block-views-fraedsla-block-19 .view-header,
   #block-views-fraedsla-block-23 .view-header,
   #block-views-fraedsla-block-28 .view-header{
-    width: 142px;
+    width: 120px;
   }
   #block-views-fraedsla-block-3 .view-header span,
   #block-views-fraedsla-block-15 .view-header span,
@@ -9161,7 +9168,7 @@ footer.layout .w25 {
   #block-views-fraedsla-block-20 .view-header,
   #block-views-fraedsla-block-24 .view-header,
   #block-views-fraedsla-block-29 .view-header{
-    width: 92px;
+    width: 70px;
   }
   #block-views-fraedsla-block-4 .view-header span,
   #block-views-fraedsla-block-16 .view-header span,
@@ -9180,7 +9187,7 @@ footer.layout .w25 {
   #block-views-fraedsla-block-33 .view-header,
   #block-views-fraedsla-block-34 .view-header,
   #block-views-fraedsla-block-35 .view-header{
-    width: 125px;
+    width: 100px;
   }
   #block-views-fraedsla-block-30 .view-header span,
   #block-views-fraedsla-block-31 .view-header span,
@@ -9191,22 +9198,43 @@ footer.layout .w25 {
     margin: 0;
   }
 
+  /** FJARFRÆÐSLA */
+  #block-views-fraedsla-block-36 .view-header,
+  #block-views-fraedsla-block-37 .view-header,
+  #block-views-fraedsla-block-38 .view-header,
+  #block-views-fraedsla-block-39 .view-header,
+  #block-views-fraedsla-block-40 .view-header,
+  #block-views-fraedsla-block-41 .view-header{
+    width: 70px;
+  }
+  #block-views-fraedsla-block-36 .view-header span,
+  #block-views-fraedsla-block-37 .view-header span,
+  #block-views-fraedsla-block-38 .view-header span,
+  #block-views-fraedsla-block-39 .view-header span,
+  #block-views-fraedsla-block-40 .view-header span,
+  #block-views-fraedsla-block-41 .view-header span{
+    margin: 0;
+  }
+
   /* Tab Layout for Fræðsla (IS) */
   /* Mikið af stílum teknir út. Vistaðir undir removed-css.css */
   .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(1) .view-header {
     left: 0px;
   }
   .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(2) .view-header {
-    left: 108px;
+    left: 80px;
   }
   .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(3) .view-header {
-    left: 234px !important;
+    left: 175px !important;
   }
   .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(4) .view-header {
-    left: 386px !important;
+    left: 300px !important;
   }
   .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(5) .view-header {
-    left: 487px !important;
+    left: 450px !important;
+  }
+  .header-1-active.header-2-active.header-3-active.header-4-active .item-list .block:nth-child(6) .view-header {
+    left: 375px !important;
   }
 
   /** Fræðslublokkir - ENSKA */
