@@ -8334,7 +8334,7 @@ a.zoom-in {
 .item-list1 {
   background-color: #393933; }
   .item-list1 a:link p, .item-list1 a:link h2, .item-list1 a:visited p, .item-list1 a:visited h2 {
-    color: #ffffff; }
+    color: #222222; }
 
 .item-list2 p {
   margin-bottom: 30px; }
@@ -9098,9 +9098,7 @@ footer.layout .w25 {
   .item-list .block:nth-child(6) .view-content{
     opacity: 0;
   }
-  .item-list .block:nth-child(1) .view-header {
-    left: 40px;
-  }
+
   /** LEIKSKÓLI **/
   #block-views-fraedsla-block-1 .view-header,
   #block-views-fraedsla-block-13 .view-header,
@@ -9214,6 +9212,27 @@ footer.layout .w25 {
   #block-views-fraedsla-block-40 .view-header span,
   #block-views-fraedsla-block-41 .view-header span{
     margin: 0;
+  }
+
+  /* VIÐEY - Veitingar og útleiga */
+  #block-views-starfsemi-block-2 .view-header {
+    left: 20px;
+  }
+  #block-views-starfsemi-block-3 .view-header {
+    left: 130px;
+  }
+  #block-views-starfsemi-block-4 .view-header {
+    left: 250px;
+  }
+  /* VIÐEY - Afþreying */
+  #block-views-starfsemi-block-6 .view-header {
+    left: 20px;
+  }
+  #block-views-starfsemi-block-7 .view-header {
+    left: 145px;
+  }
+  #block-views-starfsemi-block-8 .view-header {
+    left: 245px;
   }
 
   /* Tab Layout for Fræðsla (IS) */
