@@ -9,12 +9,12 @@
 }
 
 .page-node-646 .item-list1 .item {
-    background-color: #F26522;
+    background-color: #fdd491;
     transition: all 0.26s ease-in-out 0s;
 }
 
 .page-node-646 .item-list1 .item:hover {
-    background-color: #FAA61A;
+    background-color: #fcc25e;
 }
 
 @media (min-width: 66.25em) {
