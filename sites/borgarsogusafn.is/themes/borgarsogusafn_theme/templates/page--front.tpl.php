@@ -27,13 +27,6 @@
          ?>
       </div>
 
-      <div class="wrapper-padding padding-top-none events-wrapper">
-         <?php
-            $block = module_invoke('hvirfill', 'block_view', 'hvirfill_sample');
-            print render($block['content']);
-         ?>
-      </div>
-
    <?php
       $block = block_load('views', 'frontpage_view-block_1');
       $output = _block_get_renderable_array(_block_render_blocks(array($block)));

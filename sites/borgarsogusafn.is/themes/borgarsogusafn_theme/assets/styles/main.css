@@ -7262,11 +7262,20 @@ html {
     float: left;
     width: 50%;
     transition: all .26s ease-in-out; }
-  .component-about.layout li:nth-child(1) .text-wrapper, .component-about.layout li:nth-child(2) .text-wrapper {
+  .component-about.layout li:nth-child(1) .text-wrapper, .component-about.layout li:nth-child(2) .text-wrapper,
+  .component-about.layout li:nth-child(5) .text-wrapper, .component-about.layout li:nth-child(6) .text-wrapper,
+  .component-about.layout li:nth-child(9) .text-wrapper, .component-about.layout li:nth-child(10) .text-wrapper,
+  .component-about.layout li:nth-child(13) .text-wrapper, .component-about.layout li:nth-child(14) .text-wrapper{
     float: right; }
-    .component-about.layout li:nth-child(1) .text-wrapper:before, .component-about.layout li:nth-child(2) .text-wrapper:before {
+  .component-about.layout li:nth-child(1) .text-wrapper:before, .component-about.layout li:nth-child(2) .text-wrapper:before,
+  .component-about.layout li:nth-child(5) .text-wrapper:before, .component-about.layout li:nth-child(6) .text-wrapper:before,
+  .component-about.layout li:nth-child(9) .text-wrapper:before, .component-about.layout li:nth-child(10) .text-wrapper:before,
+  .component-about.layout li:nth-child(13) .text-wrapper:before, .component-about.layout li:nth-child(14) .text-wrapper:before{
       transition: all .26s ease-in-out; }
-  .component-about.layout li:nth-child(1) .image-wrapper, .component-about.layout li:nth-child(2) .image-wrapper {
+  .component-about.layout li:nth-child(1) .image-wrapper, .component-about.layout li:nth-child(2) .image-wrapper,
+  .component-about.layout li:nth-child(5) .image-wrapper, .component-about.layout li:nth-child(6) .image-wrapper,
+  .component-about.layout li:nth-child(9) .image-wrapper, .component-about.layout li:nth-child(10) .image-wrapper,
+  .component-about.layout li:nth-child(13) .image-wrapper, .component-about.layout li:nth-child(14) .image-wrapper{
     float: left; }
   .component-about.layout li:nth-child(2) .text-wrapper:before {
     border-width: 9.5px 10px 9.5px 0;
@@ -7278,9 +7287,15 @@ html {
     border-color: transparent transparent transparent #d9e6ec;
     right: -10px;
     left: inherit; }
-  .component-about.layout li:nth-child(3) .text-wrapper, .component-about.layout li:nth-child(4) .text-wrapper {
+  .component-about.layout li:nth-child(3) .text-wrapper, .component-about.layout li:nth-child(4) .text-wrapper,
+  .component-about.layout li:nth-child(7) .text-wrapper, .component-about.layout li:nth-child(8) .text-wrapper,
+  .component-about.layout li:nth-child(11) .text-wrapper, .component-about.layout li:nth-child(12) .text-wrapper,
+  .component-about.layout li:nth-child(15) .text-wrapper, .component-about.layout li:nth-child(16) .text-wrapper{
     float: left; }
-  .component-about.layout li:nth-child(3) .image-wrapper, .component-about.layout li:nth-child(4) .image-wrapper {
+  .component-about.layout li:nth-child(3) .image-wrapper, .component-about.layout li:nth-child(4) .image-wrapper,
+  .component-about.layout li:nth-child(7) .image-wrapper, .component-about.layout li:nth-child(8) .image-wrapper,
+  .component-about.layout li:nth-child(11) .image-wrapper, .component-about.layout li:nth-child(12) .image-wrapper,
+  .component-about.layout li:nth-child(15) .image-wrapper, .component-about.layout li:nth-child(16) .image-wrapper{
     float: right; }
   .component-about.layout li:hover {
     background-color: #fbfaf4; }
