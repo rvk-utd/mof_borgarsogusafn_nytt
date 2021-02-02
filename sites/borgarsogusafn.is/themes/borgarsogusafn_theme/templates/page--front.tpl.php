@@ -18,14 +18,15 @@
    </div>
 
    <section class="main">
+     <!--
       <div class="wrapper-padding">
-         <?php
+         <?php /**
             $block = block_load('views', 'frontpage_view-block_2');
             $output = _block_get_renderable_array(_block_render_blocks(array($block)));
             $output2 = drupal_render($output);
-            print render($output2);
+            print render($output2);**/
          ?>
-      </div>
+      </div> -->
 
    <?php
       $block = block_load('views', 'frontpage_view-block_1');
