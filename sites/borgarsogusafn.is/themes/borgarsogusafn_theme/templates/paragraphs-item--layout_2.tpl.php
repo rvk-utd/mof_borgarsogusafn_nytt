@@ -1,11 +1,5 @@
 <div class="layout2">
 	<div class="wrapper">
-		 <div class="left">
-	      <?php
-	         print render(block_get_blocks_by_region('social_media'));
-	      ?>
-   	</div>
-
 		<?php if ($content['field_right']): ?>
 			<div class="right text-content">
 				<?php if (block_get_blocks_by_region('custom_breadcrumbs')): ?>
