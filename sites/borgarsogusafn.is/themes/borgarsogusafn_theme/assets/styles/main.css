@@ -8283,13 +8283,10 @@ a.zoom-in {
   .layout1 .wrapper, .layout2 .wrapper {
     position: relative;
     clear: both;
-    padding: 30px;
     margin: 0;
     box-shadow: none;
     overflow: hidden; }
   .layout1 .item-list1, .layout2 .item-list1 {
-    margin-right: -30px;
-    margin-left: -30px;
     overflow: hidden; }
     .layout1 .item-list1 .image-wrapper, .layout1 .item-list1 .text-wrapper, .layout1 .item-list1 .item, .layout2 .item-list1 .image-wrapper, .layout2 .item-list1 .text-wrapper, .layout2 .item-list1 .item {
       float: left;
@@ -8391,7 +8388,9 @@ a.zoom-in {
 /* Media Queries Min Width 579px */
 /*	------------------------------*/
 @media (min-width: 36.1875em) {
-  .item-list1 .item:nth-child(2) .image-wrapper {
+  .item-list1 .item:nth-child(2) .image-wrapper,
+  .item-list1 .item:nth-child(5) .image-wrapper,
+  .item-list1 .item:nth-child(6) .image-wrapper{
     float: left !important; }
   .item-list1 .item {
     float: left;
@@ -8407,57 +8406,12 @@ a.zoom-in {
         width: auto;
         max-width: none; }
     .item-list1 .item .image-wrapper, .item-list1 .item .text-wrapper {
-      min-height: 212px !important; }
-  .item-list1 + .item-list1 .image-wrapper {
-    float: right; }
-  .item-list1 + .item-list1 .item:nth-child(2) .image-wrapper {
-    float: right !important; } }
-
-/* Media Queries Min Width 768px */
-/*	------------------------------*/
-@media (min-width: 48em) {
-  .layout1 .item-list1, .layout2 .item-list1 {
-    margin-left: 0;
-    margin-right: -170px; }
-  .layout1 .wrapper, .layout2 .wrapper {
-    padding: 40px 170px 40px; }
-  .layout2 .bottom {
-    margin-right: -170px;
-    margin-left: -130px; }
-  .layout2 .item {
-    padding-right: 40px; } }
-
-
-
-/* Media Queries Min Width 900px */
-/*	------------------------------*/
-@media (min-width: 56.25em) {
-  .layout2 .bottom {
-    margin-right: -150px; }
-  .layout2 .item {
-    width: 25%;
-    padding-right: 20px; } }
-
-/* Media Queries Min Width 1024px */
-/*	------------------------------*/
-@media (min-width: 64em) {
-  .layout2 .bottom {
-    margin-right: -160px; }
-  .layout2 .item {
-    padding-right: 30px; } }
-
-/* Media Queries Min Width 1060px */
-/*	------------------------------*/
-@media (min-width: 66.25em) {
-  .layout1 .item-list1, .layout2 .item-list1 {
-    margin-right: -212px; }
-  .layout1 .wrapper, .layout2 .wrapper {
-    padding: 76px 212px 40px; }
-  .layout2 .bottom {
-    margin-left: -172px;
-    margin-right: -212px; }
-  .layout2 .item {
-    padding-right: 40px; } }
+      min-height: 220px !important; }
+  .item-list1:nth-child(2) .item .image-wrapper {
+    float: right !important; }
+  .item-list1:nth-child(4) .item .image-wrapper {
+    float: right !important; }
+}
 
 #block-locale-language {
   float: right;
