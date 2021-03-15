@@ -8302,9 +8302,17 @@ a.zoom-in {
     margin: 0; }
     .layout1 .image-wrapper img, .layout2 .image-wrapper img {
       margin: 0; }
-  .layout1 .right, .layout2 .right {
+  .layout1 .right {
     position: relative;
     margin: 100px;
+  }
+
+  .page-node-97 .layout1 .right,
+  .page-node-99 .layout1 .right,
+  .page-node-101 .layout1 .right,
+  .page-node-103 .layout1 .right,
+  .page-node-105 .layout1 .right {
+    margin: 0px !important;
   }
   .layout1 .title, .layout2 .title {
     margin: 32px 0 9px; }
