@@ -1,12 +1,5 @@
 <div class="main ">
-
-   <div class="left">
-      <?php
-         print render(block_get_blocks_by_region('social_media'));
-      ?>
-   </div>
-
-<?php 
+<?php
    hide($content['field_dagsetning']);
    hide($content['field_stadur_eda_salur']);
    hide($content['field_summary']);

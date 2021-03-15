@@ -4,12 +4,6 @@
 
 <div class="main ">
 
-   <div class="left">
-      <?php
-        //print render(block_get_blocks_by_region('social_media'));
-      ?>
-   </div>
-
 <?php
    hide($content['field_aldur']);
    hide($content['field_summary']);

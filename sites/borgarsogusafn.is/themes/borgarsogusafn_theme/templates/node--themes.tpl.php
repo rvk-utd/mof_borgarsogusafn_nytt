@@ -1,5 +1,3 @@
 <?php
 	print render($content);
-
-
-
+	
