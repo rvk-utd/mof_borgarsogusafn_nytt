@@ -10170,6 +10170,18 @@ html, body {
   margin-bottom: 5px !important;
 }
 
+.main .report-category .category {
+  background: #888888;
+  color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .main {
     padding-left: 40px;
@@ -10180,12 +10192,20 @@ html, body {
     top: 0;
     right: 30px;
   }
+
+  .main .report-category .category {
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .main .report-category {
     top: 0;
     right: 100px;
+  }
+
+  .main .report-category .category {
+    margin-right: 20px;
   }
 }
 
@@ -10210,15 +10230,6 @@ html, body {
 
 .report-category {
   display: inline-block;
-  background: #888888;
-  color: #fff;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 6px;
-  padding-left: 6px;
-  border-radius: 0px;
-  font-size: 14px;
-  font-weight: 800;
   position: absolute;
   top: 30px;
   right: 230px;
