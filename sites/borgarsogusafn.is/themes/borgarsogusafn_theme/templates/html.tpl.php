@@ -42,6 +42,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFd68xYg3xRbfrQ0YekyKo_qXxDBv71dM&libraries=places&region=is&language=<?php echo $variables['language']->language; ?>" type="text/javascript"></script>
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <?php print $scripts; ?>
+  <meta name="facebook-domain-verification" content="nx0m0rt5sxpan2uz7wwkkeol8n2np9" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
