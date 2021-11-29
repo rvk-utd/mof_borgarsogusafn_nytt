@@ -10234,3 +10234,11 @@ html, body {
   top: 30px;
   right: 230px;
 }
+
+.view-sk-rslur {
+  padding: 40px;
+}
+
+.view-sk-rslur th a {
+  display: flex;
+}
