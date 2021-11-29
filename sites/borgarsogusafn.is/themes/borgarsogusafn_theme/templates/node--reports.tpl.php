@@ -2,7 +2,13 @@
   <?php if($content['field_tegund_skyrslu']):?>
   <div class="report-category"><?=render($content['field_tegund_skyrslu']);?></div>
   <?php endif; ?>
-  <?php if($content['field_skyrsla_nr']): ?><h2 class="f-M f-2-2 subtitle">Skýrsla: <?=render($content['field_skyrsla_nr']);?></h2><?php endif; ?>
+  <?php if($content['field_skyrsla_nr']): ?>
+    <h2 class="f-M f-2-2 subtitle">Skýrsla <?=render($content['field_skyrsla_nr']);?>
+    <?php if($content['field_utgafuar']) : ?>
+      Útgáfuár <?=render($content['field_utgafuar']); ?>
+    <?php endif; ?>
+    </h2>
+  <?php endif; ?>
   <h1 class="title f-XXL f-2 text-dark-grey"><?php print $title; ?></h1>
   <?php if($content['field_efnisord']): ?>
   <div class="tags tagwords">
