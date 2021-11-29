@@ -10346,6 +10346,54 @@ html, body {
   width: 100%;
 }
 
+.view-sk-rslur .views-submit-button {
+  padding-right: 0;
+}
+
+.view-sk-rslur .view-content {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .view-sk-rslur {
+    padding: 20px;
+  }
+  .view-sk-rslur .views-exposed-widgets > div {
+    width: 33.33%;
+  }
+  .view-sk-rslur .views-submit-button input {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .view-sk-rslur .views-exposed-widgets > div {
+    width: 35%;
+  }
+  .view-sk-rslur .views-exposed-widgets > div:last-child {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .view-sk-rslur .views-exposed-widgets {
+    flex-wrap: wrap;
+  }
+  .view-sk-rslur .views-exposed-widgets > div {
+    width: 50%;
+  }
+  .view-sk-rslur .views-exposed-widgets > div:nth-child(2) {
+    padding-right: 0;
+  }
+  .view-sk-rslur .views-exposed-widgets > div:last-child {
+    width: 100%;
+  }
+  .view-sk-rslur .views-submit-button input {
+    margin-top: 0 !important;
+  }
+}
+
 
 
 
