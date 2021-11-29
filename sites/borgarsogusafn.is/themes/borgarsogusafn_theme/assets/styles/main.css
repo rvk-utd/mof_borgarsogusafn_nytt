@@ -10239,6 +10239,69 @@ html, body {
   padding: 40px;
 }
 
+.view-sk-rslur th {
+  padding: 14px 20px;
+}
+
 .view-sk-rslur th a {
   display: flex;
+  align-items: center;
+  color: #ffffff;
 }
+
+.view-sk-rslur th a.active {
+  text-decoration: underline;
+}
+
+.view-sk-rslur th {
+  color: #ffffff;
+  border-bottom: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.view-sk-rslur thead {
+  background: #00984a;
+}
+
+.view-sk-rslur thead img {
+  margin-left: 4px;
+  margin-top: -4px
+}
+
+.view-sk-rslur td.active { 
+  background-color: transparent;
+}
+
+.view-sk-rslur tbody {
+  border-top: none;
+}
+
+.view-sk-rslur td a {
+  color: #f26522;
+  font-weight: 700;
+}
+
+.view-sk-rslur td {
+  font-size: 0.875rem;
+  padding: 14px 20px;
+  line-height: 1.2;
+}
+
+.view-sk-rslur td {
+  font-size: 0.875rem;
+  padding: 14px 20px;
+  line-height: 1.2;
+}
+
+.view-sk-rslur tbody tr:nth-child(even) td {
+  border-top: 1px solid #d7d7d6;
+  border-bottom: 1px solid #d7d7d6;
+  background-color: #ededed;
+}
+
+
+
+
+
