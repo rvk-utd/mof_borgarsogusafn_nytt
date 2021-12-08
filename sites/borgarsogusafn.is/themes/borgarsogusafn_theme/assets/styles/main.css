@@ -10239,6 +10239,15 @@ html, body {
   padding: 40px;
 }
 
+.view-sk-rslur p {
+  margin-bottom: 16px;
+}
+
+.view-sk-rslur h2:first-of-type {
+  margin: 32px 0 9px;
+  font-size: 1.875rem;
+}
+
 .view-sk-rslur th {
   padding: 14px 20px;
 }
@@ -10279,7 +10288,7 @@ html, body {
 }
 
 .view-sk-rslur td a {
-  color: #f26522;
+  color: #337ab7;
   font-weight: 700;
 }
 
