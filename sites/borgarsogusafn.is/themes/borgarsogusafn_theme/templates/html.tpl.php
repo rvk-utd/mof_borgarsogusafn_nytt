@@ -57,5 +57,6 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 
+  <script async src=https://siteimproveanalytics.com/js/siteanalyze_6020043.js></script>
 </body>
 </html>
