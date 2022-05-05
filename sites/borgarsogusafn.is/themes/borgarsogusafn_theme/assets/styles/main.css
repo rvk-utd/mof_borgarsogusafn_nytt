@@ -7223,17 +7223,58 @@ html {
 /*	------------------------------*/
 /* About */
 .component-about.layout {
-  max-width: none; }
+  max-width: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .component-about.layout li {
+    flex: 100%;
+    transition: all .26s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+    .component-about.layout li a {
+      display: flex;
+      height: 100%;
+    }
+
+    .component-about.layout li:hover a {
+      text-decoration: none;
+    }
+
+    .component-about.layout .image-wrapper,
+    .component-about.layout .text-wrapper {
+      flex: 50%
+    }
+
+      .component-about.layout .image-wrapper img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+    .component-about.layout .image-wrapper {
+      display: flex;
+    }
+
+    .component-about.layout li:nth-child(4n+3) a,
+    .component-about.layout li:nth-child(4n+4) a {
+      flex-direction: row;
+    }
+
 
 /* Media Queries Min Width 435px */
 /*	------------------------------*/
 @media (min-width: 27.1875em) {
-  .component-about.layout li {
-    position: relative;
-    overflow: hidden;
-    list-style-type: none; }
+  .component-about.layout li:nth-child(2n+2) a {
+    flex-direction: row-reverse;
+  }
+
   .component-about.layout li:nth-child(even) .image-wrapper {
-    float: right; }
+    /*float: right; */
+  }
   .component-about.layout li:nth-child(even) .text-wrapper:before {
     border-width: 9.5px 0 9.5px 10px;
     border-color: transparent transparent transparent #d9e6ec;
@@ -7243,15 +7284,13 @@ html {
     border-width: 9.5px 10px 9.5px 0;
     border-color: transparent #d9e6ec transparent transparent;
     left: 0; }
-  .component-about.layout .image-wrapper, .component-about.layout .text-wrapper {
-    float: left;
-    width: 50%; }
   .component-about.layout .text-wrapper:before {
     width: 0;
     height: 0;
     border-style: solid;
     position: absolute;
-    top: 30px; } }
+    top: 30px; }
+}
 
 /* Media Queries Min Width 768px */
 /*	------------------------------*/
@@ -7259,24 +7298,15 @@ html {
 /*	------------------------------*/
 @media (min-width: 64em) {
   .component-about.layout li {
-    float: left;
-    width: 50%;
-    transition: all .26s ease-in-out; }
-  .component-about.layout li:nth-child(1) .text-wrapper, .component-about.layout li:nth-child(2) .text-wrapper,
-  .component-about.layout li:nth-child(5) .text-wrapper, .component-about.layout li:nth-child(6) .text-wrapper,
-  .component-about.layout li:nth-child(9) .text-wrapper, .component-about.layout li:nth-child(10) .text-wrapper,
-  .component-about.layout li:nth-child(13) .text-wrapper, .component-about.layout li:nth-child(14) .text-wrapper{
-    float: right; }
-  .component-about.layout li:nth-child(1) .text-wrapper:before, .component-about.layout li:nth-child(2) .text-wrapper:before,
-  .component-about.layout li:nth-child(5) .text-wrapper:before, .component-about.layout li:nth-child(6) .text-wrapper:before,
-  .component-about.layout li:nth-child(9) .text-wrapper:before, .component-about.layout li:nth-child(10) .text-wrapper:before,
-  .component-about.layout li:nth-child(13) .text-wrapper:before, .component-about.layout li:nth-child(14) .text-wrapper:before{
-      transition: all .26s ease-in-out; }
-  .component-about.layout li:nth-child(1) .image-wrapper, .component-about.layout li:nth-child(2) .image-wrapper,
-  .component-about.layout li:nth-child(5) .image-wrapper, .component-about.layout li:nth-child(6) .image-wrapper,
-  .component-about.layout li:nth-child(9) .image-wrapper, .component-about.layout li:nth-child(10) .image-wrapper,
-  .component-about.layout li:nth-child(13) .image-wrapper, .component-about.layout li:nth-child(14) .image-wrapper{
-    float: left; }
+    flex: 50%;
+ }
+  .component-about.layout li:nth-child(2n+2) a {
+    flex-direction: row;
+  }
+  .component-about.layout li:nth-child(4n+3) a,
+  .component-about.layout li:nth-child(4n+4) a {
+    flex-direction: row-reverse;
+  }
   .component-about.layout li:nth-child(2) .text-wrapper:before {
     border-width: 9.5px 10px 9.5px 0;
     border-color: transparent #d9e6ec transparent transparent;
@@ -7287,16 +7317,6 @@ html {
     border-color: transparent transparent transparent #d9e6ec;
     right: -10px;
     left: inherit; }
-  .component-about.layout li:nth-child(3) .text-wrapper, .component-about.layout li:nth-child(4) .text-wrapper,
-  .component-about.layout li:nth-child(7) .text-wrapper, .component-about.layout li:nth-child(8) .text-wrapper,
-  .component-about.layout li:nth-child(11) .text-wrapper, .component-about.layout li:nth-child(12) .text-wrapper,
-  .component-about.layout li:nth-child(15) .text-wrapper, .component-about.layout li:nth-child(16) .text-wrapper{
-    float: left; }
-  .component-about.layout li:nth-child(3) .image-wrapper, .component-about.layout li:nth-child(4) .image-wrapper,
-  .component-about.layout li:nth-child(7) .image-wrapper, .component-about.layout li:nth-child(8) .image-wrapper,
-  .component-about.layout li:nth-child(11) .image-wrapper, .component-about.layout li:nth-child(12) .image-wrapper,
-  .component-about.layout li:nth-child(15) .image-wrapper, .component-about.layout li:nth-child(16) .image-wrapper{
-    float: right; }
   .component-about.layout li:hover {
     background-color: #fbfaf4; }
   .component-about.layout li:nth-child(even):hover .text-wrapper:before {
@@ -7478,8 +7498,19 @@ html {
   .museums .component-slider .icon-shape4 {
     display: none; }
 
-.page-node-97 .layout1 .wrapper, .page-node-103 .layout1 .wrapper, .page-node-101 .layout1 .wrapper, .page-node-99 .layout1 .wrapper, .page-node-105 .layout1 .wrapper, .page-node-98 .layout1 .wrapper, .page-node-104 .layout1 .wrapper, .page-node-102 .layout1 .wrapper, .page-node-100 .layout1 .wrapper, .page-node-106 .layout1 .wrapper {
-  padding-top: 0; }
+.page-node-97 .layout1 .wrapper,
+.page-node-98 .layout1 .wrapper,
+.page-node-99 .layout1 .wrapper,
+.page-node-100 .layout1 .wrapper,
+.page-node-101 .layout1 .wrapper,
+.page-node-102 .layout1 .wrapper,
+.page-node-103 .layout1 .wrapper,
+.page-node-104 .layout1 .wrapper,
+.page-node-105 .layout1 .wrapper,
+.page-node-106 .layout1 .wrapper,
+.page-node-646 .layout1 .wrapper {
+  padding-top: 0;
+}
 
 /* Media Queries Min Width 435px */
 /*	------------------------------*/
@@ -8286,11 +8317,63 @@ a.zoom-in {
     margin: 0;
     box-shadow: none;
     overflow: hidden; }
-  .layout1 .item-list1, .layout2 .item-list1 {
-    overflow: hidden; }
-    .layout1 .item-list1 .image-wrapper, .layout1 .item-list1 .text-wrapper, .layout1 .item-list1 .item, .layout2 .item-list1 .image-wrapper, .layout2 .item-list1 .text-wrapper, .layout2 .item-list1 .item {
-      float: left;
-      width: 100%; }
+  .layout1 .item-list1,
+  .layout2 .item-list1 {
+    overflow: hidden;
+    display: flex;
+  }
+
+    .layout1 .item-list1 .item,
+    .layout2 .item-list1 .item {
+      flex: 50%;
+    }
+    .layout1 .item-list1 .image-wrapper,
+    .layout1 .item-list1 .text-wrapper,
+    .layout2 .item-list1 .image-wrapper,
+    .layout2 .item-list1 .text-wrapper {
+      flex: 50%;
+    }
+
+      .layout1 .item-list1 .item a,
+      .layout2 .item-list1 .item a {
+        display: flex;
+        height: 100%;
+      }
+
+        .layout1 .item-list1 .item a:hover,
+        .layout2 .item-list1 .item a:hover {
+          text-decoration: none;
+        }
+
+      .layout1 .image-wrapper,
+      .layout2 .image-wrapper {
+        margin: 0;
+        display: flex;
+      }
+        .layout1 .image-wrapper img,
+        .layout2 .image-wrapper img {
+          margin: 0;
+          object-fit: cover;
+          width: 100%;
+        }
+
+    .layout1 .item-list1:nth-child(even) .item a {
+      flex-direction: row-reverse;
+    }
+
+    .layout2 .item-list1:nth-child(even) .item:nth-child(even) {
+
+    }
+
+    .layout1 .item-list1 .image-wrapper,
+    .layout1 .item-list1 .text-wrapper,
+    .layout1 .item-list1 .item,
+    .layout2 .item-list1 .image-wrapper,
+    .layout2 .item-list1 .text-wrapper,
+    .layout2 .item-list1 .item {
+      /*float: left;*/
+      /*width: 100%;*/
+    }
     .layout1 .item-list1 h2, .layout2 .item-list1 h2 {
       line-height: 1.45;
       margin-bottom: 14px; }
@@ -8298,20 +8381,23 @@ a.zoom-in {
       line-height: 1.65; }
   .layout1 .text-wrapper, .layout2 .text-wrapper {
     padding: 20px; }
-  .layout1 .image-wrapper, .layout2 .image-wrapper {
-    margin: 0; }
-    .layout1 .image-wrapper img, .layout2 .image-wrapper img {
-      margin: 0; }
+
+
   .layout1 .right {
     position: relative;
     margin: 100px;
   }
 
   .page-node-97 .layout1 .right,
+  .page-node-98 .layout1 .right,
   .page-node-99 .layout1 .right,
   .page-node-101 .layout1 .right,
+  .page-node-102 .layout1 .right,
   .page-node-103 .layout1 .right,
-  .page-node-105 .layout1 .right {
+  .page-node-104 .layout1 .right,
+  .page-node-105 .layout1 .right,
+  .page-node-106 .layout1 .right,
+  .page-node-646 .layout1 .right {
     margin: 0px !important;
   }
   .layout1 .title, .layout2 .title {
@@ -8374,6 +8460,23 @@ a.zoom-in {
 .layout2 .item-list2 p {
   margin-bottom: 0; }
 
+@media (max-width: 1023px) {
+  .layout1 .item-list1,
+  .layout2 .item-list1 {
+    flex-wrap: wrap;
+  }
+  .layout1 .item-list1 .item,
+  .layout2 .item-list1 .item {
+    flex: 100%;
+  }
+  .layout1 .item-list1:nth-child(even) .item a {
+    flex-direction: row;
+  }
+  .layout1 .item-list1 .item:nth-child(even) a {
+    flex-direction: row-reverse;
+  }
+}
+
 /* Media Queries Min Width 100px Max Width 479 */
 /*  ------------------------------*/
 @media (min-width: 6.25em) and (max-width: 29.9375em) {
@@ -8383,44 +8486,45 @@ a.zoom-in {
 /* Media Queries Min Width 480px */
 /*	------------------------------*/
 @media (min-width: 30em) {
-  .layout1 .item-list1 .image-wrapper, .layout1 .item-list1 .text-wrapper, .layout2 .item-list1 .image-wrapper, .layout2 .item-list1 .text-wrapper {
-    width: 50%; }
-  .layout1 .item-list1 .item:nth-child(2) .image-wrapper, .layout2 .item-list1 .item:nth-child(2) .image-wrapper {
-    float: right; }
-  .item-list2 .item {
-    float: left;
-    width: 50%;
-    padding-right: 12px; }
-    .item-list2 .item .text-wrapper {
-      padding-left: 20px;
-      padding-right: 20px; } }
+  /*.layout1 .item-list1 .image-wrapper, .layout1 .item-list1 .text-wrapper, .layout2 .item-list1 .image-wrapper, .layout2 .item-list1 .text-wrapper {*/
+  /*  width: 50%; }*/
+  /*.layout1 .item-list1 .item:nth-child(2) .image-wrapper, .layout2 .item-list1 .item:nth-child(2) .image-wrapper {*/
+  /*  float: right; }*/
+  /*.item-list2 .item {*/
+  /*  float: left;*/
+  /*  width: 50%;*/
+  /*  padding-right: 12px; }*/
+  /*  .item-list2 .item .text-wrapper {*/
+  /*    padding-left: 20px;*/
+  /*    padding-right: 20px; } */
+}
 
 /* Media Queries Min Width 579px */
 /*	------------------------------*/
 @media (min-width: 36.1875em) {
-  .item-list1 .item:nth-child(2) .image-wrapper,
-  .item-list1 .item:nth-child(5) .image-wrapper,
-  .item-list1 .item:nth-child(6) .image-wrapper{
-    float: left !important; }
-  .item-list1 .item {
-    float: left;
-    width: 50% !important; }
-    .item-list1 .item .image-wrapper {
-      position: relative;
-      overflow: hidden; }
-      .item-list1 .item .image-wrapper img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: auto;
-        max-width: none; }
-    .item-list1 .item .image-wrapper, .item-list1 .item .text-wrapper {
-      min-height: 220px !important; }
-  .item-list1:nth-child(2) .item .image-wrapper {
-    float: right !important; }
-  .item-list1:nth-child(4) .item .image-wrapper {
-    float: right !important; }
+  /*.item-list1 .item:nth-child(2) .image-wrapper,*/
+  /*.item-list1 .item:nth-child(5) .image-wrapper,*/
+  /*.item-list1 .item:nth-child(6) .image-wrapper{*/
+  /*  !*float: left !important; }*!*/
+  /*.item-list1 .item {*/
+  /*  !*float: left;*!*/
+  /*  !*width: 50% !important; }*!*/
+  /*  .item-list1 .item .image-wrapper {*/
+  /*    !*position: relative;*!*/
+  /*    !*overflow: hidden; }*!*/
+  /*    .item-list1 .item .image-wrapper img {*/
+  /*      !*position: absolute;*!*/
+  /*      !*left: 0;*!*/
+  /*      !*top: 0;*!*/
+  /*      !*height: 100%;*!*/
+  /*      !*width: auto;*!*/
+  /*      !*max-width: none; }*!*/
+  /*  .item-list1 .item .image-wrapper, .item-list1 .item .text-wrapper {*/
+  /*    !*min-height: 220px !important; }*!*/
+  /*.item-list1:nth-child(2) .item .image-wrapper {*/
+  /*  !*float: right !important; }*!*/
+  /*.item-list1:nth-child(4) .item .image-wrapper {*/
+  /*  !*float: right !important; }*!*/
 }
 
 #block-locale-language {
@@ -10187,7 +10291,10 @@ html, body {
     padding-left: 40px;
     padding-right: 40px;
   }
-
+.front .main {
+  padding-left: 0;
+  padding-right: 0;
+}
   .main .report-category {
     top: 0;
     right: 30px;
@@ -10279,7 +10386,7 @@ html, body {
   margin-top: -4px
 }
 
-.view-sk-rslur td.active { 
+.view-sk-rslur td.active {
   background-color: transparent;
 }
 
