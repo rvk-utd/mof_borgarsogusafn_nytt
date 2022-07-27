@@ -45,7 +45,7 @@ if (class_exists('SoapClient') === TRUE) {
 
 			curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, $this->validate);
 			curl_setopt($this->ch, CURLOPT_SSL_VERIFYHOST, $this->validate);
-		
+
 			curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($this->ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($this->ch, CURLOPT_POST, true );
@@ -64,7 +64,7 @@ if (class_exists('SoapClient') === TRUE) {
 
 			return $response;
 		}
-	 
+
 		public function __getLastRequestHeaders() {
 			return implode('n', $this->__last_request_headers) . "\n";
 		}
@@ -81,17 +81,17 @@ if (class_exists('SoapClient') === TRUE) {
  */
 
 /*
- * CHAPTER II: Helper functions 
+ * CHAPTER II: Helper functions
  */
 
 /*
  * KK_DEF_MODULE_STR_SAFE:
  *
- * Converts all  icelandic (upper- and lowercase) characters in 
+ * Converts all  icelandic (upper- and lowercase) characters in
  * given string to ASCII characters; all other chars are converted to
  * underscore ("_").
  */
- 
+
 function kk_std_module_str_safe($str) {
 	$str = mb_strtolower($str);
 
@@ -159,14 +159,14 @@ function kk_std_module_kennitala_cleanup($kt) {
 	return preg_replace('/[^0-9]/', '', $kt);
 }
 
-/* 
+/*
  * KK_DEF_MODULE_KENNITALA_CHECK:
  *
  * Checks if kennitala is valid mathemathically.
  * Does not check if it actually exists.
  *
  * Borrowed from http://stefanvignir.wordpress.com/2011/05/03/ad-vinna-med-kennitolur-i-php/
- * 
+ *
  * Enhanced so to get rid of "-" in kennitals.
  */
 
@@ -209,8 +209,8 @@ function kk_std_module_kennitala_check($kt) {
 
 /*
  * KK_DEF_MODULE_CREDITCARDNUMBER_CHECK:
- * 
- * Checks if entered (presumed) creditcard number 
+ *
+ * Checks if entered (presumed) creditcard number
  * fulfills some basic characteristics of real credit card
  * numbers.
  */
@@ -232,7 +232,7 @@ function kk_std_module_creditcardnumber_check($credit_card_number) {
 /*
  * KK_DEF_MODULE_DEVELOPMENT_ENVIRONMENT_ON:
  *
- * Checks if we are running in a development environment. 
+ * Checks if we are running in a development environment.
  * Returns TRUE if so, FALSE otherwise.
  */
 
@@ -251,7 +251,7 @@ function kk_std_module_development_environment_on() {
 		($myhostname == "Einar-Valurs-MacBook-Pro.local") ||
 		($myhostname == "imacs-imac.in.is") ||
 		($myhostname == "Hilmars-iMac.local") ||
-		($myhostname == "analogue.stefan") 
+		($myhostname == "analogue.stefan")
 	) {
 		return TRUE;
 	}
@@ -259,7 +259,7 @@ function kk_std_module_development_environment_on() {
 	return FALSE;
 }
 
-/* 
+/*
  * KK_DEF_MODULE_COOKIE_NEW:
  *
  * Purpose:
@@ -274,14 +274,14 @@ function kk_std_module_cookie_new() {
 		$db_rows = db_query("SELECT cookie_hash_id FROM kk_std_module_cookie_ids WHERE cookie_hash_id = :cookie_hash_id", array(":cookie_hash_id" => $cookie_hash_id));
 	} while ($db_rows->rowCount() > 0);
 
-       
-	/* Register the new cookie into DB */ 
+
+	/* Register the new cookie into DB */
 	db_query("INSERT INTO kk_std_module_cookie_ids (cookie_hash_id, timestamp_updated) VALUES (:cookie_hash_id, :timestamp_updated)", array(":cookie_hash_id" => $cookie_hash_id, ":timestamp_updated" => time()));
 
 	/* Assign the cookie */
 	user_cookie_save(array(kk_std_module_cookie_field_id => $cookie_hash_id));
 
-	$_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id} = $cookie_hash_id;
+	$_COOKIE["Drupal_visitor_" . kk_std_module_cookie_field_id] = $cookie_hash_id;
 }
 
 /*
@@ -293,9 +293,9 @@ function kk_std_module_cookie_new() {
 
 function kk_std_module_cookie_check_exists() {
 	/* Check if any cookie is given */
-	if (isset($_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id})) {
+	if (isset($_COOKIE["Drupal_visitor_" . kk_std_module_cookie_field_id])) {
 		/* Check if the cookie exists in the database */
-		$rows = db_query("SELECT cookie_hash_id FROM kk_std_module_cookie_ids WHERE  cookie_hash_id = :cookie_hash_id", array(":cookie_hash_id" => $_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id}));
+		$rows = db_query("SELECT cookie_hash_id FROM kk_std_module_cookie_ids WHERE  cookie_hash_id = :cookie_hash_id", array(":cookie_hash_id" => $_COOKIE["Drupal_visitor_" . kk_std_module_cookie_field_id]));
 
 		foreach ($rows as $row) {
 			/* Yep. It exists, return TRUE */
@@ -303,7 +303,7 @@ function kk_std_module_cookie_check_exists() {
 		}
 	}
 
-	/* 
+	/*
 	 * Coookie is not given OR it does not exist in database.
 	 * A new one must be assigned.
 	 */
@@ -315,18 +315,18 @@ function kk_std_module_cookie_check_exists() {
  * KK_DEF_MODULE_COOKIE_GET_HASH_ID:
  *
  * Purpose:
- *	Get ID of the cookie 
+ *	Get ID of the cookie
  */
- 
+
 function kk_std_module_cookie_get_hash_id() {
-	return $_COOKIE{"Drupal_visitor_" . kk_std_module_cookie_field_id};
+	return $_COOKIE["Drupal_visitor_" . kk_std_module_cookie_field_id];
 }
 
 /*
  * KK_DEF_MODULE_VHOSTS_REGISTER_HOSTNAME:
  *
- * Register vhost user is visiting in our 
- * cache of virtual hosts. 
+ * Register vhost user is visiting in our
+ * cache of virtual hosts.
  */
 
 function kk_std_module_vhosts_register_hostname() {
@@ -374,7 +374,7 @@ function kk_std_module_vhosts_registry_get() {
 	$kk_std_module_vhosts_registry = array();
 
 	/* Get current registry of vhosts */
-	if (($kk_std_module_vhosts_registry = cache_get('kk_std_module_vhosts_registry', 'cache')) !== FALSE) { 
+	if (($kk_std_module_vhosts_registry = cache_get('kk_std_module_vhosts_registry', 'cache')) !== FALSE) {
 		$kk_std_module_vhosts_registry = $kk_std_module_vhosts_registry->data;
 	}
 
@@ -384,14 +384,14 @@ function kk_std_module_vhosts_registry_get() {
 
 /*
  ***************************************************
- * CHAPTER I ENDS 
+ * CHAPTER I ENDS
  */
 
 /*
  *
  ***************************************************
- * CHAPTER III: 
- * 
+ * CHAPTER III:
+ *
  * Enforce HTTPS where needed.
  */
 
@@ -402,11 +402,11 @@ function kk_std_module_node_view($node, $view_mode, $langcode) {
 	kk_std_module_vhosts_register_hostname();
 
 	/*
-	 * If user is accessing webform (full-view), not via 
+	 * If user is accessing webform (full-view), not via
 	 * HTTPS, and not running on K&K's development machines,
 	 * redirect to HTTPS version of the form.
 	 */
-		
+
         if (($node->type == 'webform') && ($view_mode == 'full') && (isset($_SERVER['HTTPS']) === FALSE)) {
 		kk_std_module_https_enforce();
 	}
@@ -461,13 +461,13 @@ function kk_std_module_cron_tasks() {
 
 	/* Do this once every 24-hours */
 	if (date("H") == 13) {
-		/* 
+		/*
 		 * Configure update manager.
 		 */
 
 		/* Check daily */
 		variable_set('update_check_frequency', "1");
-	
+
 		/* Do not check disabled modules and themes. */
 		variable_set('update_check_disabled', 0);
 
@@ -487,15 +487,15 @@ function kk_std_module_cron_tasks() {
 			variable_set('update_notify_emails', array('null@vm8.virtual.is'));
 		}
 
-		/* 
-		 * If not running in development environment, 
-		 * turn on cache for this site, if accidentally turned off 
+		/*
+		 * If not running in development environment,
+		 * turn on cache for this site, if accidentally turned off
 		 */
 
 		if (kk_std_module_development_environment_on() === FALSE) {
 			if ((variable_get('cache', FALSE)) != TRUE) {
 				variable_set('cache', TRUE);
-		
+
 				$drupal_flush_all_caches = TRUE;
 			}
 
@@ -506,18 +506,18 @@ function kk_std_module_cron_tasks() {
 				if (variable_get('preprocess_css', 0) == 0) {
 					variable_set('preprocess_css', TRUE);
 					drupal_clear_css_cache();
-	
+
 					$drupal_flush_all_caches = TRUE;
 				}
-		
+
 				if (variable_get('preprocess_js', 0) == 0) {
 					variable_set('preprocess_js', TRUE);
 					drupal_clear_js_cache();
-	
+
 					$drupal_flush_all_caches = TRUE;
 				}
 			}
-	
+
 			if ($drupal_flush_all_caches === TRUE) {
 				drupal_flush_all_caches();
 			}
