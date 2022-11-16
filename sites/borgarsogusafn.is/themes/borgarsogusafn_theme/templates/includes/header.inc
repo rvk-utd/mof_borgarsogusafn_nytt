@@ -20,7 +20,7 @@ global $language;
       <nav class="component-nav-main-top">
          <ul class="nav nav-tabs">
             <li><a href="/arbaejarsafn">Árbæjarsafn</a></li>
-            <li><a href="/landnamssyningin">Landnámssýningin</a></li>
+            <li><a href="/landnamssyningin">AÐALSTRÆTI/a></li>
             <li><a href="/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
          <li><a href="/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
             <li><a href="/videy">Viðey</a></li>
@@ -31,7 +31,7 @@ global $language;
       <nav class="component-nav-main-top">
          <ul class="nav nav-tabs">
             <li><a href="/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
-            <li><a href="/the-settlement-exhibition">The Settlement Exhibition</a></li>
+            <li><a href="/the-settlement-exhibition">AÐALSTRÆTI</a></li>
             <li><a href="/reykjavik-museum-of-photography">Museum of Photography</a></li>
             <li><a href="/reykjavik-maritime-museum">Maritime Museum</a></li>
 
@@ -85,7 +85,7 @@ global $language;
       <?php if ($language->language == 'is'): ?>
          <ul class="subpages-mobile-menu">
             <li><a href="/arbaejarsafn">Árbæjarsafn</a></li>
-            <li><a href="/landnamssyningin">Landnámssýningin</a></li>
+            <li><a href="/landnamssyningin">AÐALSTRÆTI</a></li>
             <li><a href="/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
             <li><a href="/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
             <li><a href="/videy">Viðey</a></li>
@@ -94,7 +94,7 @@ global $language;
       <?php if ($language->language == 'en'): ?>
          <ul class="subpages-mobile-menu">
             <li><a href="/arbaer-open-air-museum">Árbær Open Air Museum</a></li>
-            <li><a href="/the-settlement-exhibition">The Settlement Exhibition</a></li>
+            <li><a href="/the-settlement-exhibition">AÐALSTRÆTI</a></li>
             <li><a href="/reykjavik-maritime-museum">Reykjavík Maritime Museum</a></li>
             <li><a href="/reykjavik-museum-of-photography">Reykjavík Museum Of Photography</a></li>
             <li><a href="/videy-island">Viðey Island</a></li>
@@ -105,7 +105,7 @@ global $language;
          <li><a href="/is/arbaejarsafn">Árbæjarsafn</a></li>
          <li><a href="/is/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
          <li><a href="/is/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
-         <li><a href="/is/landnamssyningin">Landnámssýningin</a></li>
+         <li><a href="/is/landnamssyningin">AÐALSTRÆTI</a></li>
          <li><a href="/is/videy">Viðey</a></li>
          </ul>-->
       </div>
