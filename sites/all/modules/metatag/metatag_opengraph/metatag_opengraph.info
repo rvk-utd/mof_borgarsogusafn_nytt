@@ -7,8 +7,8 @@ dependencies[] = metatag:metatag
 ; Tests.
 files[] = tests/MetatagOpenGraphTagsTest.test
 
-; Information added by Drupal.org packaging script on 2022-07-26
-version = "7.x-1.29"
+; Information added by Drupal.org packaging script on 2022-07-27
+version = "7.x-1.30"
 core = "7.x"
 project = "metatag"
-datestamp = "1658848674"
+datestamp = "1658935898"
