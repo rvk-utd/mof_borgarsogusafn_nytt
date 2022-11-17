@@ -41,7 +41,7 @@
         },
         en: {
             'árbæjarsafn': 'árbær open museum',
-            'landnámssýningin': 'the settlement exhibition',
+            'AÐALSTRÆTI': 'AÐALSTRÆTI',
             'sjóminjasafnið í reykjavík': 'maritime museum',
             'ljósmyndasafn reykjavíkur': 'museum of photography',
             'viðey': 'videy island'
@@ -73,14 +73,14 @@
 
     HVIRFILL.labels = {
         'árbæjarsafn': 'green',
-        'landnámssýningin': 'red',
+        'AÐALSTRÆTI': 'red',
         'sjóminjasafnið í reykjavík': 'blue',
         'ljósmyndasafn reykjavíkur': 'yellow',
         'viðey': 'turkish-blue'
     }
 
     var Helper = (function() {
-        
+
         function Helper(v8y, dateT10n, textLength) {
             this.v8y = v8y;
             this.dateT10n = dateT10n;
@@ -95,7 +95,7 @@
                 return this.capitalize(text);
             return this.capitalize(translated);
         }
-        
+
         Helper.prototype.capitalize = function(str) {
             return str.substr(0, 1).toUpperCase() + str.substr(1);
         }
@@ -179,7 +179,7 @@
             var popupParams = 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600';
             window.open(shareUrl, '', popupParams);
         }
-        
+
         return Helper;
 
     })();

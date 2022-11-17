@@ -32,14 +32,14 @@ DATE_TRANSLATION = {
         ],
         month: [
             'janúar',
-            'febrúar', 
+            'febrúar',
             'mars',
             'apríl',
             'maí',
             'júní',
             'júlí',
             'ágúst',
-            'september', 
+            'september',
             'október',
             'nóvember',
             'desember'
@@ -57,14 +57,14 @@ DATE_TRANSLATION = {
         ],
         month: [
             'january',
-            'february', 
+            'february',
             'march',
             'april',
             'may',
             'june',
             'july',
             'august',
-            'september', 
+            'september',
             'october',
             'november',
             'december'
@@ -77,7 +77,7 @@ DATE_TRANSLATION = {
 TEXT_LENGTH = 150;
 
 LABELS = {
-    is: ['árbæjarsafn', 'landnámssýningin', 'sjómynjasafnið', 'ljósmyndasafn', 'viðey'],
+    is: ['árbæjarsafn', 'AÐALSTRÆTI', 'sjómynjasafnið', 'ljósmyndasafn', 'viðey'],
     en: ['']
 }
 
