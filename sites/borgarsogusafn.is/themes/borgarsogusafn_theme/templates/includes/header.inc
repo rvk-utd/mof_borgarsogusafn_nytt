@@ -20,7 +20,7 @@ global $language;
       <nav class="component-nav-main-top">
          <ul class="nav nav-tabs">
             <li><a href="/arbaejarsafn">Árbæjarsafn</a></li>
-            <li><a href="/landnamssyningin">AÐALSTRÆTI/a></li>
+            <li><a href="/landnamssyningin">AÐALSTRÆTI</a></li>
             <li><a href="/ljosmyndasafn-reykjavikur">Ljósmyndasafn Reykjavíkur</a></li>
          <li><a href="/sjominjasafnid-i-reykjavik">Sjóminjasafnið í Reykjavík</a></li>
             <li><a href="/videy">Viðey</a></li>
