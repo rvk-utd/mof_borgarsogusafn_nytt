@@ -37,11 +37,12 @@
             'all events': 'Allir viðburðir',
             'single events': 'stakir viðburðir',
             'reoccurring events': 'endurteknir viðburðir',
-            'exhibitions': 'sýningar'
+            'exhibitions': 'sýningar',
+            'landnámssýningin': 'aðalstræti'
         },
         en: {
             'árbæjarsafn': 'árbær open museum',
-            'AÐALSTRÆTI': 'AÐALSTRÆTI',
+            'landnámssýningin': 'the settlement exhibition',
             'sjóminjasafnið í reykjavík': 'maritime museum',
             'ljósmyndasafn reykjavíkur': 'museum of photography',
             'viðey': 'videy island'
@@ -73,7 +74,7 @@
 
     HVIRFILL.labels = {
         'árbæjarsafn': 'green',
-        'AÐALSTRÆTI': 'red',
+        'landnámssýningin': 'red',
         'sjóminjasafnið í reykjavík': 'blue',
         'ljósmyndasafn reykjavíkur': 'yellow',
         'viðey': 'turkish-blue'
