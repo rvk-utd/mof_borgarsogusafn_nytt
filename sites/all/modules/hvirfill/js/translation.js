@@ -77,7 +77,7 @@ DATE_TRANSLATION = {
 TEXT_LENGTH = 150;
 
 LABELS = {
-    is: ['árbæjarsafn', 'AÐALSTRÆTI', 'sjómynjasafnið', 'ljósmyndasafn', 'viðey'],
+    is: ['árbæjarsafn', 'aðalstræti', 'sjómynjasafnið', 'ljósmyndasafn', 'viðey'],
     en: ['']
 }
 
