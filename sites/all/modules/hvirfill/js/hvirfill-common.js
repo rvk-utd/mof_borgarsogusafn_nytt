@@ -42,7 +42,7 @@
         },
         en: {
             'árbæjarsafn': 'árbær open museum',
-            'landnámssýningin': 'the settlement exhibition',
+            'landnámssýningin': 'aðalstræti',
             'sjóminjasafnið í reykjavík': 'maritime museum',
             'ljósmyndasafn reykjavíkur': 'museum of photography',
             'viðey': 'videy island'
