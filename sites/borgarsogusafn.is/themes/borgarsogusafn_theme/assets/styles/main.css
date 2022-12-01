@@ -5188,8 +5188,15 @@ sub {
 .icon-kr:before {
   content: "\E00B"; }
 
-.icon-landnamssyning:before {
-  content: "\E00C"; }
+.icon-landnamssyning {
+  background-image: url(images/ADAL.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display:block;
+  color:white;
+  width:200px;
+  height:40px;
+}
 
 .icon-left-arrow:before {
   content: "\E00D"; }
