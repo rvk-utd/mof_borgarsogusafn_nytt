@@ -31,6 +31,16 @@
   </div>-->
 
 <!-- container-fluid -->
+  <div class="basic-page">
+    <div class="text-content">
+      <div class="texts-and-headline">
+        <h1 class="title f-XXL f-2 text-dark-grey">Viðburðir</h1>
+        <h2 class="subtitle f-M f-2-2 text-dark-grey"></h2>
+      </div>
+      <div class="paragraph-items">
+      </div>
+    </div>
+  </div>
 
   <section id="events-container">
     <div class="hvirfill-wrapper clearfix" data-bind="foreach: events, visible: events().length" style="display: none">

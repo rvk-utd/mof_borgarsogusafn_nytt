@@ -228,7 +228,7 @@
     this.getEventsRequest = function () {
       $.ajax({
         type: "GET",
-        url: "https://reykjavik.is/api-proxy/hvirfill-api?_api_proxy_uri=find%3Fsort%3Dstart%26offset%3D0%26limit%3D1000%26range%3D2023-02-24%2C2023-02-26%26any%3Dborgarsogusafn.is",
+        url: "https://reykjavik.is/api-proxy/hvirfill-api?_api_proxy_uri=find%3Fsort%3Dstart%26offset%3D0%26limit%3D1000%26range%3D2023-02-25%2C2023-02-26%26any%3Dborgarsogusafn.is",
         dataType: 'json',
         crossDomain: true,
         accepts: {
@@ -241,6 +241,7 @@
 
     this.setEvents = function (response, status) {
       if (status === "success") {
+        response.shift();
         var modifyDatesVar = modifyDates(response);
         var separator = addSeperators(modifyDatesVar);
         console.log(separator);
