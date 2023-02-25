@@ -2,7 +2,8 @@
 
 class EventsApi {
 
-    public static $event_server = 'https://hvirfill.reykjavik.is';
+//    public static $event_server = 'https://hvirfill.reykjavik.is';
+    public static $event_server = 'https://reykjavik.is/api-proxy/hvirfill-api?_api_proxy_uri=';
     protected $api_key;
 
     public $error;

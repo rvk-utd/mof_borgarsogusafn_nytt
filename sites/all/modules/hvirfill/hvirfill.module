@@ -170,7 +170,8 @@
         if (!hvirfill_is_event_id())
             return;
 
-        $server = 'https://hvirfill.reykjavik.is';
+//        $server = 'https://hvirfill.reykjavik.is';
+        $server = 'https://reykjavik.is/api-proxy/hvirfill-api?_api_proxy_uri=';
         $event_url = $server . '/get?_id=' . $_GET['event'];
         $data = file_get_contents($event_url);
         if ($data == false) {

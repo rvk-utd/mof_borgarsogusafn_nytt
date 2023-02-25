@@ -136,7 +136,8 @@
         var isReady = false;
         var baseUrl = window.location.href.split('?')[0];
 
-        var server = 'https://hvirfill.reykjavik.is';
+        // var server = 'https://hvirfill.reykjavik.is';
+        var server = 'https://reykjavik.is/api-proxy/hvirfill-api?_api_proxy_uri=';
         this.server = server;
         var map, marker;
         var mobileWidth = 767;

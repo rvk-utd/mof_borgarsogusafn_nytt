@@ -6,7 +6,7 @@
 
 <!-- Navigation -->
 
-  <div id="search-container">
+  <!--<div id="search-container">
     <div class="hvirfill-controls clearfix">
 
       <div class="search-box">
@@ -28,7 +28,7 @@
       </div>
 
     </div>
-  </div>
+  </div>-->
 
 <!-- container-fluid -->
 
@@ -48,13 +48,13 @@
       </div>
       <div data-bind="ifnot: $data.seperator">
         <div class="hvirfill-item hvirfill-event" data-bind="click: $parent.showModal">
-          <div class="hvirfill-image">
-            <img class="img-responsive" data-bind="eventThumb: $data"/>
-            <span style="display: none;" data-bind="label: $data.language.is.tags"></span>
+          <div class="hvirfill-image" data-bind="eventThumb: $data">
+<!--            <img class="img-responsive" data-bind="eventThumb: $data"/>-->
+            <span style="display: none;" data-bind="label: $data.tags"></span>
           </div>
           <div class="hvirfill-info">
             <p data-bind="timeRange: $data"></p>
-            <h2 data-bind="clip: $data.language[$root.lang].title"></h2>
+            <h2 data-bind="clip: $data.language['is'].title"></h2>
           </div>
         </div>
       </div>
@@ -79,16 +79,16 @@
               </a>
             </span>
 
-          <?php if ($is_admin) : ?>
-            <span class="pull-left">
-              <a class="pointer">
-                <span class="fa-stack fa-2x" data-bind="click: adminHide">
-                  <i class="fa fa-stop fa-stack-2x"></i>
-                  <i class="fa fa-trash-o fa-inverse"></i>
-                </span>
-              </a>
-            </span>
-          <?php endif; ?>
+<!--          --><?php //if ($is_admin) : ?>
+<!--            <span class="pull-left">-->
+<!--              <a class="pointer">-->
+<!--                <span class="fa-stack fa-2x" data-bind="click: adminHide">-->
+<!--                  <i class="fa fa-stop fa-stack-2x"></i>-->
+<!--                  <i class="fa fa-trash-o fa-inverse"></i>-->
+<!--                </span>-->
+<!--              </a>-->
+<!--            </span>-->
+<!--          --><?php //endif; ?>
 
             <span class="pull-right">
               <a class="pointer" data-bind="click: toggleMap">
@@ -126,10 +126,10 @@
         <div class="block first-block">
           <div class="event-image event-part">
             <img class="img-responsive" data-bind="attr: {
-                src: server + modalData().image.large,
-                alt: modalData().language[$root.lang].title}"/>
+                src: server + modalData().event_image,
+                alt: modalData().language['is'].title}"/>
             <span class="text-dark-grey f-XXXS f-1-3 text-white" style="display: none;"
-                data-bind="modalLabel: modalData().language.is.tags"></span>
+                data-bind="modalLabel: modalData().tags"></span>
           </div>
 
           <div class="event-info event-part">
@@ -142,7 +142,7 @@
             <h5>
               <span class="label" data-bind="t10n: 'location'"></span>
               <span class="label">: </span>
-              <span data-bind="text: modalData().language[$root.lang].place"></span>
+              <span data-bind="text: modalData().language['is'].place"></span>
             </h5>
             <h5>
               <span class="label" data-bind="t10n: 'address'"></span>
@@ -154,15 +154,15 @@
 
         <div class="block second-block">
           <div class="event-title event-part">
-            <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
+            <h2 data-bind="text: modalData().language['is'].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language[$root.lang].text"></p>
+            <p data-bind="text: modalData().language['is'].text"></p>
           </div>
         </div>
 
         <div class="block third-block">
-        <?php if ($settings->is_datepicker) : ?>
+        <?php /*if ($settings->is_datepicker) : */?><!--
           <div class="block cal-block event-part">
             <h4 data-bind="monthName: new Date()"></h4>
             <table class="cal">
@@ -181,7 +181,7 @@
               </tbody>
             </table>
           </div>
-        <?php endif; ?>
+        --><?php /*endif; */?>
 
           <div class="block info-block event-links event-part">
             <h4 data-bind="t10n: 'event media'"></h4>
@@ -201,10 +201,10 @@
 
         <div class="block fourth-block">
           <div class="event-title event-part">
-            <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
+            <h2 data-bind="text: modalData().language['is'].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language[$root.lang].text"></p>
+            <p data-bind="text: modalData().language['is'].text"></p>
           </div>
         </div>
       </div>

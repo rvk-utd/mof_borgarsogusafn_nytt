@@ -17,7 +17,7 @@
         return value != null && typeof value === 'object';
     }
 
-    var foreach = function(arg, func) {    
+    var foreach = function(arg, func) {
         if (!isArray(arg) && !isObject(arg))
             var arg = [arg];
         if (isArray(arg)) {
@@ -92,7 +92,7 @@
     };
 
     var Action = (function () {
-        
+
         function Action(inline) {
             this.id = inline.$nextId();
             this.inline = inline;
@@ -102,7 +102,7 @@
         Action.prototype.onSuccess = function(data) {
             this.future.resolve(data);
         }
-        
+
         Action.prototype.onError = function (err) {
             this.future.reject(err);
         }
@@ -110,7 +110,7 @@
         Action.prototype.run = function() {
             this.onSuccess('done');
         }
-        
+
         return Action;
 
     })();
@@ -155,7 +155,7 @@
                 var condition = this.arg.isSuccess;
             else
                 var condition = unwrapped ? true : false;
-            
+
             if (this.method === 'ifnot')
                 condition = !condition;
 
@@ -218,7 +218,7 @@
 
 
     var Sleep = (function (_super) {
-        
+
         __extends(Sleep, _super);
 
         function Sleep(inline, time) {
@@ -236,7 +236,7 @@
 
 
     var Request = (function (_super) {
-        
+
         __extends(Request, _super);
 
         function Request(inline, type, url, params, config) {
@@ -280,7 +280,7 @@
                 this.payload = JSON.stringify(unwrapped);
 
             var xhr = new XMLHttpRequest();
-            
+
             xhr.onreadystatechange = function() {
                 if (xhr.readyState !==  4)
                     return;
@@ -297,7 +297,7 @@
                 xhr.ontimeout = this.onError.bind(this, 'timeout');
                 xhr.timeout = this.config.timeout;
             }
-            
+
             for (var key in this.config.headers) {
                 xhr.setRequestHeader(key, this.config.headers[key]);
             }
@@ -306,7 +306,7 @@
                 xhr.setRequestHeader('Content-Type', 'text/json');
             if (this.type === 'POST')
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            
+
             xhr.send(this.payload);
         }
 
@@ -316,7 +316,7 @@
 
 
     var Jsonp = (function (_super) {
-        
+
         __extends(Jsonp, _super);
 
         var callbackCounter = 0;
@@ -341,7 +341,7 @@
                 this.url = parts[0];
                 unwrapped = queryStringToObject(parts[1], unwrapped);
             }
-            
+
             var isCallback = false;
             for (var key in unwrapped) {
                 if (unwrapped[key] === 'JSON_CALLBACK') {
@@ -359,7 +359,7 @@
             inline_callbacks[callbackId] = function(data) {
                 inline_callbacks[callbackId].data = data;
             }
-            
+
             var script = document.createElement('script');
             script.src = this.url + '?' + toQueryString(unwrapped);
             script.type = 'text/javascript';
@@ -386,7 +386,7 @@
 
 
     var Upload = (function (_super) {
-        
+
         __extends(Upload, _super);
 
         var callbackCounter = 0;
@@ -408,7 +408,7 @@
         Upload.prototype.run = function()  {
             var self = this;
             var xhr = new XMLHttpRequest();
-        
+
             var unwrapped = this.inline.unwrap(this.params);
             objectMerge(this.headers, unwrapped);
 
@@ -417,7 +417,7 @@
                     self.progress.call(window, (e.loaded / e.total * 100).toFixed());
                 }, false);
             }
-        
+
             xhr.onreadystatechange = function(e) {
                 if (xhr.readyState !== 4)
                     return;
@@ -453,7 +453,7 @@
             this.actions = [];
             this.futures = [];
             this.result = futures
-            
+
             if (isArray(futures)) {
                 this.futures = futures;
             } else {
@@ -499,7 +499,7 @@
 
 
     var Future = (function() {
-            
+
         function Future(id, inline) {
             this.id = id;
             this.inline = inline;
@@ -646,7 +646,7 @@
     })();
 
     window.Inline = (function() {
-        
+
         function Inline(config) {
             this.$chain = [];
             this.$subChain = [];
@@ -660,7 +660,7 @@
             if (isObject(config))
                 objectMerge(this.config, config);
         }
-     
+
         Inline.prototype.config = {
             debug: false,
             autoStart: true
@@ -766,7 +766,7 @@
                 else if (this.$subChain.indexOf(action) !== -1)
                     this.$subChain.splice(this.$subChain.indexOf(action), 1);
             }
-            return action;      
+            return action;
         }
 
         // test methods
@@ -865,7 +865,7 @@
 
         Inline.prototype.skip = function() {
             throw 'skip';
-        }   
+        }
 
         Inline.prototype.instanceOf = function(config) {
             var config = config || this.config;
@@ -928,7 +928,7 @@
 
         Inline.prototype.map = function(collection, func) {
             return this.registerAction(new Iteration(this, 'map', collection, func));
-        } 
+        }
 
         Inline.prototype.filter = function(collection, func) {
             return this.registerAction(new Iteration(this, 'filter', collection, func));
@@ -963,7 +963,7 @@
         // jsonp methods for class Jsonp
 
         Inline.prototype.jsonp = function(url, params, noCache) {
-            return this.registerAction(new Jsonp(this, url, params, noCache));
+          return this.registerAction(new Jsonp(this, url, params, noCache));
         }
 
         // jsonp methods for class Jsonp
