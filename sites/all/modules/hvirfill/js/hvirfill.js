@@ -244,7 +244,6 @@
         response.shift();
         var modifyDatesVar = modifyDates(response);
         var separator = addSeperators(modifyDatesVar);
-        console.log(separator);
         events = separator;
         self.events(events);
         loadMap();
