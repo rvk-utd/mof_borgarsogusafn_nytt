@@ -4,14 +4,14 @@
 
 <div>
 
-<!-- Navigation -->
+  <!-- Navigation -->
 
-  <!--<div id="search-container">
+  <div id="search-container">
     <div class="hvirfill-controls clearfix">
 
       <div class="search-box">
         <input placeholder= "Leit" class="hvirfill-input"
-            data-bind="event: {keyup: autocomplete}, value: searchString, valueUpdate: 'afterkeydown'"/>
+               data-bind="event: {keyup: autocomplete}, value: searchString, valueUpdate: 'afterkeydown'"/>
       </div>
 
       <div class="date-box">
@@ -28,19 +28,9 @@
       </div>
 
     </div>
-  </div>-->
-
-<!-- container-fluid -->
-  <div class="basic-page">
-    <div class="text-content">
-      <div class="texts-and-headline">
-        <h1 class="title f-XXL f-2 text-dark-grey">Viðburðir</h1>
-        <h2 class="subtitle f-M f-2-2 text-dark-grey"></h2>
-      </div>
-      <div class="paragraph-items">
-      </div>
-    </div>
   </div>
+
+  <!-- container-fluid -->
 
   <section id="events-container">
     <div class="hvirfill-wrapper clearfix" data-bind="foreach: events, visible: events().length" style="display: none">
@@ -58,13 +48,13 @@
       </div>
       <div data-bind="ifnot: $data.seperator">
         <div class="hvirfill-item hvirfill-event" data-bind="click: $parent.showModal">
-          <div class="hvirfill-image" data-bind="eventThumb: $data">
-<!--            <img class="img-responsive" data-bind="eventThumb: $data"/>-->
-            <span style="display: none;" data-bind="label: $data.tags"></span>
+          <div class="hvirfill-image">
+            <img class="img-responsive" data-bind="eventThumb: $data"/>
+            <span style="display: none;" data-bind="label: $data.language.is.tags"></span>
           </div>
           <div class="hvirfill-info">
             <p data-bind="timeRange: $data"></p>
-            <h2 data-bind="clip: $data.language['is'].title"></h2>
+            <h2 data-bind="clip: $data.language[$root.lang].title"></h2>
           </div>
         </div>
       </div>
@@ -89,16 +79,16 @@
               </a>
             </span>
 
-<!--          --><?php //if ($is_admin) : ?>
-<!--            <span class="pull-left">-->
-<!--              <a class="pointer">-->
-<!--                <span class="fa-stack fa-2x" data-bind="click: adminHide">-->
-<!--                  <i class="fa fa-stop fa-stack-2x"></i>-->
-<!--                  <i class="fa fa-trash-o fa-inverse"></i>-->
-<!--                </span>-->
-<!--              </a>-->
-<!--            </span>-->
-<!--          --><?php //endif; ?>
+            <?php if ($is_admin) : ?>
+              <span class="pull-left">
+              <a class="pointer">
+                <span class="fa-stack fa-2x" data-bind="click: adminHide">
+                  <i class="fa fa-stop fa-stack-2x"></i>
+                  <i class="fa fa-trash-o fa-inverse"></i>
+                </span>
+              </a>
+            </span>
+            <?php endif; ?>
 
             <span class="pull-right">
               <a class="pointer" data-bind="click: toggleMap">
@@ -136,10 +126,10 @@
         <div class="block first-block">
           <div class="event-image event-part">
             <img class="img-responsive" data-bind="attr: {
-                src: server + modalData().event_image,
-                alt: modalData().language['is'].title}"/>
+                src: server + modalData().image.large,
+                alt: modalData().language[$root.lang].title}"/>
             <span class="text-dark-grey f-XXXS f-1-3 text-white" style="display: none;"
-                data-bind="modalLabel: modalData().tags"></span>
+                  data-bind="modalLabel: modalData().language.is.tags"></span>
           </div>
 
           <div class="event-info event-part">
@@ -152,7 +142,7 @@
             <h5>
               <span class="label" data-bind="t10n: 'location'"></span>
               <span class="label">: </span>
-              <span data-bind="text: modalData().language['is'].place"></span>
+              <span data-bind="text: modalData().language[$root.lang].place"></span>
             </h5>
             <h5>
               <span class="label" data-bind="t10n: 'address'"></span>
@@ -164,19 +154,19 @@
 
         <div class="block second-block">
           <div class="event-title event-part">
-            <h2 data-bind="text: modalData().language['is'].title"></h2>
+            <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language['is'].text"></p>
+            <p data-bind="text: modalData().language[$root.lang].text"></p>
           </div>
         </div>
 
         <div class="block third-block">
-        <?php /*if ($settings->is_datepicker) : */?><!--
-          <div class="block cal-block event-part">
-            <h4 data-bind="monthName: new Date()"></h4>
-            <table class="cal">
-              <tbody data-bind="foreach: modalCal">
+          <?php if ($settings->is_datepicker) : ?>
+            <div class="block cal-block event-part">
+              <h4 data-bind="monthName: new Date()"></h4>
+              <table class="cal">
+                <tbody data-bind="foreach: modalCal">
                 <tr data-bind="foreach: $data">
                   <td data-bind="
                       click: $root.calClick,
@@ -188,10 +178,10 @@
                       }">
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        --><?php /*endif; */?>
+                </tbody>
+              </table>
+            </div>
+          <?php endif; ?>
 
           <div class="block info-block event-links event-part">
             <h4 data-bind="t10n: 'event media'"></h4>
@@ -211,10 +201,10 @@
 
         <div class="block fourth-block">
           <div class="event-title event-part">
-            <h2 data-bind="text: modalData().language['is'].title"></h2>
+            <h2 data-bind="text: modalData().language[$root.lang].title"></h2>
           </div>
           <div class="event-lang event-part">
-            <p data-bind="text: modalData().language['is'].text"></p>
+            <p data-bind="text: modalData().language[$root.lang].text"></p>
           </div>
         </div>
       </div>
@@ -229,7 +219,7 @@
 <div id="event-bottom"></div>
 
 <script>
-HVIRFILL.extend(<?php echo json_encode($settings); ?>);
+  HVIRFILL.extend(<?php echo json_encode($settings); ?>);
 </script>
 
 <script src="/<?php echo $module_path; ?>/js/hvirfill.js"></script>
