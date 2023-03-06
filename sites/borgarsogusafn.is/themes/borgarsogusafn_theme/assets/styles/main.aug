@@ -5148,15 +5148,8 @@ sub {
 .icon-kr:before {
   content: "\E00B"; }
 
-.icon-landnamssyning {
-  background-image: url(images/adalstraeti.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display:block;
-  color:white;
-  width:200px;
-  height:40px;
- }
+.icon-landnamssyning:before {
+  content: "\E00C"; }
 
 .icon-left-arrow:before {
   content: "\E00D"; }
@@ -5203,15 +5196,8 @@ sub {
 .icon-right:before {
   content: "\E01B"; }
 
-.icon-settlement-exibition {
-  background-image: url(images/adalstraeti.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display:block;
-  color:white;
-  width:200px;
-  height:40px;
- }
+.icon-settlement-exibition:before {
+  content: "\E01C"; }
 
 .icon-shape1:before {
   content: "\E01D"; }
