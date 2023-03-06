@@ -48,9 +48,9 @@
       </div>
       <div data-bind="ifnot: $data.seperator">
         <div class="hvirfill-item hvirfill-event" data-bind="click: $parent.showModal">
-          <div class="hvirfill-image">
-            <img class="img-responsive" data-bind="eventThumb: $data"/>
-            <span style="display: none;" data-bind="label: $data.language.is.tags"></span>
+          <div class="hvirfill-image" data-bind="eventThumb: $data">
+<!--            <img class="img-responsive" data-bind="eventThumb: $data"/>-->
+            <span style="display: none;" data-bind="label: $data.tags"></span>
           </div>
           <div class="hvirfill-info">
             <p data-bind="timeRange: $data"></p>
@@ -126,10 +126,10 @@
         <div class="block first-block">
           <div class="event-image event-part">
             <img class="img-responsive" data-bind="attr: {
-                src: server + modalData().image.large,
+                src: server + modalData().event_image,
                 alt: modalData().language[$root.lang].title}"/>
             <span class="text-dark-grey f-XXXS f-1-3 text-white" style="display: none;"
-                  data-bind="modalLabel: modalData().language.is.tags"></span>
+                  data-bind="modalLabel: modalData().tags"></span>
           </div>
 
           <div class="event-info event-part">

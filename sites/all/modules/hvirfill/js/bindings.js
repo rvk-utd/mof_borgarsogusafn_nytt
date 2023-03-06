@@ -49,7 +49,8 @@
   ko.bindingHandlers.eventThumb = {
     update: function(element, value, bindings, model, context) {
       var data = ko.unwrap(value());
-      $(element).attr('src', context.$root.server + data.image.medium);
+      $(element).attr('style', 'background: url(https://hvirfill.reykjavik.is/' + data.event_image + ') no-repeat center center; background-size: cover;width: 100%;\n' +
+        '    height: 184px;');
     }
   }
 
@@ -148,7 +149,7 @@
       var data = ko.unwrap(value());
       if (!Object.keys(data).length)
         return;
-      var tags = data.language.is.tags;
+      var tags = data.tags;
       for (var i=0; i<tags.length; i++) {
         if (tags[i] in HVIRFILL.labels) {
           element.className = 'hvirfill-modal link-' + HVIRFILL.labels[tags[i]];

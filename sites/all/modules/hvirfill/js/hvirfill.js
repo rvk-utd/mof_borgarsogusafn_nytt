@@ -97,8 +97,8 @@
       return links;
     }
 
-    if ('facebook' in data.media) {
-      if (data.media.facebook.indexOf('facebook.com') === -1)
+    if ('facebook' in data.media && data.media.facebook !== null && data.media.facebook !== undefined) {
+      if (data.media.facebook.indexOf('facebook.com') === -1 && data.media.facebook.indexOf('fb.me') === -1)
         var fbLink = 'https://www.facebook.com/' + data.media.facebook;
       else
         var fbLink = data.media.facebook;
